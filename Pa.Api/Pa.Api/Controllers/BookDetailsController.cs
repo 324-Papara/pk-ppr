@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Pa.Api.Controllers
 {
-    [Route("pa/api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class BookDetailsController : ControllerBase
     {
         private List<Book> list;
