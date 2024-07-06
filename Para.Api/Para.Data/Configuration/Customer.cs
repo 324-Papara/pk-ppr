@@ -11,7 +11,7 @@ public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
         builder.Property(x => x.InsertDate).IsRequired(true);
         builder.Property(x => x.IsActive).IsRequired(true);
         builder.Property(x => x.InsertUser).IsRequired(true).HasMaxLength(50);
-        
+
         builder.Property(x => x.FirstName).IsRequired(true).HasMaxLength(50);
         builder.Property(x => x.LastName).IsRequired(true).HasMaxLength(50);
         builder.Property(x => x.IdentityNumber).IsRequired(true).HasMaxLength(11);
@@ -36,6 +36,10 @@ public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
             .IsRequired(true)
             .OnDelete(DeleteBehavior.Cascade);
 
-
+        builder.HasOne(x => x.CustomerDetail)
+            .WithOne(x => x.Customer)
+            .HasForeignKey<CustomerDetail>(x => x.CustomerId)
+            .IsRequired(true)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

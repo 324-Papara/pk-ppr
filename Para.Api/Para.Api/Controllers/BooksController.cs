@@ -3,6 +3,7 @@ using Para.Base.Response;
 
 namespace Para.Api.Controllers
 {
+    [NonController]
     [ApiController]
     [Route("api/[controller]")]
     public class BooksController : ControllerBase

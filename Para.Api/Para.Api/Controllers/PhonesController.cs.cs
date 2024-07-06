@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Para.Api.Controllers
 {
     
+    [NonController]
     [ApiController]
     [Route("api/[controller]")]
     public class PhonesController : ControllerBase
