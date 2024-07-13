@@ -11,7 +11,7 @@ namespace Para.Bussiness.Query;
 public class CustomerQueryHandler : 
     IRequestHandler<GetAllCustomerQuery,ApiResponse<List<CustomerResponse>>>,
     IRequestHandler<GetCustomerByIdQuery,ApiResponse<CustomerResponse>>,
-    IRequestHandler<GetCustomerByParameterQuery,ApiResponse<List<CustomerResponse>>>
+    IRequestHandler<GetCustomerByParametersQuery,ApiResponse<List<CustomerResponse>>>
     
 {
     private readonly IUnitOfWork unitOfWork;
@@ -37,7 +37,7 @@ public class CustomerQueryHandler :
         return new ApiResponse<CustomerResponse>(mapped);
     }
 
-    public async Task<ApiResponse<List<CustomerResponse>>> Handle(GetCustomerByParameterQuery request, CancellationToken cancellationToken)
+    public async Task<ApiResponse<List<CustomerResponse>>> Handle(GetCustomerByParametersQuery request, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();
     }

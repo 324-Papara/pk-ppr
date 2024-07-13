@@ -4,6 +4,8 @@ using AutoMapper;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Para.Api.Middleware;
+using Para.Api.Service;
 using Para.Bussiness;
 using Para.Bussiness.Cqrs;
 using Para.Data.Context;
@@ -50,6 +52,10 @@ public class Startup
 
 
         services.AddMediatR(typeof(CreateCustomerCommand).GetTypeInfo().Assembly);
+
+        services.AddTransient<CustomService1>();
+        services.AddScoped<CustomService2>();
+        services.AddSingleton<CustomService3>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -61,12 +67,52 @@ public class Startup
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Para.Api v1"));
         }
 
+
+        app.UseMiddleware<HeartbeatMiddleware>();
+        app.UseMiddleware<ErrorHandlerMiddleware>();
+        
         app.UseHttpsRedirection();
         app.UseRouting();
         app.UseAuthorization();
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllers();
+        });
+        
+        app.Use((context,next) =>
+        {
+            if (!string.IsNullOrEmpty(context.Request.Path) && context.Request.Path.Value.Contains("favicon"))
+            {
+                return next();
+            }
+            
+            var service1 = context.RequestServices.GetRequiredService<CustomService1>();
+            var service2 = context.RequestServices.GetRequiredService<CustomService2>();
+            var service3 = context.RequestServices.GetRequiredService<CustomService3>();
+
+            service1.Counter++;
+            service2.Counter++;
+            service3.Counter++;
+
+            return next();
+        });
+        
+        app.Run(async context =>
+        {
+            var service1 = context.RequestServices.GetRequiredService<CustomService1>();
+            var service2 = context.RequestServices.GetRequiredService<CustomService2>();
+            var service3 = context.RequestServices.GetRequiredService<CustomService3>();
+
+            if (!string.IsNullOrEmpty(context.Request.Path) && !context.Request.Path.Value.Contains("favicon"))
+            {
+                service1.Counter++;
+                service2.Counter++;
+                service3.Counter++;
+            }
+
+            await context.Response.WriteAsync($"Service1 : {service1.Counter}\n");
+            await context.Response.WriteAsync($"Service2 : {service2.Counter}\n");
+            await context.Response.WriteAsync($"Service3 : {service3.Counter}\n");
         });
     }
 }
