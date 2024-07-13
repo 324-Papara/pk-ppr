@@ -11,9 +11,9 @@ using Para.Data.Context;
 
 namespace Para.Data.Migrations
 {
-    [DbContext(typeof(ParaSqlDbContext))]
-    [Migration("20240706104906_CustomerDetail")]
-    partial class CustomerDetail
+    [DbContext(typeof(ParaDbContext))]
+    [Migration("20240713072620_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

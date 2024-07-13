@@ -20,7 +20,9 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Para.Base\Para.Base.csproj" />
+      <ProjectReference Include="..\Para.Bussiness\Para.Bussiness.csproj" />
       <ProjectReference Include="..\Para.Data\Para.Data.csproj" />
+      <ProjectReference Include="..\Para.Schema\Para.Schema.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -31,4 +33,6 @@
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
     </ItemGroup>
 
+  
+    
 </Project>

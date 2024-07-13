@@ -5,8 +5,8 @@ namespace Para.Data.UnitOfWork;
 
 public interface IUnitOfWork
 {
-    Task Complete();
-    
+    Task Complete(); 
+    Task CompleteWithTransaction();
     IGenericRepository<Customer> CustomerRepository { get; }
     IGenericRepository<CustomerDetail> CustomerDetailRepository { get; }
     IGenericRepository<CustomerAddress> CustomerAddressRepository { get; }

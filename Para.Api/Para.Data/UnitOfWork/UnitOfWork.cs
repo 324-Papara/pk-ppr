@@ -6,7 +6,7 @@ namespace Para.Data.UnitOfWork;
 
 public class UnitOfWork : IUnitOfWork, IDisposable
 {
-    private readonly ParaSqlDbContext dbContext;
+    private readonly ParaDbContext dbContext;
     
     public IGenericRepository<Customer> CustomerRepository { get; }
     public IGenericRepository<CustomerDetail> CustomerDetailRepository { get; }
@@ -15,7 +15,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     
     
 
-    public UnitOfWork(ParaSqlDbContext dbContext)
+    public UnitOfWork(ParaDbContext dbContext)
     {
         this.dbContext = dbContext;
 
@@ -30,6 +30,11 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     }
 
     public async Task Complete()
+    {
+        await dbContext.SaveChangesAsync();
+    }
+    
+    public async Task CompleteWithTransaction()
     {
         using (var dbTransaction = await dbContext.Database.BeginTransactionAsync())
         {

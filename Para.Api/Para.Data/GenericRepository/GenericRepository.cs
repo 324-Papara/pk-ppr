@@ -6,9 +6,9 @@ namespace Para.Data.GenericRepository;
 
 public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntity
 {
-    private readonly ParaSqlDbContext dbContext;
+    private readonly ParaDbContext dbContext;
 
-    public GenericRepository(ParaSqlDbContext dbContext)
+    public GenericRepository(ParaDbContext dbContext)
     {
         this.dbContext = dbContext;
     }
@@ -18,7 +18,7 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
         await dbContext.SaveChangesAsync();
     }
 
-    public async Task<TEntity> GetById(long Id)
+    public async Task<TEntity?> GetById(long Id)
     {
         return await dbContext.Set<TEntity>().FirstOrDefaultAsync(x => x.Id == Id);
     }
@@ -31,12 +31,12 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
         await dbContext.Set<TEntity>().AddAsync(entity);
     }
 
-    public async Task Update(TEntity entity)
+    public void Update(TEntity entity)
     {
         dbContext.Set<TEntity>().Update(entity);
     }
 
-    public async Task Delete(TEntity entity)
+    public void Delete(TEntity entity)
     {
         dbContext.Set<TEntity>().Remove(entity);
     }
@@ -44,7 +44,8 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
     public async Task Delete(long Id)
     {
         var entity = await dbContext.Set<TEntity>().FirstOrDefaultAsync(x => x.Id == Id);
-        dbContext.Set<TEntity>().Remove(entity);
+        if(entity is not null)
+            dbContext.Set<TEntity>().Remove(entity);
     }
 
     public async Task<List<TEntity>> GetAll()

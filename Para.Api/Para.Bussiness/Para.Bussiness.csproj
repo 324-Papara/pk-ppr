@@ -6,4 +6,20 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Para.Data\Para.Data.csproj" />
+      <ProjectReference Include="..\Para.Schema\Para.Schema.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Validation\" />
+    </ItemGroup>
+
+
+
+    <ItemGroup>
+        <PackageReference Include="MediatR" Version="9.0.0" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    </ItemGroup>
+    
 </Project>

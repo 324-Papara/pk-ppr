@@ -1,6 +1,11 @@
+using System.Reflection;
 using System.Text.Json.Serialization;
+using AutoMapper;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Para.Bussiness;
+using Para.Bussiness.Cqrs;
 using Para.Data.Context;
 using Para.Data.UnitOfWork;
 
@@ -31,12 +36,20 @@ public class Startup
         });
 
         var connectionStringSql = Configuration.GetConnectionString("MsSqlConnection");
-        services.AddDbContext<ParaSqlDbContext>(options => options.UseSqlServer(connectionStringSql));
-        
-        var connectionStringPostgre = Configuration.GetConnectionString("PostgresSqlConnection");
-        services.AddDbContext<ParaPostgreDbContext>(options => options.UseNpgsql(connectionStringPostgre));
+        services.AddDbContext<ParaDbContext>(options => options.UseSqlServer(connectionStringSql));
+        //services.AddDbContext<ParaDbContext>(options => options.UseNpgsql(connectionStringPostgre));
+  
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+        var config = new MapperConfiguration(cfg =>
+        {
+            cfg.AddProfile(new MapperConfig());
+        });
+        services.AddSingleton(config.CreateMapper());
+
+
+        services.AddMediatR(typeof(CreateCustomerCommand).GetTypeInfo().Assembly);
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

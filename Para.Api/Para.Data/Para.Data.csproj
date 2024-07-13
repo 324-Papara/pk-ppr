@@ -22,8 +22,4 @@
       <ProjectReference Include="..\Para.Base\Para.Base.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Migrations\" />
-    </ItemGroup>
-
 </Project>

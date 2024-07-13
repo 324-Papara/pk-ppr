@@ -6,6 +6,7 @@ namespace Para.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [NonController]
     public class Customers2Controller : ControllerBase
     {
         private readonly IUnitOfWork unitOfWork;
@@ -24,7 +25,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpGet("{customerId}")]
-        public async Task<Customer> Get(long customerId)
+        public async Task<Customer?> Get(long customerId)
         {
             var entity = await unitOfWork.CustomerRepository.GetById(customerId);
             return entity;
@@ -36,13 +37,13 @@ namespace Para.Api.Controllers
             await unitOfWork.CustomerRepository.Insert(value);
             await unitOfWork.CustomerRepository.Insert(value);
             await unitOfWork.CustomerRepository.Insert(value);
-            await unitOfWork.Complete();
+            await unitOfWork.CompleteWithTransaction();
         }
 
         [HttpPut("{customerId}")]
         public async Task Put(long customerId, [FromBody] Customer value)
         {
-            await unitOfWork.CustomerRepository.Update(value);
+            unitOfWork.CustomerRepository.Update(value);
             await unitOfWork.Complete();
         }
 

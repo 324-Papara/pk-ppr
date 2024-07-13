@@ -1,8 +1,9 @@
-using Microsoft.AspNetCore.Http;
+using AutoMapper;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Para.Data.Context;
-using Para.Data.Domain;
+using Para.Base.Response;
+using Para.Bussiness.Cqrs;
+using Para.Schema;
 
 namespace Para.Api.Controllers
 {
@@ -10,49 +11,52 @@ namespace Para.Api.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
-        private readonly ParaSqlDbContext dbContext;
-
-        public CustomersController(ParaSqlDbContext dbContext)
+        private readonly IMediator mediator;
+        
+        public CustomersController(IMediator mediator)
         {
-            this.dbContext = dbContext;
+            this.mediator = mediator;
         }
 
 
         [HttpGet]
-        public async Task<List<Customer>> Get()
+        public async Task<ApiResponse<List<CustomerResponse>>> Get()
         {
-            var entityList1 = await dbContext.Set<Customer>().Include(x=> x.CustomerAddresses).Include(x=> x.CustomerPhones).Include(x=> x.CustomerDetail).ToListAsync();
-            var entityList2 = await dbContext.Customers.Include(x=> x.CustomerAddresses).Include(x=> x.CustomerPhones).Include(x=> x.CustomerDetail).ToListAsync();
-            return entityList1;
+            var operation = new GetAllCustomerQuery();
+            var result = await mediator.Send(operation);
+            return result;
         }
 
         [HttpGet("{customerId}")]
-        public async Task<Customer> Get(long customerId)
+        public async Task<ApiResponse<CustomerResponse>> Get([FromRoute]long customerId)
         {
-            var entity = await dbContext.Set<Customer>().Include(x=> x.CustomerAddresses).Include(x=> x.CustomerPhones).Include(x=> x.CustomerDetail).FirstOrDefaultAsync(x => x.Id == customerId);
-            return entity;
+            var operation = new GetCustomerByIdQuery(customerId);
+            var result = await mediator.Send(operation);
+            return result;
         }
 
         [HttpPost]
-        public async Task Post([FromBody] Customer value)
+        public async Task<ApiResponse<CustomerResponse>> Post([FromBody] CustomerRequest value)
         {
-            var entity = await dbContext.Set<Customer>().AddAsync(value);
-            await dbContext.SaveChangesAsync();
+            var operation = new CreateCustomerCommand(value);
+            var result = await mediator.Send(operation);
+            return result;
         }
 
         [HttpPut("{customerId}")]
-        public async Task Put(long customerId, [FromBody] Customer value)
+        public async Task<ApiResponse> Put(long customerId, [FromBody] CustomerRequest value)
         {
-            dbContext.Set<Customer>().Update(value);
-            await dbContext.SaveChangesAsync();
+            var operation = new UpdateCustomerCommand(customerId,value);
+            var result = await mediator.Send(operation);
+            return result;
         }
 
         [HttpDelete("{customerId}")]
-        public async Task Delete(long customerId)
+        public async Task<ApiResponse> Delete(long customerId)
         {
-            var entity = await dbContext.Set<Customer>().FirstOrDefaultAsync(x => x.Id == customerId);
-            dbContext.Set<Customer>().Remove(entity);
-            await dbContext.SaveChangesAsync();
+            var operation = new DeleteCustomerCommand(customerId);
+            var result = await mediator.Send(operation);
+            return result;
         }
     }
 }
