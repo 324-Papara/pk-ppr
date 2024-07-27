@@ -20,4 +20,8 @@ public class CustomerAddressResponse : BaseResponse
     public string AddressLine { get; set; }
     public string ZipCode { get; set; }
     public bool IsDefault { get; set; }
+    
+    public string CustomerName { get; set; }
+    public string CustomerIdentityNumber { get; set; }
+    public int CustomerNumber { get; set; }
 }

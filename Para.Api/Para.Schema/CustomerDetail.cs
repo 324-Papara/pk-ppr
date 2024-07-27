@@ -19,4 +19,8 @@ public class CustomerDetailResponse : BaseResponse
     public string EducationStatus { get; set; }
     public string MontlyIncome { get; set; }
     public string Occupation { get; set; }
+    
+    public string CustomerName { get; set; }
+    public string CustomerIdentityNumber { get; set; }
+    public int CustomerNumber { get; set; }
 }

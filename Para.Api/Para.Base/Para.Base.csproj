@@ -6,4 +6,7 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="LinqKit" Version="1.2.4" />
+    </ItemGroup>
 </Project>

@@ -11,14 +11,23 @@ public class MapperConfig : Profile
     {
         CreateMap<Customer, CustomerResponse>();
         CreateMap<CustomerRequest, Customer>();
-        
-        CreateMap<CustomerAddress, CustomerAddressResponse>();
+
+        CreateMap<CustomerAddress, CustomerAddressResponse>()
+            .ForMember(dest => dest.CustomerIdentityNumber, opt => opt.MapFrom(src => src.Customer.IdentityNumber))
+            .ForMember(dest => dest.CustomerNumber, opt => opt.MapFrom(src => src.Customer.CustomerNumber))
+            .ForMember(dest => dest.CustomerName, opt => opt.MapFrom(src => src.Customer.FirstName + " " + src.Customer.LastName));
         CreateMap<CustomerAddressRequest, CustomerAddress>();
         
-        CreateMap<CustomerPhone, CustomerPhoneResponse>();
+        CreateMap<CustomerPhone, CustomerPhoneResponse>()
+            .ForMember(dest => dest.CustomerIdentityNumber, opt => opt.MapFrom(src => src.Customer.IdentityNumber))
+            .ForMember(dest => dest.CustomerNumber, opt => opt.MapFrom(src => src.Customer.CustomerNumber))
+            .ForMember(dest => dest.CustomerName, opt => opt.MapFrom(src => src.Customer.FirstName + " " + src.Customer.LastName));
         CreateMap<CustomerPhoneRequest, CustomerPhone>();
         
-        CreateMap<CustomerDetail, CustomerDetailResponse>();
+        CreateMap<CustomerDetail, CustomerDetailResponse>()
+            .ForMember(dest => dest.CustomerIdentityNumber, opt => opt.MapFrom(src => src.Customer.IdentityNumber))
+            .ForMember(dest => dest.CustomerNumber, opt => opt.MapFrom(src => src.Customer.CustomerNumber))
+            .ForMember(dest => dest.CustomerName, opt => opt.MapFrom(src => src.Customer.FirstName + " " + src.Customer.LastName));
         CreateMap<CustomerDetailRequest, CustomerDetail>();
     }
 }
