@@ -11,6 +11,11 @@ public class CustomerRequest : BaseRequest
     public string IdentityNumber { get; set; }
     public string Email { get; set; }
     public DateTime DateOfBirth { get; set; }
+    
+    
+    public CustomerDetailRequest CustomerDetail { get; set; }
+    public List<CustomerAddressRequest> CustomerAddresses { get; set; }
+    public List<CustomerPhoneRequest> CustomerPhones { get; set; }
 }
 
 public class CustomerResponse : BaseResponse

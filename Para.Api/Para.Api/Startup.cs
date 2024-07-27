@@ -1,6 +1,7 @@
 using System.Reflection;
 using System.Text.Json.Serialization;
 using AutoMapper;
+using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -8,6 +9,7 @@ using Para.Api.Middleware;
 using Para.Api.Service;
 using Para.Bussiness;
 using Para.Bussiness.Cqrs;
+using Para.Bussiness.Validation;
 using Para.Data.Context;
 using Para.Data.UnitOfWork;
 
@@ -32,6 +34,11 @@ public class Startup
             options.JsonSerializerOptions.WriteIndented = true;
             options.JsonSerializerOptions.PropertyNamingPolicy = null;
         });
+        services.AddControllers().AddFluentValidation(x =>
+        {
+            x.RegisterValidatorsFromAssemblyContaining<BaseValidator>();
+        });
+        
         services.AddSwaggerGen(c =>
         {
             c.SwaggerDoc("v1", new OpenApiInfo { Title = "Para.Api", Version = "v1" });

@@ -11,15 +11,13 @@
       <ProjectReference Include="..\Para.Schema\Para.Schema.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Validation\" />
-    </ItemGroup>
-
 
 
     <ItemGroup>
         <PackageReference Include="MediatR" Version="9.0.0" />
         <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.2" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.5.2" />
     </ItemGroup>
     
 </Project>
