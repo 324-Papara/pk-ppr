@@ -161,3 +161,1476 @@ Response Body: {
   "ReferenceNumber": "d9415e29-3ad3-48ce-9282-fb1ecaea483d"
 }
 2024-07-27 11:56:04.462 [INF] -------------Request-End------------
+2024-07-27 12:06:24.953 [INF] Application is starting...
+2024-07-27 12:06:52.137 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 12:07:01.259 [WRN] Failed to determine the https port for redirect.
+2024-07-27 12:07:10.756 [INF] LogAuthorizationFilter.OnAuthorization
+2024-07-27 12:07:19.902 [INF] LogResourceFilter.OnResourceExecuting
+2024-07-27 12:07:44.640 [INF] LogActionFilter.OnActionExecuting
+2024-07-27 12:07:53.088 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2024-07-27 12:09:22.222 [INF] LogActionFilter.OnActionExecuted
+2024-07-27 12:09:29.771 [INF] LogResultFilter.OnResultExecuting
+2024-07-27 12:09:32.897 [INF] LogResultFilter.OnResultExecuted
+2024-07-27 12:09:38.129 [INF] LogResourceFilter.OnResourceExecuted
+2024-07-27 12:10:15.920 [INF] -------------Request-Begin------------
+2024-07-27 12:10:15.921 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Customers 
+QueryString:  
+Request Body: 
+2024-07-27 12:10:15.922 [INF] 
+
+2024-07-27 12:10:15.923 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Customers 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "FirstName": "Ali",
+      "LastName": "Yilmaz",
+      "IdentityNumber": "23423443",
+      "Email": "ali@yilmaz.com",
+      "CustomerNumber": 45234563,
+      "DateOfBirth": "2024-07-13T08:41:15.01",
+      "CustomerDetail": {
+        "CustomerId": 5,
+        "FatherName": "Mehmet",
+        "MotherName": "Fatma",
+        "EducationStatus": "License",
+        "MontlyIncome": "2342",
+        "Occupation": "Lawyer",
+        "CustomerName": "Ali Yilmaz",
+        "CustomerIdentityNumber": "23423443",
+        "CustomerNumber": 45234563,
+        "Id": 1
+      },
+      "CustomerAddresses": [
+        {
+          "CustomerId": 5,
+          "Country": "TUR",
+          "City": "IST",
+          "AddressLine": "TUR",
+          "ZipCode": "345345",
+          "IsDefault": true,
+          "CustomerName": "Ali Yilmaz",
+          "CustomerIdentityNumber": "23423443",
+          "CustomerNumber": 45234563,
+          "Id": 10002
+        }
+      ],
+      "CustomerPhones": [
+        {
+          "CustomerId": 5,
+          "CountyCode": "TUR",
+          "Phone": "987979859",
+          "IsDefault": true,
+          "CustomerName": "Ali Yilmaz",
+          "CustomerIdentityNumber": "23423443",
+          "CustomerNumber": 45234563,
+          "Id": 10002
+        },
+        {
+          "CustomerId": 5,
+          "CountyCode": "TUR",
+          "Phone": "432342332",
+          "IsDefault": false,
+          "CustomerName": "Ali Yilmaz",
+          "CustomerIdentityNumber": "23423443",
+          "CustomerNumber": 45234563,
+          "Id": 10003
+        }
+      ],
+      "Id": 5
+    },
+    {
+      "FirstName": "Ali",
+      "LastName": "Yilmaz",
+      "IdentityNumber": "23543423443",
+      "Email": "ali3@yilmaz.com",
+      "CustomerNumber": 0,
+      "DateOfBirth": "2024-07-13T08:41:15.01",
+      "CustomerDetail": {
+        "CustomerId": 8,
+        "FatherName": "Mehmet",
+        "MotherName": "Ayse",
+        "EducationStatus": "License",
+        "MontlyIncome": "89678",
+        "Occupation": "Lawyer",
+        "CustomerName": "Ali Yilmaz",
+        "CustomerIdentityNumber": "23543423443",
+        "CustomerNumber": 0,
+        "Id": 2
+      },
+      "CustomerAddresses": [
+        {
+          "CustomerId": 8,
+          "Country": "TUR",
+          "City": "IST",
+          "AddressLine": "TUR",
+          "ZipCode": "345345",
+          "IsDefault": true,
+          "CustomerName": "Ali Yilmaz",
+          "CustomerIdentityNumber": "23543423443",
+          "CustomerNumber": 0,
+          "Id": 10003
+        }
+      ],
+      "CustomerPhones": [
+        {
+          "CustomerId": 8,
+          "CountyCode": "TUR",
+          "Phone": "345345345",
+          "IsDefault": true,
+          "CustomerName": "Ali Yilmaz",
+          "CustomerIdentityNumber": "23543423443",
+          "CustomerNumber": 0,
+          "Id": 10004
+        },
+        {
+          "CustomerId": 8,
+          "CountyCode": "TUR",
+          "Phone": "679769679",
+          "IsDefault": false,
+          "CustomerName": "Ali Yilmaz",
+          "CustomerIdentityNumber": "23543423443",
+          "CustomerNumber": 0,
+          "Id": 10005
+        }
+      ],
+      "Id": 8
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T09:07:53.765877Z",
+  "ReferenceNumber": "e25055aa-575c-497f-9c5d-2a07abfef284"
+}
+2024-07-27 12:10:15.923 [INF] -------------Request-End------------
+2024-07-27 12:25:58.939 [INF] Application is starting...
+2024-07-27 12:27:00.124 [INF] Application is starting...
+2024-07-27 12:27:34.177 [INF] Application is starting...
+2024-07-27 12:28:18.570 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 12:28:21.982 [WRN] Failed to determine the https port for redirect.
+2024-07-27 12:28:23.774 [INF] -------------Request-Begin------------
+2024-07-27 12:28:23.775 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+Request Body: 
+2024-07-27 12:28:23.775 [INF] 
+
+2024-07-27 12:28:23.775 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CustomerId": 5,
+      "Country": "TUR",
+      "City": "IST",
+      "AddressLine": "TUR",
+      "ZipCode": "345345",
+      "IsDefault": true,
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23423443",
+      "CustomerNumber": 45234563,
+      "Id": 10002
+    },
+    {
+      "CustomerId": 8,
+      "Country": "TUR",
+      "City": "IST",
+      "AddressLine": "TUR",
+      "ZipCode": "345345",
+      "IsDefault": true,
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 0,
+      "Id": 10003
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T09:28:23.729752Z",
+  "ReferenceNumber": "ba6bd3f9-6e9e-4e84-8bfe-2135030f809e"
+}
+2024-07-27 12:28:23.775 [INF] -------------Request-End------------
+2024-07-27 12:28:53.218 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 12:28:53.354 [INF] -------------Request-Begin------------
+2024-07-27 12:28:53.354 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+Request Body: 
+2024-07-27 12:28:53.354 [INF] 
+
+2024-07-27 12:28:53.354 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CustomerId": 5,
+      "Country": "TUR",
+      "City": "IST",
+      "AddressLine": "TUR",
+      "ZipCode": "345345",
+      "IsDefault": true,
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23423443",
+      "CustomerNumber": 45234563,
+      "Id": 10002
+    },
+    {
+      "CustomerId": 8,
+      "Country": "TUR",
+      "City": "IST",
+      "AddressLine": "TUR",
+      "ZipCode": "345345",
+      "IsDefault": true,
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 0,
+      "Id": 10003
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T09:28:53.353333Z",
+  "ReferenceNumber": "ad52d689-b755-44c9-a6a3-ed17ad387c05"
+}
+2024-07-27 12:28:53.354 [INF] -------------Request-End------------
+2024-07-27 13:53:58.138 [INF] Application is starting...
+2024-07-27 13:55:18.558 [INF] Application is starting...
+2024-07-27 13:57:06.960 [INF] Application is starting...
+2024-07-27 13:58:41.378 [INF] Application is starting...
+2024-07-27 13:59:34.652 [INF] Application is starting...
+2024-07-27 14:00:13.579 [INF] Application is starting...
+2024-07-27 14:01:25.905 [INF] Application is starting...
+2024-07-27 14:02:00.297 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:02:00.324 [WRN] Failed to determine the https port for redirect.
+2024-07-27 14:02:02.094 [FTL] Path=/api/Authorization || Method=POST || Exception=The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+2024-07-27 14:02:02.264 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id eedb530e-944f-4be2-a002-1645fde9d7e2 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Para.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/ErrorHandlerMiddleware.cs:line 35
+   at Para.Api.Middleware.HeartbeatMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/HeartbeatMiddleware.cs:line 24
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-27 14:02:02.349 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id eedb530e-944f-4be2-a002-1645fde9d7e2 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.DisplayExceptionContent(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-27 14:02:02.351 [ERR] Connection id "0HN5E5E26J4HM", Request id "0HN5E5E26J4HM:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id eedb530e-944f-4be2-a002-1645fde9d7e2 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Para.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/ErrorHandlerMiddleware.cs:line 35
+   at Para.Api.Middleware.HeartbeatMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/HeartbeatMiddleware.cs:line 24
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2024-07-27 14:02:15.809 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:03:23.703 [INF] Application is starting...
+2024-07-27 14:03:37.006 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:03:37.025 [WRN] Failed to determine the https port for redirect.
+2024-07-27 14:03:38.210 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-07-27 14:03:38.828 [ERR] Failed executing DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[InsertDate], [u].[InsertUser], [u].[IsActive], [u].[LastLoginDate], [u].[LastName], [u].[Password], [u].[Role], [u].[Status], [u].[UserName]
+FROM [dbo].[User] AS [u]
+2024-07-27 14:03:38.867 [ERR] An exception occurred while iterating over the results of a query for context type 'Para.Data.Context.ParaDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.User'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:377af222-3c20-4ee2-a273-1d94dd9d8eed
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.User'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:377af222-3c20-4ee2-a273-1d94dd9d8eed
+Error Number:208,State:1,Class:16
+2024-07-27 14:09:11.197 [INF] Application is starting...
+2024-07-27 14:09:26.373 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:09:26.389 [WRN] Failed to determine the https port for redirect.
+2024-07-27 14:09:46.846 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-07-27 14:12:06.589 [INF] -------------Request-Begin------------
+2024-07-27 14:12:06.613 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-07-27 14:12:06.614 [INF] 
+
+2024-07-27 14:12:06.614 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-27T14:16:56.135341+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUGFyYSBQYSIsImV4cCI6MTcyMjA3ODk1MSwiaXNzIjoiUGFyYUFwaSIsImF1ZCI6IlBhcmFBcGkifQ.Oaz30kTa6Syweri7BuHIxp9gQJexbEwO6P9-BEV0TSI",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:12:04.419407Z",
+  "ReferenceNumber": "af0eae97-e707-473a-95fe-b0fac9621d13"
+}
+2024-07-27 14:12:06.614 [INF] -------------Request-End------------
+2024-07-27 14:13:28.414 [INF] Application is starting...
+2024-07-27 14:13:37.793 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:13:37.809 [WRN] Failed to determine the https port for redirect.
+2024-07-27 14:13:37.894 [INF] -------------Request-Begin------------
+2024-07-27 14:13:37.894 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+Request Body: 
+2024-07-27 14:13:37.894 [INF] 
+
+2024-07-27 14:13:37.894 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:13:37.894 [INF] -------------Request-End------------
+2024-07-27 14:13:45.761 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:13:45.769 [INF] -------------Request-Begin------------
+2024-07-27 14:13:45.769 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/5565 
+QueryString:  
+Request Body: 
+2024-07-27 14:13:45.769 [INF] 
+
+2024-07-27 14:13:45.769 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/5565 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:13:45.769 [INF] -------------Request-End------------
+2024-07-27 14:13:59.049 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:13:59.053 [INF] -------------Request-Begin------------
+2024-07-27 14:13:59.053 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/5565 
+QueryString:  
+Request Body: 
+2024-07-27 14:13:59.053 [INF] 
+
+2024-07-27 14:13:59.053 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/5565 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:13:59.053 [INF] -------------Request-End------------
+2024-07-27 14:14:26.563 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:14:26.565 [INF] -------------Request-Begin------------
+2024-07-27 14:14:26.565 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/5565 
+QueryString:  
+Request Body: 
+2024-07-27 14:14:26.565 [INF] 
+
+2024-07-27 14:14:26.565 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/5565 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:14:26.565 [INF] -------------Request-End------------
+2024-07-27 14:14:30.255 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:14:30.256 [INF] -------------Request-Begin------------
+2024-07-27 14:14:30.256 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/5565 
+QueryString:  
+Request Body: 
+2024-07-27 14:14:30.256 [INF] 
+
+2024-07-27 14:14:30.256 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/5565 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:14:30.256 [INF] -------------Request-End------------
+2024-07-27 14:14:39.638 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:14:39.639 [INF] -------------Request-Begin------------
+2024-07-27 14:14:39.639 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/1 
+QueryString:  
+Request Body: 
+2024-07-27 14:14:39.639 [INF] 
+
+2024-07-27 14:14:39.639 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/1 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:14:39.639 [INF] -------------Request-End------------
+2024-07-27 14:14:45.009 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:14:45.010 [INF] -------------Request-Begin------------
+2024-07-27 14:14:45.010 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/1 
+QueryString:  
+Request Body: 
+2024-07-27 14:14:45.010 [INF] 
+
+2024-07-27 14:14:45.010 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/1 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:14:45.010 [INF] -------------Request-End------------
+2024-07-27 14:15:15.585 [INF] Application is starting...
+2024-07-27 14:15:24.416 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:15:24.443 [WRN] Failed to determine the https port for redirect.
+2024-07-27 14:15:24.535 [INF] -------------Request-Begin------------
+2024-07-27 14:15:24.535 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+Request Body: 
+2024-07-27 14:15:24.535 [INF] 
+
+2024-07-27 14:15:24.535 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:15:24.535 [INF] -------------Request-End------------
+2024-07-27 14:15:35.685 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:15:40.640 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-07-27 14:15:42.943 [INF] -------------Request-Begin------------
+2024-07-27 14:15:42.943 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-07-27 14:15:42.943 [INF] 
+
+2024-07-27 14:15:42.943 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-27T14:20:42.919238+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUGFyYSBQYSIsImV4cCI6MTcyMjA3OTI0MiwiaXNzIjoiUGFyYUFwaSIsImF1ZCI6IlBhcmFBcGkifQ.M4ZCZQaY8OP4uDXvUvSnxiKZEZ3FjZYpqqQmSy9BNXI",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:15:42.91956Z",
+  "ReferenceNumber": "fbe5f95a-8989-472a-bb2b-eb99d76cd275"
+}
+2024-07-27 14:15:42.943 [INF] -------------Request-End------------
+2024-07-27 14:16:00.294 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:16:00.567 [INF] -------------Request-Begin------------
+2024-07-27 14:16:00.567 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+Request Body: 
+2024-07-27 14:16:00.567 [INF] 
+
+2024-07-27 14:16:00.567 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CustomerId": 5,
+      "Country": "TUR",
+      "City": "IST",
+      "AddressLine": "TUR",
+      "ZipCode": "345345",
+      "IsDefault": true,
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23423443",
+      "CustomerNumber": 45234563,
+      "Id": 10002
+    },
+    {
+      "CustomerId": 8,
+      "Country": "TUR",
+      "City": "IST",
+      "AddressLine": "TUR",
+      "ZipCode": "345345",
+      "IsDefault": true,
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 0,
+      "Id": 10003
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:16:00.556251Z",
+  "ReferenceNumber": "27bd2c05-774f-442b-9806-e1e90cf2bf07"
+}
+2024-07-27 14:16:00.567 [INF] -------------Request-End------------
+2024-07-27 14:16:38.341 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:16:38.348 [INF] -------------Request-Begin------------
+2024-07-27 14:16:38.348 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+Request Body: 
+2024-07-27 14:16:38.348 [INF] 
+
+2024-07-27 14:16:38.348 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:16:38.348 [INF] -------------Request-End------------
+2024-07-27 14:29:45.289 [INF] Application is starting...
+2024-07-27 14:30:05.396 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:30:05.421 [WRN] Failed to determine the https port for redirect.
+2024-07-27 14:30:05.513 [INF] -------------Request-Begin------------
+2024-07-27 14:30:05.513 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/NoToken 
+QueryString:  
+Request Body: 
+2024-07-27 14:30:05.513 [INF] 
+
+2024-07-27 14:30:05.513 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/NoToken 
+QueryString:  
+StatusCode: 200 
+Response Body: NoToken
+2024-07-27 14:30:05.513 [INF] -------------Request-End------------
+2024-07-27 14:30:15.360 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:30:15.368 [INF] -------------Request-Begin------------
+2024-07-27 14:30:15.368 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2024-07-27 14:30:15.368 [INF] 
+
+2024-07-27 14:30:15.368 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:30:15.368 [INF] -------------Request-End------------
+2024-07-27 14:30:16.873 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:30:16.879 [INF] -------------Request-Begin------------
+2024-07-27 14:30:16.879 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2024-07-27 14:30:16.879 [INF] 
+
+2024-07-27 14:30:16.879 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:30:16.879 [INF] -------------Request-End------------
+2024-07-27 14:30:32.770 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:30:32.773 [INF] -------------Request-Begin------------
+2024-07-27 14:30:32.773 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+Request Body: 
+2024-07-27 14:30:32.773 [INF] 
+
+2024-07-27 14:30:32.773 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:30:32.773 [INF] -------------Request-End------------
+2024-07-27 14:30:34.922 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:30:34.923 [INF] -------------Request-Begin------------
+2024-07-27 14:30:34.923 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+Request Body: 
+2024-07-27 14:30:34.923 [INF] 
+
+2024-07-27 14:30:34.923 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:30:34.923 [INF] -------------Request-End------------
+2024-07-27 14:30:37.892 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:30:37.895 [INF] -------------Request-Begin------------
+2024-07-27 14:30:37.895 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+Request Body: 
+2024-07-27 14:30:37.895 [INF] 
+
+2024-07-27 14:30:37.895 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:30:37.895 [INF] -------------Request-End------------
+2024-07-27 14:30:53.543 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:03.804 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-07-27 14:31:04.416 [INF] -------------Request-Begin------------
+2024-07-27 14:31:04.416 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-07-27 14:31:04.416 [INF] 
+
+2024-07-27 14:31:04.416 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-27T14:36:04.398289+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUGFyYSBQYSIsImV4cCI6MTcyMjA4MDE2NCwiaXNzIjoiUGFyYUFwaSIsImF1ZCI6IlBhcmFBcGkifQ.4deyqzNCLkfv6DI7HaWR8jqlaRKzNRbvINs8h_TTNSw",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:31:04.398595Z",
+  "ReferenceNumber": "9a674a7e-7d52-470e-b9cd-ca1a3a5a75ac"
+}
+2024-07-27 14:31:04.416 [INF] -------------Request-End------------
+2024-07-27 14:31:27.623 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:27.672 [INF] -------------Request-Begin------------
+2024-07-27 14:31:27.672 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/NoToken 
+QueryString:  
+Request Body: 
+2024-07-27 14:31:27.672 [INF] 
+
+2024-07-27 14:31:27.672 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/NoToken 
+QueryString:  
+StatusCode: 200 
+Response Body: NoToken
+2024-07-27 14:31:27.672 [INF] -------------Request-End------------
+2024-07-27 14:31:36.152 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:36.183 [INF] -------------Request-Begin------------
+2024-07-27 14:31:36.183 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2024-07-27 14:31:36.184 [INF] 
+
+2024-07-27 14:31:36.184 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2024-07-27 14:31:36.184 [INF] -------------Request-End------------
+2024-07-27 14:31:36.862 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:36.869 [INF] -------------Request-Begin------------
+2024-07-27 14:31:36.869 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2024-07-27 14:31:36.869 [INF] 
+
+2024-07-27 14:31:36.869 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2024-07-27 14:31:36.869 [INF] -------------Request-End------------
+2024-07-27 14:31:37.227 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:37.229 [INF] -------------Request-Begin------------
+2024-07-27 14:31:37.229 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2024-07-27 14:31:37.229 [INF] 
+
+2024-07-27 14:31:37.229 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2024-07-27 14:31:37.229 [INF] -------------Request-End------------
+2024-07-27 14:31:37.408 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:37.409 [INF] -------------Request-Begin------------
+2024-07-27 14:31:37.409 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2024-07-27 14:31:37.409 [INF] 
+
+2024-07-27 14:31:37.409 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2024-07-27 14:31:37.409 [INF] -------------Request-End------------
+2024-07-27 14:31:48.599 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:48.611 [INF] -------------Request-Begin------------
+2024-07-27 14:31:48.612 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+Request Body: 
+2024-07-27 14:31:48.612 [INF] 
+
+2024-07-27 14:31:48.612 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+StatusCode: 200 
+Response Body: Admin
+2024-07-27 14:31:48.612 [INF] -------------Request-End------------
+2024-07-27 14:31:49.197 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:49.199 [INF] -------------Request-Begin------------
+2024-07-27 14:31:49.199 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+Request Body: 
+2024-07-27 14:31:49.199 [INF] 
+
+2024-07-27 14:31:49.199 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+StatusCode: 200 
+Response Body: Admin
+2024-07-27 14:31:49.199 [INF] -------------Request-End------------
+2024-07-27 14:31:49.450 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:49.451 [INF] -------------Request-Begin------------
+2024-07-27 14:31:49.452 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+Request Body: 
+2024-07-27 14:31:49.452 [INF] 
+
+2024-07-27 14:31:49.452 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+StatusCode: 200 
+Response Body: Admin
+2024-07-27 14:31:49.452 [INF] -------------Request-End------------
+2024-07-27 14:31:49.587 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:49.589 [INF] -------------Request-Begin------------
+2024-07-27 14:31:49.589 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+Request Body: 
+2024-07-27 14:31:49.589 [INF] 
+
+2024-07-27 14:31:49.589 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Admin 
+QueryString:  
+StatusCode: 200 
+Response Body: Admin
+2024-07-27 14:31:49.589 [INF] -------------Request-End------------
+2024-07-27 14:31:55.245 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:31:55.252 [INF] -------------Request-Begin------------
+2024-07-27 14:31:55.253 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Manager 
+QueryString:  
+Request Body: 
+2024-07-27 14:31:55.253 [INF] 
+
+2024-07-27 14:31:55.253 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/Manager 
+QueryString:  
+StatusCode: 403 
+Response Body: 
+2024-07-27 14:31:55.253 [INF] -------------Request-End------------
+2024-07-27 14:32:15.117 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:32:15.129 [INF] -------------Request-Begin------------
+2024-07-27 14:32:15.129 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/ManagerAndAdmin 
+QueryString:  
+Request Body: 
+2024-07-27 14:32:15.129 [INF] 
+
+2024-07-27 14:32:15.129 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/TokenTest/ManagerAndAdmin 
+QueryString:  
+StatusCode: 200 
+Response Body: ManagerAndAdmin
+2024-07-27 14:32:15.129 [INF] -------------Request-End------------
+2024-07-27 14:38:06.076 [INF] Application is starting...
+2024-07-27 14:38:15.102 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:38:15.127 [WRN] Failed to determine the https port for redirect.
+2024-07-27 14:38:15.212 [INF] -------------Request-Begin------------
+2024-07-27 14:38:15.213 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+Request Body: 
+2024-07-27 14:38:15.213 [INF] 
+
+2024-07-27 14:38:15.213 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-27 14:38:15.213 [INF] -------------Request-End------------
+2024-07-27 14:38:36.247 [INF] Application is starting...
+2024-07-27 14:38:38.402 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:38:38.419 [WRN] Failed to determine the https port for redirect.
+2024-07-27 14:38:43.125 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2024-07-27 14:38:46.512 [INF] -------------Request-Begin------------
+2024-07-27 14:38:46.512 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+Request Body: 
+2024-07-27 14:38:46.512 [INF] 
+
+2024-07-27 14:38:46.513 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:38:43.721911Z",
+  "ReferenceNumber": "67bc1b52-b26f-486a-b0e4-94291f4efc8a"
+}
+2024-07-27 14:38:46.513 [INF] -------------Request-End------------
+2024-07-27 14:38:57.727 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:39:40.141 [INF] -------------Request-Begin------------
+2024-07-27 14:39:40.142 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+Request Body: 
+2024-07-27 14:39:40.142 [INF] 
+
+2024-07-27 14:39:40.142 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:39:05.87398Z",
+  "ReferenceNumber": "d01f4872-9046-4015-a31f-9873ecb06426"
+}
+2024-07-27 14:39:40.142 [INF] -------------Request-End------------
+2024-07-27 14:40:02.688 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:40:05.033 [INF] -------------Request-Begin------------
+2024-07-27 14:40:05.033 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+Request Body: 
+2024-07-27 14:40:05.033 [INF] 
+
+2024-07-27 14:40:05.033 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:40:05.032091Z",
+  "ReferenceNumber": "21b7009d-8a80-4983-96af-73df339516f4"
+}
+2024-07-27 14:40:05.033 [INF] -------------Request-End------------
+2024-07-27 14:40:12.679 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:40:39.204 [INF] -------------Request-Begin------------
+2024-07-27 14:40:39.206 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+Request Body: 
+2024-07-27 14:40:39.206 [INF] 
+
+2024-07-27 14:40:39.206 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:40:39.202335Z",
+  "ReferenceNumber": "28fe86b7-e1c4-4059-a7f4-5abb7408a7fb"
+}
+2024-07-27 14:40:39.206 [INF] -------------Request-End------------
+2024-07-27 14:40:42.744 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:40:45.702 [INF] -------------Request-Begin------------
+2024-07-27 14:40:45.702 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+Request Body: 
+2024-07-27 14:40:45.702 [INF] 
+
+2024-07-27 14:40:45.703 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:40:45.702189Z",
+  "ReferenceNumber": "d2a1414b-ccb7-4e37-a7cd-6d52b87743b7"
+}
+2024-07-27 14:40:45.703 [INF] -------------Request-End------------
+2024-07-27 14:40:52.800 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:41:14.062 [INF] Application is starting...
+2024-07-27 14:41:24.180 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:41:24.205 [WRN] Failed to determine the https port for redirect.
+2024-07-27 14:41:28.733 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2024-07-27 14:41:29.315 [INF] -------------Request-Begin------------
+2024-07-27 14:41:29.315 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/5 
+QueryString:  
+Request Body: 
+2024-07-27 14:41:29.315 [INF] 
+
+2024-07-27 14:41:29.315 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/5 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "FirstName": "Ali",
+    "LastName": "Yilmaz",
+    "IdentityNumber": "23423443",
+    "Email": "ali@yilmaz.com",
+    "CustomerNumber": 45234563,
+    "DateOfBirth": "2024-07-13T08:41:15.01",
+    "CustomerDetail": {
+      "CustomerId": 5,
+      "FatherName": "Mehmet",
+      "MotherName": "Fatma",
+      "EducationStatus": "License",
+      "MontlyIncome": "2342",
+      "Occupation": "Lawyer",
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23423443",
+      "CustomerNumber": 45234563,
+      "Id": 1
+    },
+    "CustomerAddresses": [
+      {
+        "CustomerId": 5,
+        "Country": "TUR",
+        "City": "IST",
+        "AddressLine": "TUR",
+        "ZipCode": "345345",
+        "IsDefault": true,
+        "CustomerName": "Ali Yilmaz",
+        "CustomerIdentityNumber": "23423443",
+        "CustomerNumber": 45234563,
+        "Id": 10002
+      }
+    ],
+    "CustomerPhones": [
+      {
+        "CustomerId": 5,
+        "CountyCode": "TUR",
+        "Phone": "987979859",
+        "IsDefault": true,
+        "CustomerName": "Ali Yilmaz",
+        "CustomerIdentityNumber": "23423443",
+        "CustomerNumber": 45234563,
+        "Id": 10002
+      },
+      {
+        "CustomerId": 5,
+        "CountyCode": "TUR",
+        "Phone": "432342332",
+        "IsDefault": false,
+        "CustomerName": "Ali Yilmaz",
+        "CustomerIdentityNumber": "23423443",
+        "CustomerNumber": 45234563,
+        "Id": 10003
+      }
+    ],
+    "Id": 5
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:41:29.236653Z",
+  "ReferenceNumber": "b801da5d-73d8-4632-8d62-507f2db164be"
+}
+2024-07-27 14:41:29.315 [INF] -------------Request-End------------
+2024-07-27 14:41:58.394 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 14:42:02.685 [INF] -------------Request-Begin------------
+2024-07-27 14:42:02.685 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/8 
+QueryString:  
+Request Body: 
+2024-07-27 14:42:02.685 [INF] 
+
+2024-07-27 14:42:02.685 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/8 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "FirstName": "Ali",
+    "LastName": "Yilmaz",
+    "IdentityNumber": "23543423443",
+    "Email": "ali3@yilmaz.com",
+    "CustomerNumber": 0,
+    "DateOfBirth": "2024-07-13T08:41:15.01",
+    "CustomerDetail": {
+      "CustomerId": 8,
+      "FatherName": "Mehmet",
+      "MotherName": "Ayse",
+      "EducationStatus": "License",
+      "MontlyIncome": "89678",
+      "Occupation": "Lawyer",
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 0,
+      "Id": 2
+    },
+    "CustomerAddresses": [
+      {
+        "CustomerId": 8,
+        "Country": "TUR",
+        "City": "IST",
+        "AddressLine": "TUR",
+        "ZipCode": "345345",
+        "IsDefault": true,
+        "CustomerName": "Ali Yilmaz",
+        "CustomerIdentityNumber": "23543423443",
+        "CustomerNumber": 0,
+        "Id": 10003
+      }
+    ],
+    "CustomerPhones": [
+      {
+        "CustomerId": 8,
+        "CountyCode": "TUR",
+        "Phone": "345345345",
+        "IsDefault": true,
+        "CustomerName": "Ali Yilmaz",
+        "CustomerIdentityNumber": "23543423443",
+        "CustomerNumber": 0,
+        "Id": 10004
+      },
+      {
+        "CustomerId": 8,
+        "CountyCode": "TUR",
+        "Phone": "679769679",
+        "IsDefault": false,
+        "CustomerName": "Ali Yilmaz",
+        "CustomerIdentityNumber": "23543423443",
+        "CustomerNumber": 0,
+        "Id": 10005
+      }
+    ],
+    "Id": 8
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T11:42:02.68501Z",
+  "ReferenceNumber": "15fafb62-95ea-4254-91e6-2b3d85d8e126"
+}
+2024-07-27 14:42:02.685 [INF] -------------Request-End------------
+2024-07-27 15:00:31.223 [INF] Application is starting...
+2024-07-27 15:00:51.699 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 15:00:51.716 [WRN] Failed to determine the https port for redirect.
+2024-07-27 15:01:49.931 [INF] Application is starting...
+2024-07-27 15:03:48.858 [INF] Application is starting...
+2024-07-27 15:03:57.465 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 15:03:57.478 [WRN] Failed to determine the https port for redirect.
+2024-07-27 15:04:57.837 [INF] Application is starting...
+2024-07-27 15:05:03.443 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 15:05:03.459 [WRN] Failed to determine the https port for redirect.
+2024-07-27 15:05:16.787 [INF] -------------Request-Begin------------
+2024-07-27 15:05:16.788 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-27 15:05:16.788 [INF] 
+
+2024-07-27 15:05:16.788 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T12:05:09.527001Z",
+  "ReferenceNumber": "cab5551e-52dc-4b3b-9173-cc30c56ffc62"
+}
+2024-07-27 15:05:16.788 [INF] -------------Request-End------------
+2024-07-27 15:06:01.108 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 15:06:29.454 [INF] -------------Request-Begin------------
+2024-07-27 15:06:29.457 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-27 15:06:29.457 [INF] 
+
+2024-07-27 15:06:29.457 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T12:05:09.527001Z",
+  "ReferenceNumber": "cab5551e-52dc-4b3b-9173-cc30c56ffc62"
+}
+2024-07-27 15:06:29.457 [INF] -------------Request-End------------
+2024-07-27 15:06:33.120 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 15:06:39.909 [INF] -------------Request-Begin------------
+2024-07-27 15:06:39.910 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-27 15:06:39.910 [INF] 
+
+2024-07-27 15:06:39.910 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T12:05:09.527001Z",
+  "ReferenceNumber": "cab5551e-52dc-4b3b-9173-cc30c56ffc62"
+}
+2024-07-27 15:06:39.910 [INF] -------------Request-End------------
+2024-07-27 15:06:55.857 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 15:07:12.171 [INF] -------------Request-Begin------------
+2024-07-27 15:07:12.174 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: {
+  "CountyCode": "CAN",
+  "Name": "Canada"
+}
+2024-07-27 15:07:12.174 [INF] 
+
+2024-07-27 15:07:12.174 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "CountyCode": "CAN",
+    "Name": "Canada",
+    "Id": 3
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T12:07:12.163552Z",
+  "ReferenceNumber": "c15cc150-ca5b-4925-ac99-117c888ff18f"
+}
+2024-07-27 15:07:12.175 [INF] -------------Request-End------------
+2024-07-27 15:07:20.078 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-27 15:07:53.886 [INF] -------------Request-Begin------------
+2024-07-27 15:07:53.888 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-27 15:07:53.888 [INF] 
+
+2024-07-27 15:07:53.888 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-27T12:07:29.130062Z",
+  "ReferenceNumber": "ef71e473-578f-4a98-afb4-cea7a1b835fc"
+}
+2024-07-27 15:07:53.889 [INF] -------------Request-End------------

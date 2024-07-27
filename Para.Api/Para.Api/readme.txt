@@ -1,5 +1,5 @@
 create migration SQL Server
-     dotnet ef migrations add CustomerDetail -s ../Para.Api/ --context ParaDbContext
+     dotnet ef migrations add UserTable -s ../Para.Api/ --context ParaDbContext
 create migration PostgreSQL Server
      dotnet ef migrations add InitialCreate -s ../Para.Api/ --context ParaDbContext    
   

@@ -19,6 +19,8 @@ public class ParaDbContext : DbContext
         modelBuilder.ApplyConfiguration(new CustomerDetailConfiguration());
         modelBuilder.ApplyConfiguration(new CustomerAddressConfiguration());
         modelBuilder.ApplyConfiguration(new CustomerPhoneConfiguration());
+        modelBuilder.ApplyConfiguration(new UserConfiguration());
+        modelBuilder.ApplyConfiguration(new CountryConfiguration());
         
     }
 }

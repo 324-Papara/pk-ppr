@@ -29,5 +29,8 @@ public class MapperConfig : Profile
             .ForMember(dest => dest.CustomerNumber, opt => opt.MapFrom(src => src.Customer.CustomerNumber))
             .ForMember(dest => dest.CustomerName, opt => opt.MapFrom(src => src.Customer.FirstName + " " + src.Customer.LastName));
         CreateMap<CustomerDetailRequest, CustomerDetail>();
+        
+        CreateMap<CountryRequest, Country>();
+        CreateMap<Country, CountryResponse>();
     }
 }

@@ -11,4 +11,6 @@ public interface IUnitOfWork
     IGenericRepository<CustomerDetail> CustomerDetailRepository { get; }
     IGenericRepository<CustomerAddress> CustomerAddressRepository { get; }
     IGenericRepository<CustomerPhone> CustomerPhoneRepository { get; }
+    IGenericRepository<User> UserRepository { get; }
+    IGenericRepository<Country> CountryRepository { get; }
 }

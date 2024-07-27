@@ -12,6 +12,8 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     public IGenericRepository<CustomerDetail> CustomerDetailRepository { get; }
     public IGenericRepository<CustomerAddress> CustomerAddressRepository { get; }
     public IGenericRepository<CustomerPhone> CustomerPhoneRepository { get; }
+    public IGenericRepository<User> UserRepository { get; }
+    public IGenericRepository<Country> CountryRepository { get; }
     
     
 
@@ -23,6 +25,8 @@ public class UnitOfWork : IUnitOfWork, IDisposable
         CustomerDetailRepository = new GenericRepository<CustomerDetail>(this.dbContext);
         CustomerAddressRepository = new GenericRepository<CustomerAddress>(this.dbContext);
         CustomerPhoneRepository = new GenericRepository<CustomerPhone>(this.dbContext);
+        UserRepository = new GenericRepository<User>(this.dbContext);
+        CountryRepository = new GenericRepository<Country>(this.dbContext);
     }
 
     public void Dispose()

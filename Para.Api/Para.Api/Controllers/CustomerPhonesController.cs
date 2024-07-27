@@ -1,5 +1,6 @@
 using AutoMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Para.Base.Response;
 using Para.Bussiness.Cqrs;
@@ -9,6 +10,7 @@ namespace Para.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CustomerPhonesController : ControllerBase
     {
         private readonly IMediator mediator;
