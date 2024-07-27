@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Serilog;
 
 namespace Para.Api.Middleware;
 
@@ -23,6 +24,11 @@ public class ErrorHandlerMiddleware
         catch (Exception ex)
         {
             // log
+            Log.Fatal(                        
+                $"Path={context.Request.Path} || " +                      
+                $"Method={context.Request.Method} || " +
+                $"Exception={ex.Message}"
+            );
 
             context.Response.StatusCode = 500;
             context.Request.ContentType = "application/json";

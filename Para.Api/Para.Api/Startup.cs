@@ -7,11 +7,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Para.Api.Middleware;
 using Para.Api.Service;
+using Para.Base.Log;
 using Para.Bussiness;
 using Para.Bussiness.Cqrs;
 using Para.Bussiness.Validation;
 using Para.Data.Context;
 using Para.Data.UnitOfWork;
+using Serilog;
 
 namespace Para.Api;
 
@@ -77,6 +79,16 @@ public class Startup
 
         app.UseMiddleware<HeartbeatMiddleware>();
         app.UseMiddleware<ErrorHandlerMiddleware>();
+        Action<RequestProfilerModel> requestResponseHandler = requestProfilerModel =>
+        {
+            Log.Information("-------------Request-Begin------------");
+            Log.Information(requestProfilerModel.Request);
+            Log.Information(Environment.NewLine);
+            Log.Information(requestProfilerModel.Response);
+            Log.Information("-------------Request-End------------");
+        };
+        app.UseMiddleware<RequestLoggingMiddleware>(requestResponseHandler);
+        
         
         app.UseHttpsRedirection();
         app.UseRouting();
