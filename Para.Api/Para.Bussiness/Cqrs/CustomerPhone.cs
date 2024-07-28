@@ -10,3 +10,4 @@ public record DeleteCustomerPhoneCommand(long CustomerPhoneId) : IRequest<ApiRes
 
 public record GetAllCustomerPhoneQuery() : IRequest<ApiResponse<List<CustomerPhoneResponse>>>;
 public record GetCustomerPhoneByIdQuery(long CustomerPhoneId) : IRequest<ApiResponse<CustomerPhoneResponse>>;
+public record GetCustomerPhoneByCustomerIdQuery () : IRequest<ApiResponse<List<CustomerPhoneResponse>>>;

@@ -10,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Para.Api.Middleware;
 using Para.Api.Service;
+using Para.Base;
 using Para.Base.Log;
 using Para.Base.Token;
 using Para.Bussiness;
@@ -119,11 +120,17 @@ public class Startup
                 {securityScheme, new string[] { }}
             });
         });
-
-
-
+        
         services.AddMemoryCache();
         
+        services.AddScoped<ISessionContext>(provider =>
+        {
+            var context = provider.GetService<IHttpContextAccessor>();
+            var sessionContext = new SessionContext();
+            sessionContext.Session = JwtManager.GetSession(context.HttpContext);
+            sessionContext.HttpContext = context.HttpContext;
+            return sessionContext;
+        });
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

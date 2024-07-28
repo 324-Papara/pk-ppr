@@ -10,7 +10,6 @@ namespace Para.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class CustomerPhonesController : ControllerBase
     {
         private readonly IMediator mediator;
@@ -22,6 +21,7 @@ namespace Para.Api.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<List<CustomerPhoneResponse>>> Get()
         {
             var operation = new GetAllCustomerPhoneQuery();
@@ -30,14 +30,25 @@ namespace Para.Api.Controllers
         }
 
         [HttpGet("{CustomerPhoneId}")]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<CustomerPhoneResponse>> Get([FromRoute]long CustomerPhoneId)
         {
             var operation = new GetCustomerPhoneByIdQuery(CustomerPhoneId);
             var result = await mediator.Send(operation);
             return result;
         }
+        
+        [HttpGet("ByCustomer")]
+        [Authorize(Roles = "customer")]
+        public async Task<ApiResponse<List<CustomerPhoneResponse>>> GetByCustomerId()
+        {
+            var operation = new GetCustomerPhoneByCustomerIdQuery();
+            var result = await mediator.Send(operation);
+            return result;
+        }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<CustomerPhoneResponse>> Post([FromBody] CustomerPhoneRequest value)
         {
             var operation = new CreateCustomerPhoneCommand(value);
@@ -46,6 +57,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpPut("{CustomerPhoneId}")]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse> Put(long CustomerPhoneId, [FromBody] CustomerPhoneRequest value)
         {
             var operation = new UpdateCustomerPhoneCommand(CustomerPhoneId,value);
@@ -54,6 +66,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpDelete("{CustomerPhoneId}")]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse> Delete(long CustomerPhoneId)
         {
             var operation = new DeleteCustomerPhoneCommand(CustomerPhoneId);

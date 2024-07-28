@@ -11,7 +11,6 @@ namespace Para.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class CustomersController : ControllerBase
     {
         private readonly IMediator mediator;
@@ -23,6 +22,7 @@ namespace Para.Api.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<List<CustomerResponse>>> Get()
         {
             var operation = new GetAllCustomerQuery();
@@ -31,6 +31,7 @@ namespace Para.Api.Controllers
         }
         
         [HttpGet("ByParameters")]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<List<CustomerResponse>>> GetByParameters(
             [FromQuery] long? CustomerNumber,
             [FromQuery] string FirstName = null,
@@ -42,7 +43,17 @@ namespace Para.Api.Controllers
             return result;
         }
 
+        [HttpGet("ByCustomer")]
+        [Authorize(Roles = "customer")]
+        public async Task<ApiResponse<CustomerResponse>> GetByCustomerId()
+        {
+            var operation = new GetCustomerByCustomerIdQuery();
+            var result = await mediator.Send(operation);
+            return result;
+        }
+        
         [HttpGet("{customerId}")]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<CustomerResponse>> Get([FromRoute]long customerId)
         {
             var operation = new GetCustomerByIdQuery(customerId);
@@ -51,6 +62,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<CustomerResponse>> Post([FromBody] CustomerRequest value)
         {
             var operation = new CreateCustomerCommand(value);
@@ -59,6 +71,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpPut("{customerId}")]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse> Put(long customerId, [FromBody] CustomerRequest value)
         {
             var operation = new UpdateCustomerCommand(customerId,value);
@@ -67,6 +80,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpDelete("{customerId}")]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse> Delete(long customerId)
         {
             var operation = new DeleteCustomerCommand(customerId);

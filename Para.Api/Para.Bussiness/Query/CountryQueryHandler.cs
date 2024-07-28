@@ -1,6 +1,7 @@
 using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Caching.Memory;
+using Para.Base;
 using Para.Base.Response;
 using Para.Bussiness.Cqrs;
 using Para.Data.Domain;
@@ -17,16 +18,19 @@ public class CountryQueryHandler :
     private readonly IUnitOfWork unitOfWork;
     private readonly IMapper mapper;
     private readonly IMemoryCache memoryCache;
+    private readonly ISessionContext sessionContext;
 
-    public CountryQueryHandler(IUnitOfWork unitOfWork, IMapper mapper,IMemoryCache memoryCache)
+    public CountryQueryHandler(IUnitOfWork unitOfWork, IMapper mapper,IMemoryCache memoryCache,ISessionContext sessionContext)
     {
         this.unitOfWork = unitOfWork;
         this.mapper = mapper;
         this.memoryCache = memoryCache;
+        this.sessionContext = sessionContext;
     }
     
     public async Task<ApiResponse<List<CountryResponse>>> Handle(GetAllCountryQuery request, CancellationToken cancellationToken)
     {
+        var userId = sessionContext.Session.UserId;
         var checkResult = memoryCache.TryGetValue("countryList", out ApiResponse<List<CountryResponse>> cacheData);
         if (checkResult)
             return cacheData;

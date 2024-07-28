@@ -1,5 +1,6 @@
 using AutoMapper;
 using MediatR;
+using Para.Base;
 using Para.Base.Response;
 using Para.Bussiness.Cqrs;
 using Para.Data.Domain;
@@ -10,16 +11,19 @@ namespace Para.Bussiness.Query;
 
 public class CustomerDetailQueryHandler : 
     IRequestHandler<GetAllCustomerDetailQuery,ApiResponse<List<CustomerDetailResponse>>>,
-    IRequestHandler<GetCustomerDetailByIdQuery,ApiResponse<CustomerDetailResponse>>
-    
+    IRequestHandler<GetCustomerDetailByIdQuery,ApiResponse<CustomerDetailResponse>>,
+    IRequestHandler<GetCustomerDetailByCustomerIdQuery, ApiResponse<CustomerDetailResponse>>
+
 {
     private readonly IUnitOfWork unitOfWork;
     private readonly IMapper mapper;
+    private readonly ISessionContext sessionContext;
 
-    public CustomerDetailQueryHandler(IUnitOfWork unitOfWork, IMapper mapper)
+    public CustomerDetailQueryHandler(IUnitOfWork unitOfWork, IMapper mapper,SessionContext sessionContext)
     {
         this.unitOfWork = unitOfWork;
         this.mapper = mapper;
+        this.sessionContext = sessionContext;
     }
     
     public async Task<ApiResponse<List<CustomerDetailResponse>>> Handle(GetAllCustomerDetailQuery request, CancellationToken cancellationToken)
@@ -32,6 +36,13 @@ public class CustomerDetailQueryHandler :
     public async Task<ApiResponse<CustomerDetailResponse>> Handle(GetCustomerDetailByIdQuery request, CancellationToken cancellationToken)
     {
         var entity = await unitOfWork.CustomerDetailRepository.GetById(request.CustomerDetailId,"Customer");
+        var mapped = mapper.Map<CustomerDetailResponse>(entity);
+        return new ApiResponse<CustomerDetailResponse>(mapped);
+    }
+
+    public async Task<ApiResponse<CustomerDetailResponse>> Handle(GetCustomerDetailByCustomerIdQuery request, CancellationToken cancellationToken)
+    {
+        var entity = await unitOfWork.CustomerDetailRepository.FirstOrDefault(x=> x.CustomerId == sessionContext.Session.CustomerId,"Customer");
         var mapped = mapper.Map<CustomerDetailResponse>(entity);
         return new ApiResponse<CustomerDetailResponse>(mapped);
     }

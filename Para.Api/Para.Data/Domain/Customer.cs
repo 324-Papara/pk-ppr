@@ -14,7 +14,9 @@ public class Customer : BaseEntity
     public DateTime DateOfBirth { get; set; }
     
     
+    public virtual User User { get; set; }
     public virtual CustomerDetail CustomerDetail { get; set; }
     public virtual List<CustomerAddress> CustomerAddresses { get; set; }
     public virtual List<CustomerPhone> CustomerPhones { get; set; }
+    public virtual List<Account> Accounts { get; set; }
 }

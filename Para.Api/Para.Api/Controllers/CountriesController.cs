@@ -22,6 +22,7 @@ namespace Para.Api.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "admin,customer")]
         public async Task<ApiResponse<List<CountryResponse>>> Get()
         {
             var operation = new GetAllCountryQuery();
@@ -31,6 +32,7 @@ namespace Para.Api.Controllers
         
         
         [HttpGet("{CountryId}")]
+        [Authorize(Roles = "admin,customer")]
         [ResponseCache(Duration = 10000,Location = ResponseCacheLocation.Any)]
         public async Task<ApiResponse<CountryResponse>> Get([FromRoute]long CountryId)
         {
@@ -40,6 +42,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin,customer")]
         public async Task<ApiResponse<CountryResponse>> Post([FromBody] CountryRequest value)
         {
             var operation = new CreateCountryCommand(value);
@@ -48,6 +51,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpPut("{CountryId}")]
+        [Authorize(Roles = "admin,customer")]
         public async Task<ApiResponse> Put(long CountryId, [FromBody] CountryRequest value)
         {
             var operation = new UpdateCountryCommand(CountryId,value);
@@ -56,6 +60,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpDelete("{CountryId}")]
+        [Authorize(Roles = "admin,customer")]
         public async Task<ApiResponse> Delete(long CountryId)
         {
             var operation = new DeleteCountryCommand(CountryId);

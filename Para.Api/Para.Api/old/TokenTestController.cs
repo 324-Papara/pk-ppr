@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Para.Api.Filter;
@@ -6,7 +7,6 @@ namespace Para.Api.Controllers
 {
     
     [ApiController]
-    [NonController]
     [Route("api/[controller]")]
     public class TokenTestController : ControllerBase
     {
@@ -34,6 +34,16 @@ namespace Para.Api.Controllers
         [HttpGet("ManagerAndAdmin")]
         [Authorize(Roles = "manager,admin")]
         public  string ManagerAndAdmin() { return "ManagerAndAdmin"; }
-        
+
+
+        [HttpGet("ParseToken")]
+        [Authorize(Roles = "manager,admin")]
+        public string ParseToken()
+        {
+            string username = User.Identity.Name;
+            var val = (User.Identity as ClaimsIdentity).FindFirst("UserId")?.Value;
+            
+            return "ParseToken";
+        }
     }
 }

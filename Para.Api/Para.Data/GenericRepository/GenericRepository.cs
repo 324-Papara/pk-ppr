@@ -63,7 +63,7 @@ internal class GenericRepository<TEntity> : IGenericRepository<TEntity> where TE
     {
         var query = dbContext.Set<TEntity>().AsQueryable();
         query = includes.Aggregate(query, (current, inc) => EntityFrameworkQueryableExtensions.Include(current, inc));
-        return query.FirstOrDefault();
+        return query.Where(expression).FirstOrDefault();
     }
 
     public async Task<List<TEntity>> GetAll(params string[] includes)

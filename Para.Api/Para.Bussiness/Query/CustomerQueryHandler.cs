@@ -1,6 +1,7 @@
 using AutoMapper;
 using LinqKit;
 using MediatR;
+using Para.Base;
 using Para.Base.Response;
 using Para.Bussiness.Cqrs;
 using Para.Data.Domain;
@@ -12,16 +13,19 @@ namespace Para.Bussiness.Query;
 public class CustomerQueryHandler : 
     IRequestHandler<GetAllCustomerQuery,ApiResponse<List<CustomerResponse>>>,
     IRequestHandler<GetCustomerByIdQuery,ApiResponse<CustomerResponse>>,
-    IRequestHandler<GetCustomerByParametersQuery,ApiResponse<List<CustomerResponse>>>
-    
+    IRequestHandler<GetCustomerByParametersQuery,ApiResponse<List<CustomerResponse>>>,
+    IRequestHandler<GetCustomerByCustomerIdQuery, ApiResponse<CustomerResponse>>
+
 {
     private readonly IUnitOfWork unitOfWork;
     private readonly IMapper mapper;
+    private readonly ISessionContext sessionContext;
 
-    public CustomerQueryHandler(IUnitOfWork unitOfWork, IMapper mapper)
+    public CustomerQueryHandler(IUnitOfWork unitOfWork, IMapper mapper,ISessionContext sessionContext)
     {
         this.unitOfWork = unitOfWork;
         this.mapper = mapper;
+        this.sessionContext = sessionContext;
     }
     
     public async Task<ApiResponse<List<CustomerResponse>>> Handle(GetAllCustomerQuery request, CancellationToken cancellationToken)
@@ -54,5 +58,12 @@ public class CustomerQueryHandler :
         
         var mappedList = mapper.Map<List<CustomerResponse>>(entityList);
         return new ApiResponse<List<CustomerResponse>>(mappedList);
+    }
+
+    public async Task<ApiResponse<CustomerResponse>> Handle(GetCustomerByCustomerIdQuery request, CancellationToken cancellationToken)
+    {
+        var entity = await unitOfWork.CustomerRepository.GetById(sessionContext.Session.CustomerId,"CustomerDetail","CustomerAddresses", "CustomerPhones");
+        var mapped = mapper.Map<CustomerResponse>(entity);
+        return new ApiResponse<CustomerResponse>(mapped);
     }
 }

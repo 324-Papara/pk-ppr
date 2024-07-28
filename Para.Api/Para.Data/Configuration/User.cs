@@ -11,7 +11,8 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.Property(x => x.InsertDate).IsRequired(true);
         builder.Property(x => x.IsActive).IsRequired(true);
         builder.Property(x => x.InsertUser).IsRequired(true).HasMaxLength(50);
-        
+
+        builder.Property(x => x.CustomerId).IsRequired(false);
         builder.Property(x => x.FirstName).IsRequired(true).HasMaxLength(50);
         builder.Property(x => x.LastName).IsRequired(true).HasMaxLength(50);
         builder.Property(x => x.UserName).IsRequired(true).HasMaxLength(50);

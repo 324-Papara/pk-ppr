@@ -10,11 +10,11 @@ namespace Para.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomerAddressesController : ControllerBase
+    public class AccountsController : ControllerBase
     {
         private readonly IMediator mediator;
         
-        public CustomerAddressesController(IMediator mediator)
+        public AccountsController(IMediator mediator)
         {
             this.mediator = mediator;
         }
@@ -22,55 +22,54 @@ namespace Para.Api.Controllers
 
         [HttpGet]
         [Authorize(Roles = "admin")]
-        public async Task<ApiResponse<List<CustomerAddressResponse>>> Get()
+        public async Task<ApiResponse<List<AccountResponse>>> Get()
         {
-            var operation = new GetAllCustomerAddressQuery();
+            var operation = new GetAllAccountQuery();
             var result = await mediator.Send(operation);
             return result;
         }
 
-        [HttpGet("{CustomerAddressId}")]
+        [HttpGet("{AccountId}")]
         [Authorize(Roles = "admin")]
-        public async Task<ApiResponse<CustomerAddressResponse>> GetById([FromRoute]long CustomerAddressId)
+        public async Task<ApiResponse<AccountResponse>> Get([FromRoute]long AccountId)
         {
-            var operation = new GetCustomerAddressByIdQuery(CustomerAddressId);
+            var operation = new GetAccountByIdQuery(AccountId);
             var result = await mediator.Send(operation);
             return result;
         }
         
         [HttpGet("ByCustomer")]
         [Authorize(Roles = "customer")]
-        public async Task<ApiResponse<List<CustomerAddressResponse>>> GetByCustomerId()
+        public async Task<ApiResponse<List<AccountResponse>>> GetByCustomerId()
         {
-            var operation = new GetCustomerAddressByCustomerIdQuery();
+            var operation = new GetAccountByCustomerIdQuery();
             var result = await mediator.Send(operation);
             return result;
         }
-
 
         [HttpPost]
         [Authorize(Roles = "admin")]
-        public async Task<ApiResponse<CustomerAddressResponse>> Post([FromBody] CustomerAddressRequest value)
+        public async Task<ApiResponse<AccountResponse>> Post([FromBody] AccountRequest value)
         {
-            var operation = new CreateCustomerAddressCommand(value);
+            var operation = new CreateAccountCommand(value);
             var result = await mediator.Send(operation);
             return result;
         }
 
-        [HttpPut("{CustomerAddressId}")]
+        [HttpPut("{AccountId}")]
         [Authorize(Roles = "admin")]
-        public async Task<ApiResponse> Put(long CustomerAddressId, [FromBody] CustomerAddressRequest value)
+        public async Task<ApiResponse> Put(long AccountId, [FromBody] AccountRequest value)
         {
-            var operation = new UpdateCustomerAddressCommand(CustomerAddressId,value);
+            var operation = new UpdateAccountCommand(AccountId,value);
             var result = await mediator.Send(operation);
             return result;
         }
 
-        [HttpDelete("{CustomerAddressId}")]
+        [HttpDelete("{AccountId}")]
         [Authorize(Roles = "admin")]
-        public async Task<ApiResponse> Delete(long CustomerAddressId)
+        public async Task<ApiResponse> Delete(long AccountId)
         {
-            var operation = new DeleteCustomerAddressCommand(CustomerAddressId);
+            var operation = new DeleteAccountCommand(AccountId);
             var result = await mediator.Send(operation);
             return result;
         }

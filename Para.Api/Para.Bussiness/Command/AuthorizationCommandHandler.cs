@@ -23,8 +23,7 @@ public class AuthorizationCommandHandler : IRequestHandler<CreateAuthorizationTo
 
     public async Task<ApiResponse<AuthorizationResponse>> Handle(CreateAuthorizationTokenCommand request, CancellationToken cancellationToken)
     {
-
-        var user = await unitOfWork.UserRepository.FirstOrDefault(x => x.UserName == request.Request.UserName);
+        var user = await unitOfWork.UserRepository.FirstOrDefault(x => x.UserName == request.Request.UserName,"Customer");
         if (user is null)
             return new ApiResponse<AuthorizationResponse>("Invalid user informations. Check your username or password. E1");
 

@@ -7,6 +7,9 @@ namespace Para.Data.Domain;
 [Table("User", Schema = "dbo")]
 public class User : BaseEntity
 {
+    public long? CustomerId { get; set; }
+    public virtual Customer Customer { get; set; }
+    
     public string UserName { get; set; }
     public string Password { get; set; }
     public string Email { get; set; }

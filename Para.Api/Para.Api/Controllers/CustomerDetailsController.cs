@@ -10,7 +10,6 @@ namespace Para.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class CustomerDetailsController : ControllerBase
     {
         private readonly IMediator mediator;
@@ -22,6 +21,7 @@ namespace Para.Api.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<List<CustomerDetailResponse>>> Get()
         {
             var operation = new GetAllCustomerDetailQuery();
@@ -30,14 +30,25 @@ namespace Para.Api.Controllers
         }
 
         [HttpGet("{CustomerDetailId}")]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<CustomerDetailResponse>> Get([FromRoute]long CustomerDetailId)
         {
             var operation = new GetCustomerDetailByIdQuery(CustomerDetailId);
             var result = await mediator.Send(operation);
             return result;
         }
+        
+        [HttpGet("ByCustomer")]
+        [Authorize(Roles = "customer")]
+        public async Task<ApiResponse<CustomerDetailResponse>> GetByCustomerId()
+        {
+            var operation = new GetCustomerDetailByCustomerIdQuery();
+            var result = await mediator.Send(operation);
+            return result;
+        }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse<CustomerDetailResponse>> Post([FromBody] CustomerDetailRequest value)
         {
             var operation = new CreateCustomerDetailCommand(value);
@@ -46,6 +57,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpPut("{CustomerDetailId}")]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse> Put(long CustomerDetailId, [FromBody] CustomerDetailRequest value)
         {
             var operation = new UpdateCustomerDetailCommand(CustomerDetailId,value);
@@ -54,6 +66,7 @@ namespace Para.Api.Controllers
         }
 
         [HttpDelete("{CustomerDetailId}")]
+        [Authorize(Roles = "admin")]
         public async Task<ApiResponse> Delete(long CustomerDetailId)
         {
             var operation = new DeleteCustomerDetailCommand(CustomerDetailId);

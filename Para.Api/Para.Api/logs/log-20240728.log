@@ -1,0 +1,351 @@
+2024-07-28 09:47:00.816 [INF] Application is starting...
+2024-07-28 09:48:15.183 [INF] Application is starting...
+2024-07-28 09:48:26.356 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 09:48:26.373 [WRN] Failed to determine the https port for redirect.
+2024-07-28 09:48:27.539 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-07-28 09:48:28.181 [INF] -------------Request-Begin------------
+2024-07-28 09:48:28.182 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-07-28 09:48:28.182 [INF] 
+
+2024-07-28 09:48:28.182 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-28T09:53:28.146238+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUGFyYSBQYSIsImV4cCI6MTcyMjE0OTYwOCwiaXNzIjoiUGFyYUFwaSIsImF1ZCI6IlBhcmFBcGkifQ.X_1Thkqj1wy--Efp4V3Rs7GKg7gwrCCv_gwLfd4PxGA",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T06:48:28.146637Z",
+  "ReferenceNumber": "5bb83374-0ee3-4d8d-a105-7742a8f88e53"
+}
+2024-07-28 09:48:28.182 [INF] -------------Request-End------------
+2024-07-28 09:48:57.753 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:11:19.873 [INF] Application is starting...
+2024-07-28 10:11:37.097 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:11:37.109 [WRN] Failed to determine the https port for redirect.
+2024-07-28 10:11:38.202 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-07-28 10:11:38.846 [INF] -------------Request-Begin------------
+2024-07-28 10:11:38.846 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-07-28 10:11:38.846 [INF] 
+
+2024-07-28 10:11:38.846 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-28T10:16:38.824949+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUGFyYSBQYSIsImV4cCI6MTcyMjE1MDk5OCwiaXNzIjoiUGFyYUFwaSIsImF1ZCI6IlBhcmFBcGkifQ.7turICBiiKhEuOG3l4yfoeXP-ek3ks67daS1fwpAvYQ",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T07:11:38.825263Z",
+  "ReferenceNumber": "043d0bb6-a3cf-49d2-972a-dd945cbd5243"
+}
+2024-07-28 10:11:38.846 [INF] -------------Request-End------------
+2024-07-28 10:11:53.129 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:20:57.860 [INF] Application is starting...
+2024-07-28 10:21:05.781 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:21:05.798 [WRN] Failed to determine the https port for redirect.
+2024-07-28 10:21:45.349 [INF] -------------Request-Begin------------
+2024-07-28 10:21:45.350 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-28 10:21:45.350 [INF] 
+
+2024-07-28 10:21:45.350 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T07:21:45.304838Z",
+  "ReferenceNumber": "b6e6bd8d-b0ea-432a-9adc-45df3bce81a1"
+}
+2024-07-28 10:21:45.350 [INF] -------------Request-End------------
+2024-07-28 10:21:47.921 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:23:17.986 [INF] -------------Request-Begin------------
+2024-07-28 10:23:17.988 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-28 10:23:17.988 [INF] 
+
+2024-07-28 10:23:17.988 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T07:21:45.304838Z",
+  "ReferenceNumber": "b6e6bd8d-b0ea-432a-9adc-45df3bce81a1"
+}
+2024-07-28 10:23:17.989 [INF] -------------Request-End------------
+2024-07-28 10:23:31.730 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:23:31.867 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-07-28 10:23:32.041 [INF] -------------Request-Begin------------
+2024-07-28 10:23:32.041 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-07-28 10:23:32.041 [INF] 
+
+2024-07-28 10:23:32.041 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-28T10:28:32.039684+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiRW1haWwiOiJwYUBwYS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJQYXJhIFBhIiwiZXhwIjoxNzIyMTUxNzExLCJpc3MiOiJQYXJhQXBpIiwiYXVkIjoiUGFyYUFwaSJ9.rVwDn-RVTeHgVaWbKyR_ffv1aW3HAtsK_9baEjNrgro",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T07:23:32.03989Z",
+  "ReferenceNumber": "27aac067-1909-40e7-8464-c853706c719d"
+}
+2024-07-28 10:23:32.041 [INF] -------------Request-End------------
+2024-07-28 10:23:45.583 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:53:38.095 [INF] Application is starting...
+2024-07-28 10:54:02.365 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:54:02.388 [WRN] Failed to determine the https port for redirect.
+2024-07-28 10:54:08.748 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-07-28 10:55:45.250 [INF] Application is starting...
+2024-07-28 10:55:50.418 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:55:50.437 [WRN] Failed to determine the https port for redirect.
+2024-07-28 10:58:10.451 [INF] Application is starting...
+2024-07-28 10:58:31.359 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:58:31.390 [WRN] Failed to determine the https port for redirect.
+2024-07-28 10:58:54.997 [INF] -------------Request-Begin------------
+2024-07-28 10:58:54.997 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "mehmet",
+  "Password": "papara"
+}
+2024-07-28 10:58:54.997 [INF] 
+
+2024-07-28 10:58:54.997 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-28T11:03:53.120279+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6Im1laG1ldCIsIlVzZXJJZCI6IjIiLCJSb2xlIjoiY3VzdG9tZXIiLCJTdGF0dXMiOiIxIiwiRW1haWwiOiJtZWhtZXRAYW1jYS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJjdXN0b21lciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJNZWhtZXQgVGFrdXAiLCJDdXN0b21lcklkIjoiMTAwMDMiLCJDdXN0b21lck51bWJlciI6IjIzNDIzMjMiLCJDdXN0b21lck5hbWUiOiJNZWhtZXQgWWFrdXAiLCJDdXN0b21lckVtYWlsIjoibWVobWV0QHlha3VwLmNvbSIsImV4cCI6MTcyMjE1MzgyOSwiaXNzIjoiUGFyYUFwaSIsImF1ZCI6IlBhcmFBcGkifQ.iFJuktTcH4VtE_xKNoY2ctFlVPFNj133JNqr93JtaHU",
+    "UserName": "mehmet",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T07:58:54.956298Z",
+  "ReferenceNumber": "a7d938ee-684a-4fb8-8501-eba9051e8c08"
+}
+2024-07-28 10:58:54.997 [INF] -------------Request-End------------
+2024-07-28 10:59:15.628 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 10:59:15.829 [INF] -------------Request-Begin------------
+2024-07-28 10:59:15.829 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerPhones 
+QueryString:  
+Request Body: 
+2024-07-28 10:59:15.829 [INF] 
+
+2024-07-28 10:59:15.829 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerPhones 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CustomerId": 5,
+      "CountyCode": "TUR",
+      "Phone": "987979859",
+      "IsDefault": true,
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23423443",
+      "CustomerNumber": 45234563,
+      "Id": 10002
+    },
+    {
+      "CustomerId": 5,
+      "CountyCode": "TUR",
+      "Phone": "432342332",
+      "IsDefault": false,
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23423443",
+      "CustomerNumber": 45234563,
+      "Id": 10003
+    },
+    {
+      "CustomerId": 8,
+      "CountyCode": "TUR",
+      "Phone": "345345345",
+      "IsDefault": true,
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 745654,
+      "Id": 10004
+    },
+    {
+      "CustomerId": 8,
+      "CountyCode": "TUR",
+      "Phone": "679769679",
+      "IsDefault": false,
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 745654,
+      "Id": 10005
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T07:59:15.818629Z",
+  "ReferenceNumber": "7b415673-2020-498a-af81-489d64faeb26"
+}
+2024-07-28 10:59:15.829 [INF] -------------Request-End------------
+2024-07-28 11:06:54.166 [INF] Application is starting...
+2024-07-28 11:07:29.389 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:07:29.408 [WRN] Failed to determine the https port for redirect.
+2024-07-28 11:08:14.576 [INF] Application is starting...
+2024-07-28 11:08:24.257 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:08:24.279 [WRN] Failed to determine the https port for redirect.
+2024-07-28 11:08:24.364 [INF] -------------Request-Begin------------
+2024-07-28 11:08:24.364 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/ByCustomerId/10003 
+QueryString:  
+Request Body: 
+2024-07-28 11:08:24.364 [INF] 
+
+2024-07-28 11:08:24.364 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/CustomerAddresses/ByCustomerId/10003 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-28 11:08:24.364 [INF] -------------Request-End------------
+2024-07-28 11:08:37.734 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:08:45.550 [INF] -------------Request-Begin------------
+2024-07-28 11:08:45.550 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "mehmet",
+  "Password": "papara"
+}
+2024-07-28 11:08:45.550 [INF] 
+
+2024-07-28 11:08:45.550 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-28T11:13:45.52795+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6Im1laG1ldCIsIlVzZXJJZCI6IjIiLCJSb2xlIjoiY3VzdG9tZXIiLCJTdGF0dXMiOiIxIiwiRW1haWwiOiJtZWhtZXRAYW1jYS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJjdXN0b21lciIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJNZWhtZXQgVGFrdXAiLCJDdXN0b21lcklkIjoiMTAwMDMiLCJDdXN0b21lck51bWJlciI6IjIzNDIzMjMiLCJDdXN0b21lck5hbWUiOiJNZWhtZXQgWWFrdXAiLCJDdXN0b21lckVtYWlsIjoibWVobWV0QHlha3VwLmNvbSIsImV4cCI6MTcyMjE1NDQyNSwiaXNzIjoiUGFyYUFwaSIsImF1ZCI6IlBhcmFBcGkifQ.NZNZNqt98UrtoOF5Rhs6lJ020lx13i6eDR4q2sKWVYQ",
+    "UserName": "mehmet",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T08:08:45.528248Z",
+  "ReferenceNumber": "6da523b3-14a9-4a3a-bc80-c77eb02d95ef"
+}
+2024-07-28 11:08:45.550 [INF] -------------Request-End------------
+2024-07-28 11:09:03.135 [INF] LogRequestLoggingMiddleware.Invoke
