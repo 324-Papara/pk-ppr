@@ -6,7 +6,7 @@ public interface IGenericRepository<TEntity> where TEntity : class
 {
     Task Save();
     Task<TEntity?> GetById(long Id,params string[] includes);
-    Task Insert(TEntity entity);
+    Task<TEntity> Insert(TEntity entity);
     void Update(TEntity entity);
     void Delete(TEntity entity);
     Task Delete(long Id);

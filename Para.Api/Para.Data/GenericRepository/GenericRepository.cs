@@ -27,12 +27,13 @@ internal class GenericRepository<TEntity> : IGenericRepository<TEntity> where TE
         return await EntityFrameworkQueryableExtensions.FirstOrDefaultAsync(query, x => x.Id == Id);
     }
 
-    public async Task Insert(TEntity entity)
+    public async Task<TEntity> Insert(TEntity entity)
     {
         entity.IsActive = true;
         entity.InsertDate = DateTime.UtcNow;
         entity.InsertUser = "System";
         await dbContext.Set<TEntity>().AddAsync(entity);
+        return entity;
     }
 
     public void Update(TEntity entity)

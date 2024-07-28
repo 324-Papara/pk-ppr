@@ -16,6 +16,7 @@ using Para.Base.Log;
 using Para.Base.Token;
 using Para.Bussiness;
 using Para.Bussiness.Cqrs;
+using Para.Bussiness.Notification;
 using Para.Bussiness.Token;
 using Para.Bussiness.Validation;
 using Para.Data.Context;
@@ -70,6 +71,7 @@ public class Startup
         services.AddSingleton<CustomService3>();
 
         services.AddScoped<ITokenService, TokenService>();
+        services.AddSingleton<INotificationService, NotificationService>();
 
         services.AddAuthentication(x =>
         {
