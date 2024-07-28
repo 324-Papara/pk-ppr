@@ -3,6 +3,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using AutoMapper;
 using FluentValidation.AspNetCore;
+using Hangfire;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -127,6 +128,14 @@ public class Startup
             opt.InstanceName = Configuration["Redis:InstanceName"];
         });
         
+        
+        services.AddHangfire(configuration => configuration
+            .SetDataCompatibilityLevel(CompatibilityLevel.Version_180)
+            .UseSimpleAssemblyNameTypeSerializer()
+            .UseRecommendedSerializerSettings()
+            .UseSqlServerStorage(Configuration.GetConnectionString("HangfireConnection")));
+        services.AddHangfireServer();
+        
 
         services.AddScoped<ISessionContext>(provider =>
         {
@@ -160,6 +169,7 @@ public class Startup
         };
         app.UseMiddleware<RequestLoggingMiddleware>(requestResponseHandler);
 
+        app.UseHangfireDashboard();
 
         app.UseHttpsRedirection();
         app.UseAuthentication();
