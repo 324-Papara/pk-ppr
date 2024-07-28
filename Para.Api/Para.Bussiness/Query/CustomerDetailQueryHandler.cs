@@ -19,7 +19,7 @@ public class CustomerDetailQueryHandler :
     private readonly IMapper mapper;
     private readonly ISessionContext sessionContext;
 
-    public CustomerDetailQueryHandler(IUnitOfWork unitOfWork, IMapper mapper,SessionContext sessionContext)
+    public CustomerDetailQueryHandler(IUnitOfWork unitOfWork, IMapper mapper,ISessionContext sessionContext)
     {
         this.unitOfWork = unitOfWork;
         this.mapper = mapper;

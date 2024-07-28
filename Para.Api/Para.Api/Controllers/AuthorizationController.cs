@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Para.Base.Attribute;
 using Para.Base.Response;
 using Para.Bussiness.Cqrs;
 using Para.Schema;
@@ -22,6 +23,7 @@ public class AuthorizationController: ControllerBase
     
     [HttpPost]
     [AllowAnonymous]
+    [ResponseHeader("MyCustomHeaderInResponse","POST")]
     public async Task<ApiResponse<AuthorizationResponse>> Post([FromBody] AuthorizationRequest value)
     {
         var operation = new CreateAuthorizationTokenCommand(value);

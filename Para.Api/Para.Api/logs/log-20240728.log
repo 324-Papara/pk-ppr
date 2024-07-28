@@ -349,3 +349,207 @@ Response Body: {
 }
 2024-07-28 11:08:45.550 [INF] -------------Request-End------------
 2024-07-28 11:09:03.135 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:42:53.632 [INF] Application is starting...
+2024-07-28 11:44:05.865 [INF] Application is starting...
+2024-07-28 11:49:53.214 [INF] Application is starting...
+2024-07-28 11:50:01.747 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:50:01.769 [WRN] Failed to determine the https port for redirect.
+2024-07-28 11:50:03.730 [INF] -------------Request-Begin------------
+2024-07-28 11:50:03.730 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "string",
+  "Password": "string"
+}
+2024-07-28 11:50:03.730 [INF] 
+
+2024-07-28 11:50:03.731 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Invalid user informations. Check your username or password. E1",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T08:50:03.709714Z",
+  "ReferenceNumber": "2eec0606-ded2-46e1-b5c5-a119198d0015"
+}
+2024-07-28 11:50:03.731 [INF] -------------Request-End------------
+2024-07-28 11:50:27.988 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:50:28.124 [INF] -------------Request-Begin------------
+2024-07-28 11:50:28.124 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "string",
+  "Password": "string"
+}
+2024-07-28 11:50:28.124 [INF] 
+
+2024-07-28 11:50:28.124 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Invalid user informations. Check your username or password. E1",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T08:50:28.123202Z",
+  "ReferenceNumber": "0dae5fa5-8991-4df7-9780-e35f483e46d6"
+}
+2024-07-28 11:50:28.124 [INF] -------------Request-End------------
+2024-07-28 11:50:51.692 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:50:51.804 [INF] -------------Request-Begin------------
+2024-07-28 11:50:51.804 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "string",
+  "Password": "string"
+}
+2024-07-28 11:50:51.804 [INF] 
+
+2024-07-28 11:50:51.805 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Invalid user informations. Check your username or password. E1",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T08:50:51.77592Z",
+  "ReferenceNumber": "0feb7c67-9130-4fb7-8321-f423ca37f76f"
+}
+2024-07-28 11:50:51.805 [INF] -------------Request-End------------
+2024-07-28 11:51:48.943 [INF] Application is starting...
+2024-07-28 11:51:59.457 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:51:59.478 [WRN] Failed to determine the https port for redirect.
+2024-07-28 11:52:01.325 [INF] -------------Request-Begin------------
+2024-07-28 11:52:01.326 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "string",
+  "Password": "string"
+}
+2024-07-28 11:52:01.326 [INF] 
+
+2024-07-28 11:52:01.326 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Invalid user informations. Check your username or password. E1",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T08:52:01.304683Z",
+  "ReferenceNumber": "caa5b1e8-1892-4efb-bf0e-e502bfdd58cf"
+}
+2024-07-28 11:52:01.326 [INF] -------------Request-End------------
+2024-07-28 11:52:11.988 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:52:12.235 [INF] -------------Request-Begin------------
+2024-07-28 11:52:12.235 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-07-28 11:52:12.235 [INF] 
+
+2024-07-28 11:52:12.235 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-28T11:57:12.231613+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiRW1haWwiOiJwYUBwYS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJQYXJhIFBhIiwiZXhwIjoxNzIyMTU3MDMyLCJpc3MiOiJQYXJhQXBpIiwiYXVkIjoiUGFyYUFwaSJ9.nkXMCdQsL80FhfSHsytlaBhytTaUAZ_e-9GTmOLnDYQ",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T08:52:12.231943Z",
+  "ReferenceNumber": "c0da72a3-82cf-46b9-95fe-08af4161c2c7"
+}
+2024-07-28 11:52:12.235 [INF] -------------Request-End------------
+2024-07-28 11:52:55.576 [INF] Application is starting...
+2024-07-28 11:53:05.499 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:53:05.517 [WRN] Failed to determine the https port for redirect.
+2024-07-28 11:53:07.416 [INF] -------------Request-Begin------------
+2024-07-28 11:53:07.416 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "string",
+  "Password": "string"
+}
+2024-07-28 11:53:07.416 [INF] 
+
+2024-07-28 11:53:07.417 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Invalid user informations. Check your username or password. E1",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T08:53:07.388084Z",
+  "ReferenceNumber": "606adb09-98a1-472c-b632-9c3150f5c522"
+}
+2024-07-28 11:53:07.417 [INF] -------------Request-End------------
+2024-07-28 11:54:29.106 [INF] Application is starting...
+2024-07-28 11:54:48.138 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:54:48.155 [WRN] Failed to determine the https port for redirect.
+2024-07-28 11:54:49.967 [INF] -------------Request-Begin------------
+2024-07-28 11:54:49.967 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "string",
+  "Password": "string"
+}
+2024-07-28 11:54:49.967 [INF] 
+
+2024-07-28 11:54:49.967 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Invalid user informations. Check your username or password. E1",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T08:54:49.945324Z",
+  "ReferenceNumber": "20d0a029-7afe-4f9d-b912-806680700bde"
+}
+2024-07-28 11:54:49.967 [INF] -------------Request-End------------

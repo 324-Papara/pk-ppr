@@ -7,6 +7,7 @@ namespace Para.Api.Controllers
 {
     
     [ApiController]
+    [NonController]
     [Route("api/[controller]")]
     public class TokenTestController : ControllerBase
     {
