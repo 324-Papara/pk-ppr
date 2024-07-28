@@ -553,3 +553,716 @@ Response Body: {
   "ReferenceNumber": "20d0a029-7afe-4f9d-b912-806680700bde"
 }
 2024-07-28 11:54:49.967 [INF] -------------Request-End------------
+2024-07-28 11:58:55.751 [INF] Application is starting...
+2024-07-28 11:59:21.979 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:59:22.001 [WRN] Failed to determine the https port for redirect.
+2024-07-28 11:59:22.202 [INF] -------------Request-Begin------------
+2024-07-28 11:59:22.202 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-28 11:59:22.202 [INF] 
+
+2024-07-28 11:59:22.202 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-28 11:59:22.202 [INF] -------------Request-End------------
+2024-07-28 11:59:33.801 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 11:59:35.782 [INF] -------------Request-Begin------------
+2024-07-28 11:59:35.782 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-07-28 11:59:35.782 [INF] 
+
+2024-07-28 11:59:35.782 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-28T12:04:35.756679+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiRW1haWwiOiJwYUBwYS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJQYXJhIFBhIiwiZXhwIjoxNzIyMTU3NDc1LCJpc3MiOiJQYXJhQXBpIiwiYXVkIjoiUGFyYUFwaSJ9.wz4dCA63pJoZz4f-VDQVdCIacoXgqo_fT9lkvaw4kNM",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T08:59:35.757099Z",
+  "ReferenceNumber": "2185aebd-6230-4112-9c01-4dd75b70760d"
+}
+2024-07-28 11:59:35.782 [INF] -------------Request-End------------
+2024-07-28 11:59:48.681 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:00:14.457 [INF] -------------Request-Begin------------
+2024-07-28 12:00:14.458 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-28 12:00:14.458 [INF] 
+
+2024-07-28 12:00:14.458 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:00:06.977764Z",
+  "ReferenceNumber": "3f6b222e-55d1-4715-886c-988db47897cb"
+}
+2024-07-28 12:00:14.458 [INF] -------------Request-End------------
+2024-07-28 12:00:19.994 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:00:25.105 [INF] -------------Request-Begin------------
+2024-07-28 12:00:25.106 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-28 12:00:25.106 [INF] 
+
+2024-07-28 12:00:25.106 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:00:06.977764Z",
+  "ReferenceNumber": "3f6b222e-55d1-4715-886c-988db47897cb"
+}
+2024-07-28 12:00:25.106 [INF] -------------Request-End------------
+2024-07-28 12:00:42.319 [INF] Application is starting...
+2024-07-28 12:00:45.944 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:00:45.961 [WRN] Failed to determine the https port for redirect.
+2024-07-28 12:04:03.504 [INF] Application is starting...
+2024-07-28 12:28:31.362 [INF] Application is starting...
+2024-07-28 12:28:45.977 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:28:45.991 [WRN] Failed to determine the https port for redirect.
+2024-07-28 12:28:48.209 [INF] -------------Request-Begin------------
+2024-07-28 12:28:48.209 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-07-28 12:28:48.209 [INF] 
+
+2024-07-28 12:28:48.210 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-28T12:33:48.183254+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiRW1haWwiOiJwYUBwYS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJQYXJhIFBhIiwiZXhwIjoxNzIyMTU5MjI4LCJpc3MiOiJQYXJhQXBpIiwiYXVkIjoiUGFyYUFwaSJ9.rJI0iQZGkQ_iMzNMA0A9PEu7ALuPZyttZaa7XU9edY0",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:28:48.183621Z",
+  "ReferenceNumber": "42a645c8-b646-40ed-b3d0-1e8d89aecbdf"
+}
+2024-07-28 12:28:48.210 [INF] -------------Request-End------------
+2024-07-28 12:29:02.858 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:29:45.395 [INF] -------------Request-Begin------------
+2024-07-28 12:29:45.397 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+Request Body: 
+2024-07-28 12:29:45.397 [INF] 
+
+2024-07-28 12:29:45.397 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:29:18.942947Z",
+  "ReferenceNumber": "1b014635-03c5-4324-b01f-07784ea973e4"
+}
+2024-07-28 12:29:45.397 [INF] -------------Request-End------------
+2024-07-28 12:29:57.284 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:29:57.393 [INF] -------------Request-Begin------------
+2024-07-28 12:29:57.393 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-28 12:29:57.393 [INF] 
+
+2024-07-28 12:29:57.393 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:29:57.393212Z",
+  "ReferenceNumber": "50ade9e8-66b8-4d24-9b90-342fb6bf8eaf"
+}
+2024-07-28 12:29:57.393 [INF] -------------Request-End------------
+2024-07-28 12:30:52.869 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:30:58.714 [INF] -------------Request-Begin------------
+2024-07-28 12:30:58.715 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: 
+2024-07-28 12:30:58.715 [INF] 
+
+2024-07-28 12:30:58.715 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:29:57.393212Z",
+  "ReferenceNumber": "50ade9e8-66b8-4d24-9b90-342fb6bf8eaf"
+}
+2024-07-28 12:30:58.715 [INF] -------------Request-End------------
+2024-07-28 12:31:05.744 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:31:47.214 [FTL] Path=/api/Countries/Cache || Method=GET || Exception=Unable to find a constructor to use for type Para.Base.Response.ApiResponse`1[System.Collections.Generic.List`1[Para.Schema.CountryResponse]]. A class should either have a default constructor, one constructor with arguments or a constructor marked with the JsonConstructor attribute. Path 'Data', line 1, position 8.
+2024-07-28 12:31:47.732 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 81044215-f2eb-4f1b-b34f-d0c3cded6c9f and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Para.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/ErrorHandlerMiddleware.cs:line 35
+   at Para.Api.Middleware.HeartbeatMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/HeartbeatMiddleware.cs:line 24
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-28 12:31:47.981 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 81044215-f2eb-4f1b-b34f-d0c3cded6c9f and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.DisplayExceptionContent(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-28 12:31:47.985 [ERR] Connection id "0HN5ESUJIRDAQ", Request id "0HN5ESUJIRDAQ:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 81044215-f2eb-4f1b-b34f-d0c3cded6c9f and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Para.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/ErrorHandlerMiddleware.cs:line 35
+   at Para.Api.Middleware.HeartbeatMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/HeartbeatMiddleware.cs:line 24
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2024-07-28 12:31:50.608 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:32:59.792 [INF] Application is starting...
+2024-07-28 12:33:15.697 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:33:15.709 [WRN] Failed to determine the https port for redirect.
+2024-07-28 12:34:28.625 [FTL] Path=/api/Countries/Cache || Method=GET || Exception=Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Para.Schema.CountryResponse]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'Data', line 1, position 8.
+2024-07-28 12:34:29.093 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id d806fe00-6994-49a6-baf6-b1e050d9eedf and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Para.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/ErrorHandlerMiddleware.cs:line 35
+   at Para.Api.Middleware.HeartbeatMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/HeartbeatMiddleware.cs:line 24
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-28 12:34:29.297 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id d806fe00-6994-49a6-baf6-b1e050d9eedf and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.DisplayExceptionContent(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-28 12:34:29.303 [ERR] Connection id "0HN5ET13UK4V0", Request id "0HN5ET13UK4V0:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id d806fe00-6994-49a6-baf6-b1e050d9eedf and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Para.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/ErrorHandlerMiddleware.cs:line 35
+   at Para.Api.Middleware.HeartbeatMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/HeartbeatMiddleware.cs:line 24
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2024-07-28 12:35:29.381 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:35:40.277 [INF] -------------Request-Begin------------
+2024-07-28 12:35:40.278 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+Request Body: {
+  "CountyCode": "PER",
+  "Name": "Peru"
+}
+2024-07-28 12:35:40.278 [INF] 
+
+2024-07-28 12:35:40.278 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "CountyCode": "PER",
+    "Name": "Peru",
+    "Id": 4
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:35:37.832583Z",
+  "ReferenceNumber": "236c9a4b-5445-4403-9b7e-71274e81ad9e"
+}
+2024-07-28 12:35:40.278 [INF] -------------Request-End------------
+2024-07-28 12:35:47.425 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:36:06.058 [INF] -------------Request-Begin------------
+2024-07-28 12:36:06.058 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+Request Body: 
+2024-07-28 12:36:06.058 [INF] 
+
+2024-07-28 12:36:06.058 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    },
+    {
+      "CountyCode": "PER",
+      "Name": "Peru",
+      "Id": 4
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:35:53.649487Z",
+  "ReferenceNumber": "84e9ff0e-25cc-4148-bb2a-2e3957cb15a7"
+}
+2024-07-28 12:36:06.059 [INF] -------------Request-End------------
+2024-07-28 12:36:08.266 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:36:08.293 [INF] -------------Request-Begin------------
+2024-07-28 12:36:08.293 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+Request Body: 
+2024-07-28 12:36:08.293 [INF] 
+
+2024-07-28 12:36:08.293 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-28 12:36:08.293 [INF] -------------Request-End------------
+2024-07-28 12:36:12.474 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:36:12.475 [INF] -------------Request-Begin------------
+2024-07-28 12:36:12.475 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+Request Body: 
+2024-07-28 12:36:12.475 [INF] 
+
+2024-07-28 12:36:12.475 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-28 12:36:12.475 [INF] -------------Request-End------------
+2024-07-28 12:36:13.222 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:36:13.224 [INF] -------------Request-Begin------------
+2024-07-28 12:36:13.224 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+Request Body: 
+2024-07-28 12:36:13.224 [INF] 
+
+2024-07-28 12:36:13.224 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-28 12:36:13.224 [INF] -------------Request-End------------
+2024-07-28 12:36:13.533 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:36:13.534 [INF] -------------Request-Begin------------
+2024-07-28 12:36:13.534 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+Request Body: 
+2024-07-28 12:36:13.534 [INF] 
+
+2024-07-28 12:36:13.534 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-07-28 12:36:13.534 [INF] -------------Request-End------------
+2024-07-28 12:36:25.762 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:36:25.990 [INF] -------------Request-Begin------------
+2024-07-28 12:36:25.990 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-07-28 12:36:25.990 [INF] 
+
+2024-07-28 12:36:25.990 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-07-28T12:41:25.987488+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiRW1haWwiOiJwYUBwYS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJQYXJhIFBhIiwiZXhwIjoxNzIyMTU5Njg1LCJpc3MiOiJQYXJhQXBpIiwiYXVkIjoiUGFyYUFwaSJ9.cK6VL_6dZaWBhg_8blBpBqnh3qbMNVUo12ehFN52dKY",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:36:25.987708Z",
+  "ReferenceNumber": "5bfce844-41ef-4fc7-9b6d-61a428310f60"
+}
+2024-07-28 12:36:25.990 [INF] -------------Request-End------------
+2024-07-28 12:36:38.928 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:36:53.488 [INF] -------------Request-Begin------------
+2024-07-28 12:36:53.489 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+Request Body: 
+2024-07-28 12:36:53.490 [INF] 
+
+2024-07-28 12:36:53.490 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    },
+    {
+      "CountyCode": "PER",
+      "Name": "Peru",
+      "Id": 4
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:36:50.207868Z",
+  "ReferenceNumber": "8d022995-5c79-4ea1-9fad-ec811e0960d7"
+}
+2024-07-28 12:36:53.490 [INF] -------------Request-End------------
+2024-07-28 12:37:24.006 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:38:09.510 [FTL] Path=/api/Countries/Cache || Method=GET || Exception=No connection is active/available to service this operation: HMGET RediscountryList; SocketClosed (ReadEndOfStream, 0-read, last-recv: 0) on localhost:6379/Subscription, Flushed/MarkProcessed, last: SUBSCRIBE, origin: ReadFromPipe, outstanding: 3, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: ConnectedEstablishing, mgr: 7 of 10 available, last-heartbeat: never, last-mbeat: 0s ago, global: 0s ago, v: 2.2.4.27433, mc: 1/1/0, mgr: 10 of 10 available, clientName: recepmac, IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=1,Free=32766,Min=8,Max=32767), v: 2.2.4.27433
+2024-07-28 12:38:09.828 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 0b39cadd-d205-44de-bae6-99fa6ad52dac and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Para.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/ErrorHandlerMiddleware.cs:line 35
+   at Para.Api.Middleware.HeartbeatMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/HeartbeatMiddleware.cs:line 24
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-28 12:38:09.866 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 0b39cadd-d205-44de-bae6-99fa6ad52dac and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.DisplayExceptionContent(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-28 12:38:09.866 [ERR] Connection id "0HN5ET13UK4V7", Request id "0HN5ET13UK4V7:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 0b39cadd-d205-44de-bae6-99fa6ad52dac and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Para.Api.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/ErrorHandlerMiddleware.cs:line 35
+   at Para.Api.Middleware.HeartbeatMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.Api/Middleware/HeartbeatMiddleware.cs:line 24
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2024-07-28 12:38:20.127 [INF] LogRequestLoggingMiddleware.Invoke
+2024-07-28 12:39:46.966 [INF] -------------Request-Begin------------
+2024-07-28 12:39:46.968 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+Request Body: 
+2024-07-28 12:39:46.968 [INF] 
+
+2024-07-28 12:39:46.968 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5220 
+Path: /api/Countries/Cache 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CountyCode": "USA",
+      "Name": "ABD",
+      "Id": 1
+    },
+    {
+      "CountyCode": "TUR",
+      "Name": "Turkiye",
+      "Id": 2
+    },
+    {
+      "CountyCode": "CAN",
+      "Name": "Canada",
+      "Id": 3
+    },
+    {
+      "CountyCode": "PER",
+      "Name": "Peru",
+      "Id": 4
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-07-28T09:39:44.545436Z",
+  "ReferenceNumber": "af42fae4-376b-4f0e-a139-9092ce10ef41"
+}
+2024-07-28 12:39:46.968 [INF] -------------Request-End------------
+2024-07-28 12:40:02.583 [INF] LogRequestLoggingMiddleware.Invoke

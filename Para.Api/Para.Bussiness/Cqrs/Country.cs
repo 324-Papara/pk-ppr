@@ -9,4 +9,5 @@ public record UpdateCountryCommand(long CountryId,CountryRequest Request) : IReq
 public record DeleteCountryCommand(long CountryId) : IRequest<ApiResponse>;
 
 public record GetAllCountryQuery() : IRequest<ApiResponse<List<CountryResponse>>>;
+public record GetAllCountryFromCacheQuery() : IRequest<ApiResponse<List<CountryResponse>>>;
 public record GetCountryByIdQuery(long CountryId) : IRequest<ApiResponse<CountryResponse>>;

@@ -20,6 +20,15 @@ namespace Para.Api.Controllers
             this.mediator = mediator;
         }
 
+        [HttpGet("Cache")]
+        [Authorize(Roles = "admin,customer")]
+        public async Task<ApiResponse<List<CountryResponse>>> GetAll()
+        {
+            var operation = new GetAllCountryFromCacheQuery();
+            var result = await mediator.Send(operation);
+            return result;
+        }
+        
 
         [HttpGet]
         [Authorize(Roles = "admin,customer")]

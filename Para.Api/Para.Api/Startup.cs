@@ -20,6 +20,7 @@ using Para.Bussiness.Validation;
 using Para.Data.Context;
 using Para.Data.UnitOfWork;
 using Serilog;
+using StackExchange.Redis;
 
 namespace Para.Api;
 
@@ -27,25 +28,24 @@ public class Startup
 {
     public IConfiguration Configuration;
     public static JwtConfig jwtConfig { get; private set; }
-    
+
     public Startup(IConfiguration configuration)
     {
         this.Configuration = configuration;
     }
-    
-    
+
+
     public void ConfigureServices(IServiceCollection services)
     {
-        
         jwtConfig = Configuration.GetSection("JwtConfig").Get<JwtConfig>();
         services.AddSingleton<JwtConfig>(jwtConfig);
-        
+
         var connectionStringSql = Configuration.GetConnectionString("MsSqlConnection");
         services.AddDbContext<ParaDbContext>(options => options.UseSqlServer(connectionStringSql));
         //services.AddDbContext<ParaDbContext>(options => options.UseNpgsql(connectionStringPostgre));
-  
+
         services.AddScoped<IUnitOfWork, UnitOfWork>();
-      
+
         services.AddControllers().AddJsonOptions(options =>
         {
             options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
@@ -56,12 +56,9 @@ public class Startup
         {
             x.RegisterValidatorsFromAssemblyContaining<BaseValidator>();
         });
-        
-      
-        var config = new MapperConfiguration(cfg =>
-        {
-            cfg.AddProfile(new MapperConfig());
-        });
+
+
+        var config = new MapperConfiguration(cfg => { cfg.AddProfile(new MapperConfig()); });
         services.AddSingleton(config.CreateMapper());
 
 
@@ -70,9 +67,9 @@ public class Startup
         services.AddTransient<CustomService1>();
         services.AddScoped<CustomService2>();
         services.AddSingleton<CustomService3>();
-        
-        services.AddScoped<ITokenService,TokenService>();
-        
+
+        services.AddScoped<ITokenService, TokenService>();
+
         services.AddAuthentication(x =>
         {
             x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -93,10 +90,8 @@ public class Startup
                 ClockSkew = TimeSpan.FromMinutes(2)
             };
         });
-        
-        
-        
-        
+
+
         services.AddSwaggerGen(c =>
         {
             c.SwaggerDoc("v1", new OpenApiInfo { Title = "Para Api Management", Version = "v1.0" });
@@ -117,12 +112,22 @@ public class Startup
             c.AddSecurityDefinition(securityScheme.Reference.Id, securityScheme);
             c.AddSecurityRequirement(new OpenApiSecurityRequirement
             {
-                {securityScheme, new string[] { }}
+                { securityScheme, new string[] { } }
             });
         });
-        
+
         services.AddMemoryCache();
+
+        var redisConfig = new ConfigurationOptions();
+        redisConfig.DefaultDatabase = 0;
+        redisConfig.EndPoints.Add(Configuration["Redis:Host"], Convert.ToInt32(Configuration["Redis:Port"]));
+        services.AddStackExchangeRedisCache(opt =>
+        {
+            opt.ConfigurationOptions = redisConfig;
+            opt.InstanceName = Configuration["Redis:InstanceName"];
+        });
         
+
         services.AddScoped<ISessionContext>(provider =>
         {
             var context = provider.GetService<IHttpContextAccessor>();
@@ -154,24 +159,21 @@ public class Startup
             Log.Information("-------------Request-End------------");
         };
         app.UseMiddleware<RequestLoggingMiddleware>(requestResponseHandler);
-        
-        
+
+
         app.UseHttpsRedirection();
         app.UseAuthentication();
         app.UseRouting();
         app.UseAuthorization();
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapControllers();
-        });
-        
-        app.Use((context,next) =>
+        app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+        app.Use((context, next) =>
         {
             if (!string.IsNullOrEmpty(context.Request.Path) && context.Request.Path.Value.Contains("favicon"))
             {
                 return next();
             }
-            
+
             var service1 = context.RequestServices.GetRequiredService<CustomService1>();
             var service2 = context.RequestServices.GetRequiredService<CustomService2>();
             var service3 = context.RequestServices.GetRequiredService<CustomService3>();
@@ -182,7 +184,7 @@ public class Startup
 
             return next();
         });
-        
+
         app.Run(async context =>
         {
             var service1 = context.RequestServices.GetRequiredService<CustomService1>();
