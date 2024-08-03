@@ -1,0 +1,68 @@
+2024-08-02 22:36:44.091 [INF] Application is starting...
+2024-08-02 22:36:44.842 [INF] Start installing Hangfire SQL objects...
+2024-08-02 22:36:45.454 [INF] Hangfire SQL objects installed.
+2024-08-02 22:36:45.780 [INF] Starting Hangfire Server using job storage: 'SQL Server: 192.168.0.23@padb'
+2024-08-02 22:36:45.781 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-02 22:36:45.781 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-02 22:36:45.793 [DBG] Execution loop BackgroundServerProcess:f4d697fd has started in 7,5194 ms
+2024-08-02 22:36:45.794 [VRB] Server recepmac:5612:836b4078 is announcing itself...
+2024-08-02 22:36:45.897 [INF] Server recepmac:5612:836b4078 successfully announced in 102,3375 ms
+2024-08-02 22:36:45.899 [DBG] Execution loop ServerHeartbeatProcess:752caca4 has started in 1,6365 ms
+2024-08-02 22:36:45.900 [INF] Server recepmac:5612:836b4078 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-02 22:36:45.927 [DBG] Execution loop ServerWatchdog:cae9d3c3 has started in 27,2204 ms
+2024-08-02 22:36:45.927 [DBG] Execution loop ServerJobCancellationWatcher:35531533 has started in 27,0521 ms
+2024-08-02 22:36:45.928 [VRB] Server recepmac:5612:836b4078 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-02 22:36:45.928 [VRB] Checking for aborted jobs...
+2024-08-02 22:36:45.928 [VRB] No newly aborted jobs found.
+2024-08-02 22:36:45.956 [DBG] Execution loop ExpirationManager:da0de19e has started in 29,0487 ms
+2024-08-02 22:36:45.977 [DBG] Execution loop CountersAggregator:80b92731 has started in 48,5529 ms
+2024-08-02 22:36:46.004 [DBG] Execution loop SqlServerHeartbeatProcess:c120a115 has started in 73,1945 ms
+2024-08-02 22:36:46.004 [DBG] Aggregating records in 'Counter' table...
+2024-08-02 22:36:46.027 [DBG] Execution loop Worker:0cee2874 has started in 70,199 ms
+2024-08-02 22:36:46.049 [DBG] Execution loop Worker:bcd6602e has started in 92,4027 ms
+2024-08-02 22:36:46.027 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2024-08-02 22:36:46.049 [INF] 2 servers were removed due to timeout
+2024-08-02 22:36:46.049 [DBG] Execution loop Worker:929f4ac9 has started in 92,603 ms
+2024-08-02 22:36:46.049 [DBG] Execution loop Worker:a6022f58 has started in 92,5108 ms
+2024-08-02 22:36:46.076 [DBG] Execution loop Worker:ac18b65c has started in 119,2936 ms
+2024-08-02 22:36:46.076 [DBG] Execution loop Worker:72e39b95 has started in 119,9766 ms
+2024-08-02 22:36:46.100 [DBG] Execution loop Worker:5e060686 has started in 143,4568 ms
+2024-08-02 22:36:46.100 [DBG] Execution loop Worker:b245acd9 has started in 143,8569 ms
+2024-08-02 22:36:46.154 [DBG] Execution loop Worker:66c5723e has started in 197,9837 ms
+2024-08-02 22:36:46.183 [DBG] Execution loop Worker:a8fc7c50 has started in 226,9545 ms
+2024-08-02 22:36:46.183 [DBG] Execution loop Worker:0760ddb8 has started in 226,9835 ms
+2024-08-02 22:36:46.187 [DBG] Execution loop Worker:6ef48f32 has started in 230,575 ms
+2024-08-02 22:36:46.188 [DBG] Execution loop Worker:0910417e has started in 232,0437 ms
+2024-08-02 22:36:46.187 [DBG] Execution loop Worker:50c4a093 has started in 230,705 ms
+2024-08-02 22:36:46.224 [DBG] Execution loop Worker:b3fc64bb has started in 267,5266 ms
+2024-08-02 22:36:46.295 [DBG] Execution loop Worker:8c4b2dcd has started in 290,6546 ms
+2024-08-02 22:36:46.296 [DBG] Execution loop Worker:4774afc7 has started in 339,0894 ms
+2024-08-02 22:36:46.319 [DBG] Execution loop Worker:e9e8fe73 has started in 362,6585 ms
+2024-08-02 22:36:46.319 [DBG] Execution loop Worker:402f181d has started in 362,828 ms
+2024-08-02 22:36:46.319 [DBG] Execution loop Worker:adbc8d4b has started in 340,2785 ms
+2024-08-02 22:36:46.394 [DBG] Execution loop DelayedJobScheduler:f689590b has started in 96,8613 ms
+2024-08-02 22:36:46.399 [INF] Server recepmac:5612:836b4078 all the dispatchers started
+2024-08-02 22:36:46.410 [DBG] Execution loop RecurringJobScheduler:26b66e18 has started in 90,6037 ms
+2024-08-02 22:36:46.537 [VRB] Records from the 'Counter' table aggregated.
+2024-08-02 22:36:46.556 [VRB] Outdated records removed from the 'AggregatedCounter' table.
+2024-08-02 22:36:46.556 [DBG] Removing outdated records from the 'Job' table...
+2024-08-02 22:36:46.994 [VRB] Outdated records removed from the 'Job' table.
+2024-08-02 22:36:46.994 [DBG] Removing outdated records from the 'List' table...
+2024-08-02 22:36:47.034 [VRB] Outdated records removed from the 'List' table.
+2024-08-02 22:36:47.034 [DBG] Removing outdated records from the 'Set' table...
+2024-08-02 22:36:47.100 [VRB] Outdated records removed from the 'Set' table.
+2024-08-02 22:36:47.100 [DBG] Removing outdated records from the 'Hash' table...
+2024-08-02 22:36:47.161 [VRB] Outdated records removed from the 'Hash' table.
+2024-08-02 22:36:47.230 [VRB] Recurring job 'nntdr' is being updated. RecurringJob: (CreatedAt:1722167179724;Cron:0 0 * * *;Job:{"t":"System.Console, mscorlib","m":"WriteLine","p":["System.String"],"a":["\"Recurring!\""]};LastExecution:1722167211208;LastJobId:5;NextExecution:1722211200000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722627406927;NextExecution:1722643200000;LastJobId:10003)
+2024-08-02 22:36:47.716 [VRB] Recurring job 'agust' is being updated. RecurringJob: (CreatedAt:1722167330855;Cron:15 14 1 * *;Job:{"t":"System.Console, mscorlib","m":"WriteLine","p":["System.String"],"a":["\"Recurring!\""]};LastExecution:1722167371556;LastJobId:6;NextExecution:1722521700000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722627406927;NextExecution:1725200100000;LastJobId:10004)
+2024-08-02 22:36:47.944 [DBG] 2 recurring job(s) processed by scheduler.
+2024-08-02 22:36:50.930 [VRB] Checking for aborted jobs...
+2024-08-02 22:36:50.933 [VRB] No newly aborted jobs found.
+2024-08-02 22:36:55.934 [VRB] Checking for aborted jobs...
+2024-08-02 22:36:55.934 [VRB] No newly aborted jobs found.
+2024-08-02 22:37:00.935 [VRB] Checking for aborted jobs...
+2024-08-02 22:37:00.935 [VRB] No newly aborted jobs found.

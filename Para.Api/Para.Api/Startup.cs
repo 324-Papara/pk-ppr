@@ -1,11 +1,14 @@
 using System.Reflection;
 using System.Text;
 using System.Text.Json.Serialization;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using AutoMapper;
 using FluentValidation.AspNetCore;
 using Hangfire;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -23,6 +26,7 @@ using Para.Data.Context;
 using Para.Data.UnitOfWork;
 using Serilog;
 using StackExchange.Redis;
+using Module = Autofac.Module;
 
 namespace Para.Api;
 
@@ -42,10 +46,18 @@ public class Startup
         jwtConfig = Configuration.GetSection("JwtConfig").Get<JwtConfig>();
         services.AddSingleton<JwtConfig>(jwtConfig);
 
-        var connectionStringSql = Configuration.GetConnectionString("MsSqlConnection");
-        services.AddDbContext<ParaDbContext>(options => options.UseSqlServer(connectionStringSql));
-        //services.AddDbContext<ParaDbContext>(options => options.UseNpgsql(connectionStringPostgre));
-
+        string type = Configuration.GetConnectionString("DbType");
+        if (type == "1")
+        {
+            var connectionStringSql = Configuration.GetConnectionString("MsSqlConnection");
+            services.AddDbContext<ParaDbContext>(options => options.UseSqlServer(connectionStringSql));
+        }
+        else
+        {
+            var connectionStringPostgre = Configuration.GetConnectionString("PostgresSqlConnection");
+            services.AddDbContext<ParaDbContext>(options => options.UseNpgsql(connectionStringPostgre));
+        }
+        
         services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         services.AddControllers().AddJsonOptions(options =>
@@ -70,8 +82,7 @@ public class Startup
         services.AddScoped<CustomService2>();
         services.AddSingleton<CustomService3>();
 
-        services.AddScoped<ITokenService, TokenService>();
-        services.AddSingleton<INotificationService, NotificationService>();
+
 
         services.AddAuthentication(x =>
         {
@@ -148,6 +159,20 @@ public class Startup
             return sessionContext;
         });
     }
+    
+    public class AutofacBusinessModule : Module
+    {
+        protected override void Load(ContainerBuilder builder)
+        {
+            builder.RegisterType<TokenService>().As<ITokenService>().InstancePerLifetimeScope();
+            builder.RegisterType<NotificationService>().As<INotificationService>().SingleInstance();
+        }
+    }
+    
+    public void ConfigureContainer(ContainerBuilder builder)
+    {
+        builder.RegisterModule(new AutofacBusinessModule());
+    }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
@@ -172,7 +197,7 @@ public class Startup
         app.UseMiddleware<RequestLoggingMiddleware>(requestResponseHandler);
 
         app.UseHangfireDashboard();
-
+       
         app.UseHttpsRedirection();
         app.UseAuthentication();
         app.UseRouting();
