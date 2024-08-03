@@ -1,5 +1,6 @@
-using System.Data.Entity;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Para.Base;
 using Para.Base.Response;
 using Para.IdentityApi.Context;
 using Para.IdentityApi.Domain;
@@ -11,16 +12,20 @@ public class PostService : IPostService
 {
     private readonly ParaIdentityDbContext dbContext;
     private readonly IMapper mapper;
+    private readonly ISessionContext sessionContext;
 
-    public PostService(ParaIdentityDbContext dbContext, IMapper mapper)
+    public PostService(ParaIdentityDbContext dbContext, IMapper mapper,ISessionContext sessionContext)
     {
         this.mapper = mapper;
         this.dbContext = dbContext;
+        this.sessionContext = sessionContext;
     }
-
     public async Task<ApiResponse<PostResponse>> Insert(PostRequest request)
     {
         var mapped = mapper.Map<Post>(request);
+        mapped.InsertDate = DateTime.Now;
+        mapped.InsertUser = sessionContext.Session.UserName;
+        mapped.IsActive = true;
         var entity = await dbContext.Set<Post>().AddAsync(mapped);
         await dbContext.SaveChangesAsync();
 

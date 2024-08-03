@@ -41,7 +41,6 @@ public class AuthService : IAuthService
             return new ApiResponse<AuthResponse>("Login Faild");
         }
         
-        
         var responseToken = await GenerateToken(user);
         AuthResponse authResponse = new AuthResponse()
         {

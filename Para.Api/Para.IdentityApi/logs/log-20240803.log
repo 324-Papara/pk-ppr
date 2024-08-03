@@ -148,3 +148,2116 @@ Response Body: {
   "ReferenceNumber": "292426be-ef2c-4f19-a9da-b180c56318a2"
 }
 2024-08-03 12:46:34.459 [INF] -------------Request-End------------
+2024-08-03 13:25:50.891 [INF] Application is starting...
+2024-08-03 13:26:09.222 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:26:09.238 [WRN] Failed to determine the https port for redirect.
+2024-08-03 13:26:09.361 [INF] -------------Request-Begin------------
+2024-08-03 13:26:09.361 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: 
+2024-08-03 13:26:09.361 [INF] 
+
+2024-08-03 13:26:09.361 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2024-08-03 13:26:09.361 [INF] -------------Request-End------------
+2024-08-03 13:26:21.946 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:26:27.038 [INF] -------------Request-Begin------------
+2024-08-03 13:26:27.038 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/identity/Authorization/Login 
+QueryString:  
+Request Body: {
+  "UserName": "pa@pa.com",
+  "Password": "Abc123"
+}
+2024-08-03 13:26:27.038 [INF] 
+
+2024-08-03 13:26:27.038 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/identity/Authorization/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": null,
+  "Message": "Login Faild",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:26:27.005834Z",
+  "ReferenceNumber": "ec968def-8ed7-435b-8bc2-26e767e6f806"
+}
+2024-08-03 13:26:27.038 [INF] -------------Request-End------------
+2024-08-03 13:27:05.805 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:27:06.304 [INF] -------------Request-Begin------------
+2024-08-03 13:27:06.304 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/identity/Authorization/Login 
+QueryString:  
+Request Body: {
+  "UserName": "para@para.com",
+  "Password": "Abc123"
+}
+2024-08-03 13:27:06.304 [INF] 
+
+2024-08-03 13:27:06.304 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/identity/Authorization/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-08-03T14:22:06.298119+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcmFAcGFyYS5jb20iLCJVc2VySWQiOiJlNzNkZDlkZi1lMTY5LTRjYzctYmNjNi00OTQ5MjUyNmFhNzUiLCJFbWFpbCI6InBhcmFAcGFyYS5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImU3M2RkOWRmLWUxNjktNGNjNy1iY2M2LTQ5NDkyNTI2YWE3NSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJwYXJhQHBhcmEuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoicGFyYUBwYXJhLmNvbSIsImV4cCI6MTcyMjY4NDEyNiwiaXNzIjoiUGFyYUFwaSIsImF1ZCI6IlBhcmFBcGkifQ.nWXj45Zzhzt0f6ypC2ChR6SxW-vvojpoJXhZFj3erEA",
+    "UserName": "para@para.com",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:27:06.298289Z",
+  "ReferenceNumber": "d11040f8-651a-4fc3-bd61-04d94f92a66b"
+}
+2024-08-03 13:27:06.304 [INF] -------------Request-End------------
+2024-08-03 13:27:18.177 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:28:37.445 [INF] Application is starting...
+2024-08-03 13:28:39.328 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:28:39.345 [WRN] Failed to determine the https port for redirect.
+2024-08-03 13:28:41.138 [INF] -------------Request-Begin------------
+2024-08-03 13:28:41.139 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: 
+2024-08-03 13:28:41.139 [INF] 
+
+2024-08-03 13:28:41.139 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:28:41.080963Z",
+  "ReferenceNumber": "47839165-81c9-4b34-8edf-7c2bd52c5c40"
+}
+2024-08-03 13:28:41.139 [INF] -------------Request-End------------
+2024-08-03 13:28:55.388 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:28:55.699 [ERR] An exception occurred in the database while saving changes for context type 'Para.IdentityApi.Context.ParaIdentityDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'paidentity.dbo.Categories'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:4b5c5052-c4ec-4216-af9b-0b094037ead8
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'InsertUser', table 'paidentity.dbo.Categories'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:4b5c5052-c4ec-4216-af9b-0b094037ead8
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-08-03 13:31:20.120 [INF] Application is starting...
+2024-08-03 13:31:43.333 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:31:43.360 [WRN] Failed to determine the https port for redirect.
+2024-08-03 13:34:49.350 [INF] Application is starting...
+2024-08-03 13:34:50.683 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:34:50.709 [WRN] Failed to determine the https port for redirect.
+2024-08-03 13:34:52.673 [INF] -------------Request-Begin------------
+2024-08-03 13:34:52.674 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: {
+  "Name": "CA1",
+  "UrlName": "CA1"
+}
+2024-08-03 13:34:52.674 [INF] 
+
+2024-08-03 13:34:52.674 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 2,
+    "Name": "CA1",
+    "UrlName": "CA1"
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:34:52.624414Z",
+  "ReferenceNumber": "5b1df536-87d3-4b8d-8a9a-05e411a52ad1"
+}
+2024-08-03 13:34:52.674 [INF] -------------Request-End------------
+2024-08-03 13:34:57.649 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:34:57.696 [INF] -------------Request-Begin------------
+2024-08-03 13:34:57.696 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: {
+  "Name": "CA1",
+  "UrlName": "CA1"
+}
+2024-08-03 13:34:57.696 [INF] 
+
+2024-08-03 13:34:57.696 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 3,
+    "Name": "CA1",
+    "UrlName": "CA1"
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:34:57.695953Z",
+  "ReferenceNumber": "94fa5db4-d4bb-49bf-b4ba-a44301f26f0b"
+}
+2024-08-03 13:34:57.696 [INF] -------------Request-End------------
+2024-08-03 13:34:58.189 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:34:58.247 [INF] -------------Request-Begin------------
+2024-08-03 13:34:58.247 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: {
+  "Name": "CA1",
+  "UrlName": "CA1"
+}
+2024-08-03 13:34:58.247 [INF] 
+
+2024-08-03 13:34:58.247 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 4,
+    "Name": "CA1",
+    "UrlName": "CA1"
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:34:58.247573Z",
+  "ReferenceNumber": "a331ad58-3450-4265-88b5-9256a597655b"
+}
+2024-08-03 13:34:58.248 [INF] -------------Request-End------------
+2024-08-03 13:34:58.420 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:34:58.432 [INF] -------------Request-Begin------------
+2024-08-03 13:34:58.432 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: {
+  "Name": "CA1",
+  "UrlName": "CA1"
+}
+2024-08-03 13:34:58.432 [INF] 
+
+2024-08-03 13:34:58.433 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 5,
+    "Name": "CA1",
+    "UrlName": "CA1"
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:34:58.432562Z",
+  "ReferenceNumber": "5bb3fdef-2997-4002-bada-6854b626d30b"
+}
+2024-08-03 13:34:58.433 [INF] -------------Request-End------------
+2024-08-03 13:34:58.628 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:34:58.666 [INF] -------------Request-Begin------------
+2024-08-03 13:34:58.666 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: {
+  "Name": "CA1",
+  "UrlName": "CA1"
+}
+2024-08-03 13:34:58.666 [INF] 
+
+2024-08-03 13:34:58.666 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 6,
+    "Name": "CA1",
+    "UrlName": "CA1"
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:34:58.665098Z",
+  "ReferenceNumber": "4252e972-af2c-467b-95b3-da1685374042"
+}
+2024-08-03 13:34:58.666 [INF] -------------Request-End------------
+2024-08-03 13:34:58.869 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:34:58.909 [INF] -------------Request-Begin------------
+2024-08-03 13:34:58.909 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: {
+  "Name": "CA1",
+  "UrlName": "CA1"
+}
+2024-08-03 13:34:58.909 [INF] 
+
+2024-08-03 13:34:58.909 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 7,
+    "Name": "CA1",
+    "UrlName": "CA1"
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:34:58.907662Z",
+  "ReferenceNumber": "6e7cf624-058f-41c2-8738-99bcbac0f2d8"
+}
+2024-08-03 13:34:58.910 [INF] -------------Request-End------------
+2024-08-03 13:34:59.046 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:34:59.152 [INF] -------------Request-Begin------------
+2024-08-03 13:34:59.152 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: {
+  "Name": "CA1",
+  "UrlName": "CA1"
+}
+2024-08-03 13:34:59.152 [INF] 
+
+2024-08-03 13:34:59.152 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 8,
+    "Name": "CA1",
+    "UrlName": "CA1"
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:34:59.152492Z",
+  "ReferenceNumber": "9ef2a6fa-6f46-4682-baa5-ddc7b5c4beb3"
+}
+2024-08-03 13:34:59.152 [INF] -------------Request-End------------
+2024-08-03 13:34:59.238 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:34:59.269 [INF] -------------Request-Begin------------
+2024-08-03 13:34:59.269 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: {
+  "Name": "CA1",
+  "UrlName": "CA1"
+}
+2024-08-03 13:34:59.269 [INF] 
+
+2024-08-03 13:34:59.269 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 9,
+    "Name": "CA1",
+    "UrlName": "CA1"
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:34:59.268969Z",
+  "ReferenceNumber": "34dde753-e668-4d93-bae0-edad7f6d93e6"
+}
+2024-08-03 13:34:59.269 [INF] -------------Request-End------------
+2024-08-03 13:34:59.439 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:34:59.473 [INF] -------------Request-Begin------------
+2024-08-03 13:34:59.474 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: {
+  "Name": "CA1",
+  "UrlName": "CA1"
+}
+2024-08-03 13:34:59.474 [INF] 
+
+2024-08-03 13:34:59.474 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 10,
+    "Name": "CA1",
+    "UrlName": "CA1"
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:34:59.473622Z",
+  "ReferenceNumber": "b81e15fd-e658-4fc7-90ce-a2d573db625e"
+}
+2024-08-03 13:34:59.474 [INF] -------------Request-End------------
+2024-08-03 13:35:05.114 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:35:05.344 [INF] -------------Request-Begin------------
+2024-08-03 13:35:05.344 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+Request Body: 
+2024-08-03 13:35:05.344 [INF] 
+
+2024-08-03 13:35:05.344 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Categories 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "Id": 2,
+      "Name": "CA1",
+      "UrlName": "CA1"
+    },
+    {
+      "Id": 3,
+      "Name": "CA1",
+      "UrlName": "CA1"
+    },
+    {
+      "Id": 4,
+      "Name": "CA1",
+      "UrlName": "CA1"
+    },
+    {
+      "Id": 5,
+      "Name": "CA1",
+      "UrlName": "CA1"
+    },
+    {
+      "Id": 6,
+      "Name": "CA1",
+      "UrlName": "CA1"
+    },
+    {
+      "Id": 7,
+      "Name": "CA1",
+      "UrlName": "CA1"
+    },
+    {
+      "Id": 8,
+      "Name": "CA1",
+      "UrlName": "CA1"
+    },
+    {
+      "Id": 9,
+      "Name": "CA1",
+      "UrlName": "CA1"
+    },
+    {
+      "Id": 10,
+      "Name": "CA1",
+      "UrlName": "CA1"
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:35:05.34193Z",
+  "ReferenceNumber": "37a5b5ca-3cb8-4022-ad90-9e1d923aa849"
+}
+2024-08-03 13:35:05.344 [INF] -------------Request-End------------
+2024-08-03 13:35:15.977 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:35:55.060 [INF] Application is starting...
+2024-08-03 13:35:57.179 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:35:57.195 [WRN] Failed to determine the https port for redirect.
+2024-08-03 13:35:59.199 [INF] -------------Request-Begin------------
+2024-08-03 13:35:59.199 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: 
+2024-08-03 13:35:59.199 [INF] 
+
+2024-08-03 13:35:59.199 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:35:59.137362Z",
+  "ReferenceNumber": "8ef51610-7a72-4f61-94bc-c42711d9ba12"
+}
+2024-08-03 13:35:59.199 [INF] -------------Request-End------------
+2024-08-03 13:36:28.232 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:28.578 [INF] -------------Request-Begin------------
+2024-08-03 13:36:28.578 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:28.578 [INF] 
+
+2024-08-03 13:36:28.578 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 1,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:28.572637Z",
+  "ReferenceNumber": "4673b7e4-59b6-464f-8d95-7f4cc6a357a9"
+}
+2024-08-03 13:36:28.578 [INF] -------------Request-End------------
+2024-08-03 13:36:33.946 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:33.959 [INF] -------------Request-Begin------------
+2024-08-03 13:36:33.960 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:33.960 [INF] 
+
+2024-08-03 13:36:33.960 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 2,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:33.959659Z",
+  "ReferenceNumber": "551c6ad1-e10d-486f-95ba-e0a1bdcdb204"
+}
+2024-08-03 13:36:33.960 [INF] -------------Request-End------------
+2024-08-03 13:36:34.964 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:35.007 [INF] -------------Request-Begin------------
+2024-08-03 13:36:35.008 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:35.008 [INF] 
+
+2024-08-03 13:36:35.008 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 3,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:35.006911Z",
+  "ReferenceNumber": "6a5402d1-5c86-4376-97f9-eaff55c27333"
+}
+2024-08-03 13:36:35.008 [INF] -------------Request-End------------
+2024-08-03 13:36:35.263 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:35.283 [INF] -------------Request-Begin------------
+2024-08-03 13:36:35.283 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:35.283 [INF] 
+
+2024-08-03 13:36:35.283 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 4,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:35.282942Z",
+  "ReferenceNumber": "927bec58-4321-4102-8d27-8b23a4176557"
+}
+2024-08-03 13:36:35.283 [INF] -------------Request-End------------
+2024-08-03 13:36:35.474 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:35.518 [INF] -------------Request-Begin------------
+2024-08-03 13:36:35.518 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:35.518 [INF] 
+
+2024-08-03 13:36:35.518 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 5,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:35.518341Z",
+  "ReferenceNumber": "bd857886-b1e9-46fe-97f5-f48b404d1b21"
+}
+2024-08-03 13:36:35.518 [INF] -------------Request-End------------
+2024-08-03 13:36:35.655 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:35.690 [INF] -------------Request-Begin------------
+2024-08-03 13:36:35.690 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:35.690 [INF] 
+
+2024-08-03 13:36:35.690 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 6,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:35.690363Z",
+  "ReferenceNumber": "066a1c24-a33e-48dd-a131-8a5a4197d231"
+}
+2024-08-03 13:36:35.690 [INF] -------------Request-End------------
+2024-08-03 13:36:35.816 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:35.828 [INF] -------------Request-Begin------------
+2024-08-03 13:36:35.828 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:35.828 [INF] 
+
+2024-08-03 13:36:35.828 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 7,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:35.828039Z",
+  "ReferenceNumber": "495e09da-7eac-45a6-98bf-a3a91de379a6"
+}
+2024-08-03 13:36:35.828 [INF] -------------Request-End------------
+2024-08-03 13:36:36.020 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:36.058 [INF] -------------Request-Begin------------
+2024-08-03 13:36:36.058 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:36.059 [INF] 
+
+2024-08-03 13:36:36.059 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 8,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:36.058445Z",
+  "ReferenceNumber": "ec101af9-e834-406c-b24e-c77d9592105b"
+}
+2024-08-03 13:36:36.059 [INF] -------------Request-End------------
+2024-08-03 13:36:36.179 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:36.399 [INF] -------------Request-Begin------------
+2024-08-03 13:36:36.399 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:36.399 [INF] 
+
+2024-08-03 13:36:36.399 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 9,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:36.398636Z",
+  "ReferenceNumber": "8b90a98b-f8ba-4a57-b4b0-459b614363f2"
+}
+2024-08-03 13:36:36.399 [INF] -------------Request-End------------
+2024-08-03 13:36:36.449 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:36.493 [INF] -------------Request-Begin------------
+2024-08-03 13:36:36.494 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:36.494 [INF] 
+
+2024-08-03 13:36:36.494 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 10,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:36.492974Z",
+  "ReferenceNumber": "349a4aa0-c919-4417-bb69-fb269b5188e7"
+}
+2024-08-03 13:36:36.494 [INF] -------------Request-End------------
+2024-08-03 13:36:36.626 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:36.664 [INF] -------------Request-Begin------------
+2024-08-03 13:36:36.664 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:36.664 [INF] 
+
+2024-08-03 13:36:36.664 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 11,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:36.664572Z",
+  "ReferenceNumber": "ee2edbcb-af92-46ba-aa96-cf6d59fb3b12"
+}
+2024-08-03 13:36:36.664 [INF] -------------Request-End------------
+2024-08-03 13:36:36.844 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:36.854 [INF] -------------Request-Begin------------
+2024-08-03 13:36:36.854 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:36.854 [INF] 
+
+2024-08-03 13:36:36.854 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 12,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:36.854309Z",
+  "ReferenceNumber": "c1bc24b2-3368-4897-8f01-c2cef9ba0e53"
+}
+2024-08-03 13:36:36.854 [INF] -------------Request-End------------
+2024-08-03 13:36:37.036 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 13:36:37.075 [INF] -------------Request-Begin------------
+2024-08-03 13:36:37.076 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+Request Body: {
+  "Title": "Demo post 1 ",
+  "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+  "UrlName": "demourltest",
+  "ImageUrl": "string",
+  "CategoryId": 3
+}
+2024-08-03 13:36:37.076 [INF] 
+
+2024-08-03 13:36:37.076 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Posts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "Id": 13,
+    "Title": "Demo post 1 ",
+    "Content": "Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 Demo post 1 ",
+    "UrlName": "demourltest",
+    "ImageUrl": "string",
+    "CategoryId": 3,
+    "CategoryName": null,
+    "CategoryUrlName": null
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T10:36:37.07523Z",
+  "ReferenceNumber": "c157e196-a7bf-4743-a266-72ab5f9a216a"
+}
+2024-08-03 13:36:37.076 [INF] -------------Request-End------------
+2024-08-03 14:03:17.104 [INF] Application is starting...
+2024-08-03 14:03:17.875 [INF] Start installing Hangfire SQL objects...
+2024-08-03 14:03:18.964 [INF] Hangfire SQL objects installed.
+2024-08-03 14:03:19.409 [INF] Starting Hangfire Server using job storage: 'SQL Server: 192.168.0.23@paidentity'
+2024-08-03 14:03:19.409 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-03 14:03:19.409 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-03 14:03:19.421 [DBG] Execution loop BackgroundServerProcess:0893dc96 has started in 7,7856 ms
+2024-08-03 14:03:19.423 [VRB] Server recepmac:19416:c66b4462 is announcing itself...
+2024-08-03 14:03:19.563 [INF] Server recepmac:19416:c66b4462 successfully announced in 139,6939 ms
+2024-08-03 14:03:19.566 [DBG] Execution loop ServerHeartbeatProcess:96f4505f has started in 1,5821 ms
+2024-08-03 14:03:19.566 [INF] Server recepmac:19416:c66b4462 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-03 14:03:19.617 [DBG] Execution loop ServerWatchdog:9446755d has started in 51,1027 ms
+2024-08-03 14:03:19.617 [DBG] Execution loop ServerJobCancellationWatcher:39128ab0 has started in 51,0955 ms
+2024-08-03 14:03:19.645 [DBG] Execution loop CountersAggregator:8ca3ec5b has started in 26,8872 ms
+2024-08-03 14:03:19.646 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 14:03:19.646 [DBG] Execution loop ExpirationManager:f532554b has started in 28,8756 ms
+2024-08-03 14:03:19.646 [VRB] Server recepmac:19416:c66b4462 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:03:19.647 [VRB] Checking for aborted jobs...
+2024-08-03 14:03:19.648 [VRB] No newly aborted jobs found.
+2024-08-03 14:03:19.648 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2024-08-03 14:03:19.679 [DBG] Execution loop SqlServerHeartbeatProcess:e62613a6 has started in 60,6792 ms
+2024-08-03 14:03:19.702 [DBG] Execution loop Worker:b7087bc6 has started in 54,7355 ms
+2024-08-03 14:03:19.702 [DBG] Execution loop Worker:94ba4cfb has started in 54,6571 ms
+2024-08-03 14:03:19.725 [DBG] Execution loop Worker:2cefc3a2 has started in 77,0813 ms
+2024-08-03 14:03:19.770 [DBG] Execution loop Worker:446cd27f has started in 101,9485 ms
+2024-08-03 14:03:19.822 [DBG] Execution loop Worker:ec651140 has started in 174,338 ms
+2024-08-03 14:03:19.822 [DBG] Execution loop Worker:bc531788 has started in 174,3847 ms
+2024-08-03 14:03:19.822 [DBG] Execution loop Worker:a7db7d22 has started in 174,6181 ms
+2024-08-03 14:03:19.822 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 14:03:19.822 [DBG] Execution loop Worker:6a83e809 has started in 174,5255 ms
+2024-08-03 14:03:19.848 [DBG] Execution loop Worker:fdac6e30 has started in 200,9888 ms
+2024-08-03 14:03:19.848 [DBG] Execution loop Worker:9c32686c has started in 200,9905 ms
+2024-08-03 14:03:19.848 [DBG] Execution loop Worker:780626bb has started in 201,0415 ms
+2024-08-03 14:03:19.849 [DBG] Execution loop Worker:5c5c3e22 has started in 201,4947 ms
+2024-08-03 14:03:19.850 [DBG] Execution loop Worker:93badbcd has started in 202,4549 ms
+2024-08-03 14:03:19.851 [DBG] Execution loop Worker:fa74f73a has started in 204,0366 ms
+2024-08-03 14:03:19.875 [DBG] Execution loop Worker:669daf18 has started in 227,6598 ms
+2024-08-03 14:03:19.900 [DBG] Execution loop Worker:cac49f33 has started in 252,1654 ms
+2024-08-03 14:03:19.925 [DBG] Execution loop Worker:872f345e has started in 277,5668 ms
+2024-08-03 14:03:19.940 [DBG] Execution loop Worker:988f3ce9 has started in 292,9936 ms
+2024-08-03 14:03:19.941 [DBG] Execution loop Worker:b9eea2d5 has started in 293,4501 ms
+2024-08-03 14:03:19.945 [DBG] Execution loop Worker:3cbd391b has started in 297,1504 ms
+2024-08-03 14:03:19.947 [DBG] Execution loop DelayedJobScheduler:e02eef42 has started in 4,3944 ms
+2024-08-03 14:03:19.949 [INF] Server recepmac:19416:c66b4462 all the dispatchers started
+2024-08-03 14:03:19.949 [DBG] Execution loop RecurringJobScheduler:9a542142 has started in 2,1986 ms
+2024-08-03 14:03:19.981 [VRB] Outdated records removed from the 'AggregatedCounter' table.
+2024-08-03 14:03:19.981 [DBG] Removing outdated records from the 'Job' table...
+2024-08-03 14:03:20.223 [VRB] Outdated records removed from the 'Job' table.
+2024-08-03 14:03:20.223 [DBG] Removing outdated records from the 'List' table...
+2024-08-03 14:03:20.259 [VRB] Outdated records removed from the 'List' table.
+2024-08-03 14:03:20.259 [DBG] Removing outdated records from the 'Set' table...
+2024-08-03 14:03:20.314 [VRB] Outdated records removed from the 'Set' table.
+2024-08-03 14:03:20.315 [DBG] Removing outdated records from the 'Hash' table...
+2024-08-03 14:03:20.351 [VRB] Outdated records removed from the 'Hash' table.
+2024-08-03 14:03:24.649 [VRB] Checking for aborted jobs...
+2024-08-03 14:03:24.650 [VRB] No newly aborted jobs found.
+2024-08-03 14:03:29.651 [VRB] Checking for aborted jobs...
+2024-08-03 14:03:29.651 [VRB] No newly aborted jobs found.
+2024-08-03 14:03:34.652 [VRB] Checking for aborted jobs...
+2024-08-03 14:03:34.654 [VRB] No newly aborted jobs found.
+2024-08-03 14:03:39.658 [VRB] Checking for aborted jobs...
+2024-08-03 14:03:39.661 [VRB] No newly aborted jobs found.
+2024-08-03 14:03:44.662 [VRB] Checking for aborted jobs...
+2024-08-03 14:03:44.663 [VRB] No newly aborted jobs found.
+2024-08-03 14:03:49.663 [VRB] Checking for aborted jobs...
+2024-08-03 14:03:49.663 [VRB] No newly aborted jobs found.
+2024-08-03 14:03:49.689 [DBG] Server recepmac:19416:c66b4462 heartbeat successfully sent
+2024-08-03 14:03:49.690 [VRB] Server recepmac:19416:c66b4462 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:03:54.665 [VRB] Checking for aborted jobs...
+2024-08-03 14:03:54.666 [VRB] No newly aborted jobs found.
+2024-08-03 14:03:59.668 [VRB] Checking for aborted jobs...
+2024-08-03 14:03:59.668 [VRB] No newly aborted jobs found.
+2024-08-03 14:04:04.669 [VRB] Checking for aborted jobs...
+2024-08-03 14:04:04.670 [VRB] No newly aborted jobs found.
+2024-08-03 14:04:09.670 [VRB] Checking for aborted jobs...
+2024-08-03 14:04:09.671 [VRB] No newly aborted jobs found.
+2024-08-03 14:04:14.672 [VRB] Checking for aborted jobs...
+2024-08-03 14:04:14.673 [VRB] No newly aborted jobs found.
+2024-08-03 14:04:19.674 [VRB] Checking for aborted jobs...
+2024-08-03 14:04:19.675 [VRB] No newly aborted jobs found.
+2024-08-03 14:04:19.725 [DBG] Server recepmac:19416:c66b4462 heartbeat successfully sent
+2024-08-03 14:04:19.726 [VRB] Server recepmac:19416:c66b4462 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:04:24.677 [VRB] Checking for aborted jobs...
+2024-08-03 14:04:24.677 [VRB] No newly aborted jobs found.
+2024-08-03 14:04:29.678 [VRB] Checking for aborted jobs...
+2024-08-03 14:04:29.678 [VRB] No newly aborted jobs found.
+2024-08-03 14:04:34.680 [VRB] Checking for aborted jobs...
+2024-08-03 14:04:34.680 [VRB] No newly aborted jobs found.
+2024-08-03 14:04:39.681 [VRB] Checking for aborted jobs...
+2024-08-03 14:04:39.681 [VRB] No newly aborted jobs found.
+2024-08-03 14:04:53.761 [INF] Application is starting...
+2024-08-03 14:04:54.588 [INF] Start installing Hangfire SQL objects...
+2024-08-03 14:04:55.181 [INF] Hangfire SQL objects installed.
+2024-08-03 14:04:55.481 [INF] Starting Hangfire Server using job storage: 'SQL Server: 192.168.0.23@paidentity'
+2024-08-03 14:04:55.482 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-03 14:04:55.482 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-03 14:04:55.489 [DBG] Execution loop BackgroundServerProcess:84a7cfe2 has started in 2,9014 ms
+2024-08-03 14:04:55.495 [VRB] Server recepmac:19466:90e00256 is announcing itself...
+2024-08-03 14:04:55.583 [INF] Server recepmac:19466:90e00256 successfully announced in 88,0677 ms
+2024-08-03 14:04:55.586 [DBG] Execution loop ServerHeartbeatProcess:900f715f has started in 1,6021 ms
+2024-08-03 14:04:55.586 [INF] Server recepmac:19466:90e00256 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-03 14:04:55.589 [DBG] Execution loop ServerWatchdog:bb6e924c has started in 0,9721 ms
+2024-08-03 14:04:55.590 [DBG] Execution loop ServerJobCancellationWatcher:1e3d5b15 has started in 1,594 ms
+2024-08-03 14:04:55.615 [DBG] Execution loop ExpirationManager:f11b25c0 has started in 24,8233 ms
+2024-08-03 14:04:55.615 [DBG] Execution loop CountersAggregator:54ce643b has started in 24,6948 ms
+2024-08-03 14:04:55.616 [DBG] Execution loop SqlServerHeartbeatProcess:bd8026cd has started in 1,1206 ms
+2024-08-03 14:04:55.662 [DBG] Execution loop Worker:a0b09281 has started in 47,1019 ms
+2024-08-03 14:04:55.662 [DBG] Execution loop Worker:8645cc96 has started in 47,1548 ms
+2024-08-03 14:04:55.662 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 14:04:55.716 [DBG] Execution loop Worker:6aec4b4d has started in 100,4 ms
+2024-08-03 14:04:55.740 [DBG] Execution loop Worker:0e1e67d3 has started in 125,3893 ms
+2024-08-03 14:04:55.740 [DBG] Execution loop Worker:1e70d02e has started in 125,4102 ms
+2024-08-03 14:04:55.764 [DBG] Execution loop Worker:efc64b14 has started in 149,4166 ms
+2024-08-03 14:04:55.766 [DBG] Execution loop Worker:83641bfb has started in 150,6906 ms
+2024-08-03 14:04:55.765 [DBG] Execution loop Worker:f89712cf has started in 149,805 ms
+2024-08-03 14:04:55.766 [VRB] Checking for aborted jobs...
+2024-08-03 14:04:55.766 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2024-08-03 14:04:55.766 [DBG] Execution loop Worker:49a03a9b has started in 151,2999 ms
+2024-08-03 14:04:55.792 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:04:55.840 [DBG] Execution loop Worker:f4968017 has started in 225,0179 ms
+2024-08-03 14:04:55.840 [VRB] No newly aborted jobs found.
+2024-08-03 14:04:55.866 [DBG] Execution loop Worker:108ed587 has started in 250,9299 ms
+2024-08-03 14:04:55.866 [DBG] Execution loop Worker:9409c1c8 has started in 251,2174 ms
+2024-08-03 14:04:55.893 [DBG] Execution loop Worker:111c9ece has started in 278,2515 ms
+2024-08-03 14:04:55.918 [DBG] Execution loop Worker:c1ca23ac has started in 303,063 ms
+2024-08-03 14:04:55.942 [DBG] Execution loop Worker:d616a179 has started in 326,4785 ms
+2024-08-03 14:04:55.968 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 14:04:55.969 [DBG] Execution loop Worker:a14f8cac has started in 353,5931 ms
+2024-08-03 14:04:55.992 [DBG] Execution loop Worker:5ef45411 has started in 377,4073 ms
+2024-08-03 14:04:56.014 [DBG] Execution loop Worker:9785c173 has started in 377,494 ms
+2024-08-03 14:04:56.014 [DBG] Execution loop Worker:cd2bc767 has started in 399,0011 ms
+2024-08-03 14:04:56.014 [DBG] Execution loop Worker:6a8e0ef6 has started in 399,1792 ms
+2024-08-03 14:04:56.016 [INF] Server recepmac:19466:90e00256 all the dispatchers started
+2024-08-03 14:04:56.016 [DBG] Execution loop DelayedJobScheduler:7c09d3c5 has started in 1,9616 ms
+2024-08-03 14:04:56.016 [DBG] Execution loop RecurringJobScheduler:f004c3f4 has started in 1,7043 ms
+2024-08-03 14:04:56.084 [VRB] Outdated records removed from the 'AggregatedCounter' table.
+2024-08-03 14:04:56.084 [DBG] Removing outdated records from the 'Job' table...
+2024-08-03 14:04:56.288 [VRB] Outdated records removed from the 'Job' table.
+2024-08-03 14:04:56.288 [DBG] Removing outdated records from the 'List' table...
+2024-08-03 14:04:56.296 [VRB] Outdated records removed from the 'List' table.
+2024-08-03 14:04:56.296 [DBG] Removing outdated records from the 'Set' table...
+2024-08-03 14:04:56.301 [VRB] Outdated records removed from the 'Set' table.
+2024-08-03 14:04:56.301 [DBG] Removing outdated records from the 'Hash' table...
+2024-08-03 14:04:56.306 [VRB] Outdated records removed from the 'Hash' table.
+2024-08-03 14:05:00.867 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:00.868 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:05.869 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:05.869 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:10.871 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:10.872 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:15.873 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:15.873 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:20.874 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:20.875 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:25.868 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:05:25.869 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:05:25.876 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:25.876 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:30.877 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:30.877 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:32.091 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 14:05:32.136 [WRN] Failed to determine the https port for redirect.
+2024-08-03 14:05:36.350 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:36.466 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:37.210 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (), Changes: (Queue:default;Cron:*/2 * * * *;TimeZoneId:UTC;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};CreatedAt:1722683137155;NextExecution:1722683160000;V:2)
+2024-08-03 14:05:41.967 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:42.051 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:42.136 [INF] -------------Request-Begin------------
+2024-08-03 14:05:42.137 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SetRecurringJob 
+QueryString:  
+Request Body: 
+2024-08-03 14:05:42.138 [INF] 
+
+2024-08-03 14:05:42.138 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SetRecurringJob 
+QueryString:  
+StatusCode: 200 
+Response Body: notificationjob
+2024-08-03 14:05:42.138 [INF] -------------Request-End------------
+2024-08-03 14:05:47.052 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:47.053 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:52.003 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:52.003 [VRB] No newly aborted jobs found.
+2024-08-03 14:05:55.826 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:05:55.827 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:05:57.004 [VRB] Checking for aborted jobs...
+2024-08-03 14:05:57.004 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:02.022 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:02.022 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:07.042 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:07.048 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:12.048 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:12.048 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:12.377 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};NextExecution:1722683160000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722683172199;NextExecution:1722683280000;LastJobId:1)
+2024-08-03 14:06:12.648 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:06:17.622 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:18.386 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:24.717 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:24.718 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:29.564 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:06:29.565 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:06:29.720 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:29.720 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:35.729 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:35.776 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:40.778 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:40.779 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:45.779 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:45.780 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:50.785 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:50.787 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:55.800 [VRB] Checking for aborted jobs...
+2024-08-03 14:06:55.861 [VRB] No newly aborted jobs found.
+2024-08-03 14:06:59.577 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:06:59.578 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:07:00.862 [VRB] Checking for aborted jobs...
+2024-08-03 14:07:00.863 [VRB] No newly aborted jobs found.
+2024-08-03 14:07:05.865 [VRB] Checking for aborted jobs...
+2024-08-03 14:07:05.868 [VRB] No newly aborted jobs found.
+2024-08-03 14:07:10.870 [VRB] Checking for aborted jobs...
+2024-08-03 14:07:10.872 [VRB] No newly aborted jobs found.
+2024-08-03 14:07:15.874 [VRB] Checking for aborted jobs...
+2024-08-03 14:07:15.874 [VRB] No newly aborted jobs found.
+2024-08-03 14:07:20.875 [VRB] Checking for aborted jobs...
+2024-08-03 14:07:20.875 [VRB] No newly aborted jobs found.
+2024-08-03 14:07:25.876 [VRB] Checking for aborted jobs...
+2024-08-03 14:07:25.878 [VRB] No newly aborted jobs found.
+2024-08-03 14:07:27.630 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 14:07:31.088 [VRB] Checking for aborted jobs...
+2024-08-03 14:07:31.088 [VRB] No newly aborted jobs found.
+2024-08-03 14:07:31.138 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:07:31.164 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:07:36.245 [VRB] Checking for aborted jobs...
+2024-08-03 14:07:36.271 [VRB] No newly aborted jobs found.
+2024-08-03 14:07:42.049 [VRB] Checking for aborted jobs...
+2024-08-03 14:07:42.050 [VRB] No newly aborted jobs found.
+2024-08-03 14:08:25.908 [VRB] Checking for aborted jobs...
+2024-08-03 14:08:25.961 [VRB] No newly aborted jobs found.
+2024-08-03 14:08:26.004 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:08:26.077 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:08:26.947 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722683172199;LastJobId:1;NextExecution:1722683280000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722683306439;NextExecution:1722683400000;LastJobId:2)
+2024-08-03 14:08:27.171 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:08:34.571 [VRB] Checking for aborted jobs...
+2024-08-03 14:08:34.597 [VRB] No newly aborted jobs found.
+2024-08-03 14:08:34.691 [INF] -------------Request-Begin------------
+2024-08-03 14:08:34.691 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+Request Body: {
+  "Email": "para@para.com",
+  "Subject": "Deneme",
+  "Content": "TEST USER"
+}
+2024-08-03 14:08:34.691 [INF] 
+
+2024-08-03 14:08:34.691 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+StatusCode: 200 
+Response Body: 1
+2024-08-03 14:08:34.691 [INF] -------------Request-End------------
+2024-08-03 14:08:39.598 [VRB] Checking for aborted jobs...
+2024-08-03 14:08:39.598 [VRB] No newly aborted jobs found.
+2024-08-03 14:08:44.599 [VRB] Checking for aborted jobs...
+2024-08-03 14:08:44.600 [VRB] No newly aborted jobs found.
+2024-08-03 14:08:47.437 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 14:08:49.774 [VRB] Checking for aborted jobs...
+2024-08-03 14:08:49.774 [VRB] No newly aborted jobs found.
+2024-08-03 14:08:54.775 [VRB] Checking for aborted jobs...
+2024-08-03 14:08:54.775 [VRB] No newly aborted jobs found.
+2024-08-03 14:08:56.142 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:08:56.143 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:08:56.778 [INF] -------------Request-Begin------------
+2024-08-03 14:08:56.778 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+Request Body: {
+  "Email": "para@para.com",
+  "Subject": "Deneme",
+  "Content": "TEST USER"
+}
+2024-08-03 14:08:56.779 [INF] 
+
+2024-08-03 14:08:56.779 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+StatusCode: 200 
+Response Body: 1
+2024-08-03 14:08:56.779 [INF] -------------Request-End------------
+2024-08-03 14:08:59.777 [VRB] Checking for aborted jobs...
+2024-08-03 14:08:59.777 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:04.778 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:04.778 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:09.779 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:09.780 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:14.780 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:14.781 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:19.782 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:19.782 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:24.784 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:24.784 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:26.181 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:09:26.235 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:09:29.785 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:29.785 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:34.786 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:34.786 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:39.787 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:39.787 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:44.788 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:44.789 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:49.790 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:49.791 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:54.791 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:54.792 [VRB] No newly aborted jobs found.
+2024-08-03 14:09:55.919 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 14:09:55.951 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 14:09:55.987 [INF] 1 servers were removed due to timeout
+2024-08-03 14:09:56.249 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:09:56.250 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:09:59.792 [VRB] Checking for aborted jobs...
+2024-08-03 14:09:59.793 [VRB] No newly aborted jobs found.
+2024-08-03 14:10:04.794 [VRB] Checking for aborted jobs...
+2024-08-03 14:10:04.794 [VRB] No newly aborted jobs found.
+2024-08-03 14:10:09.795 [VRB] Checking for aborted jobs...
+2024-08-03 14:10:09.795 [VRB] No newly aborted jobs found.
+2024-08-03 14:10:12.704 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722683306439;LastJobId:2;NextExecution:1722683400000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722683412516;NextExecution:1722683520000;LastJobId:3)
+2024-08-03 14:10:13.020 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:10:16.341 [VRB] Checking for aborted jobs...
+2024-08-03 14:10:16.540 [VRB] No newly aborted jobs found.
+2024-08-03 14:10:24.404 [VRB] Checking for aborted jobs...
+2024-08-03 14:10:24.428 [VRB] No newly aborted jobs found.
+2024-08-03 14:10:31.066 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:10:31.041 [VRB] Checking for aborted jobs...
+2024-08-03 14:10:31.112 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:10:31.113 [VRB] No newly aborted jobs found.
+2024-08-03 14:10:38.379 [VRB] Checking for aborted jobs...
+2024-08-03 14:10:38.380 [VRB] No newly aborted jobs found.
+2024-08-03 14:10:45.323 [VRB] Checking for aborted jobs...
+2024-08-03 14:10:45.327 [VRB] No newly aborted jobs found.
+2024-08-03 14:10:50.330 [VRB] Checking for aborted jobs...
+2024-08-03 14:10:50.330 [VRB] No newly aborted jobs found.
+2024-08-03 14:10:55.331 [VRB] Checking for aborted jobs...
+2024-08-03 14:10:55.332 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:00.333 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:00.335 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:01.122 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:11:01.123 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:11:05.336 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:05.338 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:10.340 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:10.340 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:15.341 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:15.342 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:20.343 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:20.344 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:25.345 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:25.346 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:30.347 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:30.348 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:31.142 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:11:31.169 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:11:35.349 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:35.349 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:40.354 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:40.355 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:40.884 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 14:11:47.437 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:47.463 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:50.924 [INF] -------------Request-Begin------------
+2024-08-03 14:11:50.928 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+Request Body: {
+  "Email": "para@para.com",
+  "Subject": "Deneme",
+  "Content": "TEST USER"
+}
+2024-08-03 14:11:50.929 [INF] 
+
+2024-08-03 14:11:50.929 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+StatusCode: 200 
+Response Body: 1
+2024-08-03 14:11:50.929 [INF] -------------Request-End------------
+2024-08-03 14:11:52.416 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 14:11:52.464 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:52.464 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:55.458 [INF] -------------Request-Begin------------
+2024-08-03 14:11:55.458 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+Request Body: {
+  "Email": "para@para.com",
+  "Subject": "Deneme",
+  "Content": "TEST USER"
+}
+2024-08-03 14:11:55.458 [INF] 
+
+2024-08-03 14:11:55.458 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+StatusCode: 200 
+Response Body: 1
+2024-08-03 14:11:55.459 [INF] -------------Request-End------------
+2024-08-03 14:11:57.466 [VRB] Checking for aborted jobs...
+2024-08-03 14:11:57.472 [VRB] No newly aborted jobs found.
+2024-08-03 14:11:58.465 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 14:12:01.181 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:12:01.182 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:12:01.495 [INF] -------------Request-Begin------------
+2024-08-03 14:12:01.495 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+Request Body: {
+  "Email": "para@para.com",
+  "Subject": "Deneme",
+  "Content": "TEST USER"
+}
+2024-08-03 14:12:01.495 [INF] 
+
+2024-08-03 14:12:01.495 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+StatusCode: 200 
+Response Body: 1
+2024-08-03 14:12:01.495 [INF] -------------Request-End------------
+2024-08-03 14:12:02.473 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:02.473 [VRB] No newly aborted jobs found.
+2024-08-03 14:12:03.010 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722683412516;LastJobId:3;NextExecution:1722683520000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722683522920;NextExecution:1722683640000;LastJobId:4)
+2024-08-03 14:12:03.235 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:12:03.335 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 14:12:07.481 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:07.510 [VRB] No newly aborted jobs found.
+2024-08-03 14:12:07.601 [INF] -------------Request-Begin------------
+2024-08-03 14:12:07.601 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+Request Body: {
+  "Email": "para@para.com",
+  "Subject": "Deneme",
+  "Content": "TEST USER"
+}
+2024-08-03 14:12:07.601 [INF] 
+
+2024-08-03 14:12:07.601 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/Notifications/SendNotification 
+QueryString:  
+StatusCode: 200 
+Response Body: 1
+2024-08-03 14:12:07.601 [INF] -------------Request-End------------
+2024-08-03 14:12:13.754 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:13.776 [VRB] No newly aborted jobs found.
+2024-08-03 14:12:19.803 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:21.172 [VRB] No newly aborted jobs found.
+2024-08-03 14:12:26.173 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:26.195 [VRB] No newly aborted jobs found.
+2024-08-03 14:12:31.196 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:12:31.196 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:31.197 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:12:31.198 [VRB] No newly aborted jobs found.
+2024-08-03 14:12:36.199 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:36.201 [VRB] No newly aborted jobs found.
+2024-08-03 14:12:41.202 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:41.202 [VRB] No newly aborted jobs found.
+2024-08-03 14:12:46.203 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:46.203 [VRB] No newly aborted jobs found.
+2024-08-03 14:12:51.208 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:51.209 [VRB] No newly aborted jobs found.
+2024-08-03 14:12:56.210 [VRB] Checking for aborted jobs...
+2024-08-03 14:12:56.217 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:01.219 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:01.219 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:01.224 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:13:01.225 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:13:06.220 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:06.221 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:11.223 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:11.223 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:16.224 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:16.224 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:21.225 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:21.225 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:26.226 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:26.227 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:31.228 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:31.228 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:31.248 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:13:31.270 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:13:36.229 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:36.230 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:41.231 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:41.231 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:46.232 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:46.232 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:51.233 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:51.234 [VRB] No newly aborted jobs found.
+2024-08-03 14:13:56.235 [VRB] Checking for aborted jobs...
+2024-08-03 14:13:56.236 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:01.237 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:01.237 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:01.289 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:14:01.290 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:14:06.238 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:06.239 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:08.318 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722683522920;LastJobId:4;NextExecution:1722683640000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722683648182;NextExecution:1722683760000;LastJobId:5)
+2024-08-03 14:14:08.561 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:14:13.031 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:13.062 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:18.063 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:18.063 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:23.064 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:23.066 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:28.067 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:28.067 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:31.305 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:14:31.306 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:14:33.068 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:33.068 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:38.070 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:38.071 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:43.072 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:43.073 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:48.074 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:48.075 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:53.076 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:53.076 [VRB] No newly aborted jobs found.
+2024-08-03 14:14:55.952 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 14:14:55.981 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 14:14:58.099 [VRB] Checking for aborted jobs...
+2024-08-03 14:14:58.100 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:01.317 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:15:01.318 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:15:03.101 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:03.101 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:08.102 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:08.103 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:13.108 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:13.108 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:18.109 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:18.111 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:23.111 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:23.112 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:28.112 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:28.114 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:31.345 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:15:31.371 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:15:33.139 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:33.140 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:38.141 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:38.141 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:43.141 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:43.141 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:48.143 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:48.144 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:53.144 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:53.145 [VRB] No newly aborted jobs found.
+2024-08-03 14:15:58.146 [VRB] Checking for aborted jobs...
+2024-08-03 14:15:58.146 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:01.382 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:16:01.383 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:16:03.147 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:03.147 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:08.148 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:08.149 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:09.363 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722683648182;LastJobId:5;NextExecution:1722683760000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722683769161;NextExecution:1722683880000;LastJobId:6)
+2024-08-03 14:16:09.636 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:16:15.231 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:15.232 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:20.233 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:20.233 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:25.234 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:25.235 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:30.236 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:30.236 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:31.398 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:16:31.399 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:16:35.237 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:35.239 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:40.240 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:40.240 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:45.241 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:45.242 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:50.243 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:50.243 [VRB] No newly aborted jobs found.
+2024-08-03 14:16:55.244 [VRB] Checking for aborted jobs...
+2024-08-03 14:16:55.246 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:00.248 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:00.249 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:01.419 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:17:01.419 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:17:05.249 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:05.250 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:10.251 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:10.255 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:15.256 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:15.256 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:20.270 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:20.288 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:25.289 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:25.291 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:30.292 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:30.293 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:31.434 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:17:31.472 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:17:35.294 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:35.295 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:40.297 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:40.298 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:45.299 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:45.299 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:50.301 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:50.302 [VRB] No newly aborted jobs found.
+2024-08-03 14:17:55.303 [VRB] Checking for aborted jobs...
+2024-08-03 14:17:55.307 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:00.309 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:00.310 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:01.482 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:18:01.483 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:18:05.311 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:05.312 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:10.315 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:10.325 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:10.325 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722683769161;LastJobId:6;NextExecution:1722683880000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722683890147;NextExecution:1722684000000;LastJobId:7)
+2024-08-03 14:18:10.543 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:18:15.351 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:15.352 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:20.353 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:20.353 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:25.356 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:25.357 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:30.358 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:30.360 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:31.495 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:18:31.496 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:18:35.361 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:35.361 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:40.363 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:40.363 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:45.365 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:45.366 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:50.367 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:50.368 [VRB] No newly aborted jobs found.
+2024-08-03 14:18:55.369 [VRB] Checking for aborted jobs...
+2024-08-03 14:18:55.369 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:00.371 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:00.371 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:01.507 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:19:01.531 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:19:05.372 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:05.372 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:10.373 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:10.374 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:15.376 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:15.376 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:20.377 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:20.378 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:25.379 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:25.380 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:30.381 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:30.381 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:31.571 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:19:31.572 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:19:35.382 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:35.383 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:40.383 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:40.384 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:45.386 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:45.387 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:50.388 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:50.389 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:55.389 [VRB] Checking for aborted jobs...
+2024-08-03 14:19:55.390 [VRB] No newly aborted jobs found.
+2024-08-03 14:19:55.983 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 14:19:56.062 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 14:20:00.391 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:00.392 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:01.582 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:20:01.608 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:20:05.393 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:05.393 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:10.394 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:10.394 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:11.507 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722683890147;LastJobId:7;NextExecution:1722684000000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722684011228;NextExecution:1722684120000;LastJobId:8)
+2024-08-03 14:20:11.843 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:20:15.395 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:15.396 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:20.397 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:20.398 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:25.399 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:25.399 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:30.400 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:30.401 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:31.632 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:20:31.661 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:20:35.405 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:35.406 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:40.407 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:40.408 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:45.409 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:45.409 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:50.410 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:50.411 [VRB] No newly aborted jobs found.
+2024-08-03 14:20:55.412 [VRB] Checking for aborted jobs...
+2024-08-03 14:20:55.415 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:00.416 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:00.418 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:01.677 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:21:01.699 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:21:05.420 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:05.424 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:10.425 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:10.425 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:15.426 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:15.427 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:20.428 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:20.429 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:25.431 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:25.431 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:30.432 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:30.434 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:31.713 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:21:31.715 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:21:35.435 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:35.435 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:40.436 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:40.437 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:45.438 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:45.438 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:50.439 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:50.440 [VRB] No newly aborted jobs found.
+2024-08-03 14:21:55.441 [VRB] Checking for aborted jobs...
+2024-08-03 14:21:55.441 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:00.444 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:00.445 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:01.752 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:22:01.775 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:22:05.445 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:05.445 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:10.452 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:10.453 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:12.621 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722684011228;LastJobId:8;NextExecution:1722684120000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722684132471;NextExecution:1722684240000;LastJobId:9)
+2024-08-03 14:22:12.865 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:22:15.458 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:15.458 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:20.463 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:20.464 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:25.467 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:25.478 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:30.481 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:30.482 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:31.817 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:22:31.818 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:22:35.484 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:35.486 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:40.488 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:40.489 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:45.490 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:45.491 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:50.492 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:50.493 [VRB] No newly aborted jobs found.
+2024-08-03 14:22:55.494 [VRB] Checking for aborted jobs...
+2024-08-03 14:22:55.495 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:00.496 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:00.496 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:01.833 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:23:01.834 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:23:05.498 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:05.498 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:10.499 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:10.500 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:15.501 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:15.501 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:20.503 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:20.504 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:25.506 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:25.506 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:30.508 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:30.508 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:31.856 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:23:31.856 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:23:35.509 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:35.510 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:40.511 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:40.512 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:45.516 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:45.517 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:50.518 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:50.520 [VRB] No newly aborted jobs found.
+2024-08-03 14:23:55.521 [VRB] Checking for aborted jobs...
+2024-08-03 14:23:55.521 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:00.522 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:00.524 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:01.891 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:24:01.892 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:24:05.524 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:05.524 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:10.525 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:10.526 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:13.536 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722684132471;LastJobId:9;NextExecution:1722684240000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722684253425;NextExecution:1722684360000;LastJobId:10)
+2024-08-03 14:24:13.796 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:24:15.527 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:15.527 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:20.528 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:20.528 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:25.530 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:25.533 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:30.535 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:30.535 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:31.914 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:24:31.915 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:24:35.536 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:35.536 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:40.537 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:40.537 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:45.538 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:45.538 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:50.539 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:50.540 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:55.541 [VRB] Checking for aborted jobs...
+2024-08-03 14:24:55.542 [VRB] No newly aborted jobs found.
+2024-08-03 14:24:56.088 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 14:24:56.147 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 14:25:00.543 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:00.544 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:01.946 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:25:01.949 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:25:05.545 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:05.546 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:10.554 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:10.557 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:15.558 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:15.558 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:20.559 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:20.560 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:25.562 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:25.562 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:30.568 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:30.571 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:31.990 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:25:31.992 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:25:35.572 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:35.572 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:40.573 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:40.574 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:45.575 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:45.576 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:50.577 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:50.579 [VRB] No newly aborted jobs found.
+2024-08-03 14:25:55.580 [VRB] Checking for aborted jobs...
+2024-08-03 14:25:55.580 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:00.581 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:00.583 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:02.001 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:26:02.025 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:26:05.584 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:05.585 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:10.588 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:10.589 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:14.555 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722684253425;LastJobId:10;NextExecution:1722684360000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722684374361;NextExecution:1722684480000;LastJobId:11)
+2024-08-03 14:26:14.853 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:26:15.591 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:15.591 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:20.592 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:20.594 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:25.595 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:25.595 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:30.596 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:30.597 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:32.037 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:26:32.063 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:26:35.598 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:35.599 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:40.600 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:40.601 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:45.603 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:45.603 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:50.604 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:50.605 [VRB] No newly aborted jobs found.
+2024-08-03 14:26:55.606 [VRB] Checking for aborted jobs...
+2024-08-03 14:26:55.607 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:00.607 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:00.608 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:02.072 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:27:02.098 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:27:05.609 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:05.609 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:10.609 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:10.611 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:15.612 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:15.612 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:20.613 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:20.615 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:25.616 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:25.617 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:30.618 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:30.619 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:32.106 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:27:32.106 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:27:35.620 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:35.621 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:40.622 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:40.623 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:45.624 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:45.624 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:50.625 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:50.626 [VRB] No newly aborted jobs found.
+2024-08-03 14:27:55.627 [VRB] Checking for aborted jobs...
+2024-08-03 14:27:55.628 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:00.629 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:00.577 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722684374361;LastJobId:11;NextExecution:1722684480000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722684480426;NextExecution:1722684600000;LastJobId:12)
+2024-08-03 14:28:00.633 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:00.961 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:28:02.112 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:28:02.114 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:28:05.634 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:05.663 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:10.664 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:10.665 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:15.670 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:15.670 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:20.672 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:20.673 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:25.674 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:25.675 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:30.675 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:30.676 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:32.121 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:28:32.121 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:28:35.678 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:35.678 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:40.679 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:40.681 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:45.682 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:45.683 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:50.684 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:50.685 [VRB] No newly aborted jobs found.
+2024-08-03 14:28:55.689 [VRB] Checking for aborted jobs...
+2024-08-03 14:28:55.689 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:00.690 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:00.691 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:02.143 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:29:02.170 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:29:05.692 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:05.692 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:10.693 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:10.694 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:15.696 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:15.696 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:20.697 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:20.699 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:25.700 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:25.700 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:30.701 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:30.702 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:32.178 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:29:32.178 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:29:35.704 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:35.704 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:40.707 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:40.709 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:45.710 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:45.710 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:50.711 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:50.712 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:55.713 [VRB] Checking for aborted jobs...
+2024-08-03 14:29:55.714 [VRB] No newly aborted jobs found.
+2024-08-03 14:29:56.149 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 14:29:56.183 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 14:30:00.716 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:00.718 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:01.899 [VRB] Recurring job 'notificationjob' is being updated. RecurringJob: (CreatedAt:1722683137155;Cron:*/2 * * * *;Job:{"t":"Para.IdentityApi.Service.MessageService, Para.IdentityApi","m":"Consumer"};LastExecution:1722684480426;LastJobId:12;NextExecution:1722684600000;Queue:default;TimeZoneId:UTC;V:2), Changes: (LastExecution:1722684601705;NextExecution:1722684720000;LastJobId:13)
+2024-08-03 14:30:02.133 [DBG] 1 recurring job(s) processed by scheduler.
+2024-08-03 14:30:02.242 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:30:02.242 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:30:05.719 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:05.719 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:10.721 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:10.722 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:15.723 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:15.724 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:20.725 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:20.726 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:25.727 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:25.727 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:30.728 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:30.731 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:32.271 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:30:32.321 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:30:35.732 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:35.732 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:40.733 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:40.734 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:45.736 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:45.736 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:50.738 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:50.738 [VRB] No newly aborted jobs found.
+2024-08-03 14:30:55.739 [VRB] Checking for aborted jobs...
+2024-08-03 14:30:55.739 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:00.741 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:00.742 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:02.329 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:31:02.330 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:31:05.743 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:05.744 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:10.745 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:10.746 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:15.747 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:15.747 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:20.748 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:20.750 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:25.751 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:25.752 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:30.753 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:30.754 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:32.343 [DBG] Server recepmac:19466:90e00256 heartbeat successfully sent
+2024-08-03 14:31:32.344 [VRB] Server recepmac:19466:90e00256 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 14:31:35.754 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:35.754 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:40.755 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:40.756 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:45.757 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:45.758 [VRB] No newly aborted jobs found.
+2024-08-03 14:31:50.759 [VRB] Checking for aborted jobs...
+2024-08-03 14:31:50.760 [VRB] No newly aborted jobs found.

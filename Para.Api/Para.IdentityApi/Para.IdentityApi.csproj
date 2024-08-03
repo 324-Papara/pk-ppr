@@ -24,6 +24,7 @@
         <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="2.3.2" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
         <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.17" />
+        <PackageReference Include="RabbitMQ.Client" Version="6.2.2" />
     </ItemGroup>
     
     <ItemGroup>

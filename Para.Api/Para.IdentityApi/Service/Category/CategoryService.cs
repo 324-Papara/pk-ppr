@@ -1,5 +1,6 @@
-using System.Data.Entity;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Para.Base;
 using Para.Base.Response;
 using Para.IdentityApi.Context;
 using Para.IdentityApi.Domain;
@@ -11,16 +12,21 @@ public class CategoryService : ICategoryService
 {
     private readonly ParaIdentityDbContext dbContext;
     private readonly IMapper mapper;
+    private readonly ISessionContext sessionContext;
 
-    public CategoryService(ParaIdentityDbContext dbContext, IMapper mapper)
+    public CategoryService(ParaIdentityDbContext dbContext, IMapper mapper,ISessionContext sessionContext)
     {
         this.mapper = mapper;
         this.dbContext = dbContext;
+        this.sessionContext = sessionContext;
     }
 
     public async Task<ApiResponse<CategoryResponse>> Insert(CategoryRequest request)
     {
         var mapped = mapper.Map<Category>(request);
+        mapped.InsertDate = DateTime.Now;
+        mapped.InsertUser = sessionContext.Session.UserName;
+        mapped.IsActive = true;
         var entity = await dbContext.Set<Category>().AddAsync(mapped);
         await dbContext.SaveChangesAsync();
 

@@ -12,7 +12,7 @@ public static class JwtManager
         var claims = identity.Claims;
         session.UserName = GetClaimValue(claims, "UserName");
         session.Status = Convert.ToInt32(GetClaimValue(claims, "Status"));
-        session.UserId = Convert.ToInt64(GetClaimValue(claims, "UserId"));
+        session.UserId = GetClaimValue(claims, "UserId");
         session.Role = GetClaimValue(claims, "Role");
         session.Email = GetClaimValue(claims, "Email");
         session.CustomerId = Convert.ToInt64(GetClaimValue(claims, "CustomerId"));

@@ -125,6 +125,15 @@ public class Startup
             sessionContext.HttpContext = context.HttpContext;
             return sessionContext;
         });
+        
+        
+        services.AddHangfire(configuration => configuration
+            .SetDataCompatibilityLevel(CompatibilityLevel.Version_180)
+            .UseSimpleAssemblyNameTypeSerializer()
+            .UseRecommendedSerializerSettings()
+            .UseSqlServerStorage(Configuration.GetConnectionString("HangfireConnection")));
+        services.AddHangfireServer();
+
     }
     
     public class AutofacBusinessModule : Module
@@ -134,6 +143,9 @@ public class Startup
             builder.RegisterType<CategoryService>().As<ICategoryService>().InstancePerLifetimeScope();
             builder.RegisterType<PostService>().As<IPostService>().InstancePerLifetimeScope();
             builder.RegisterType<AuthService>().As<IAuthService>().InstancePerLifetimeScope();
+            builder.RegisterType<NotificationService>().As<INotificationService>().SingleInstance();
+            builder.RegisterType<MessageService>().As<IMessageService>().SingleInstance();
+            
         }
     }
     
@@ -151,6 +163,7 @@ public class Startup
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Para.Api v1"));
         }
 
+        app.UseHangfireDashboard();
 
         app.UseMiddleware<ErrorHandlerMiddleware>();
         Action<RequestProfilerModel> requestResponseHandler = requestProfilerModel =>
