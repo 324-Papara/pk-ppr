@@ -215,3 +215,1571 @@ Service3 : 0
 2024-08-03 10:31:25.635 [VRB] No newly aborted jobs found.
 2024-08-03 10:31:30.636 [VRB] Checking for aborted jobs...
 2024-08-03 10:31:30.636 [VRB] No newly aborted jobs found.
+2024-08-03 07:35:34.226 [INF] Application is starting...
+2024-08-03 07:35:35.605 [WRN] Storing keys in a directory '/home/app/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2024-08-03 07:35:35.692 [INF] Start installing Hangfire SQL objects...
+2024-08-03 07:35:36.404 [INF] Hangfire SQL objects installed.
+2024-08-03 07:35:36.500 [WRN] No XML encryptor configured. Key {a77b1ed7-471b-4134-8a10-005837d49e88} may be persisted to storage in unencrypted form.
+2024-08-03 07:35:36.807 [INF] Starting Hangfire Server using job storage: 'SQL Server: 192.168.0.23@padb'
+2024-08-03 07:35:36.807 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-03 07:35:36.808 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-03 07:35:36.818 [DBG] Execution loop BackgroundServerProcess:e3d03a93 has started in 3.7028 ms
+2024-08-03 07:35:36.829 [VRB] Server ef4f0593a9a9:29:24657186 is announcing itself...
+2024-08-03 07:35:36.911 [INF] Server ef4f0593a9a9:29:24657186 successfully announced in 81.9689 ms
+2024-08-03 07:35:36.915 [DBG] Execution loop ServerHeartbeatProcess:e99e6c45 has started in 2.8902 ms
+2024-08-03 07:35:36.916 [INF] Server ef4f0593a9a9:29:24657186 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-03 07:35:36.921 [DBG] Execution loop ServerWatchdog:72b9e3f3 has started in 3.847 ms
+2024-08-03 07:35:36.922 [VRB] Server ef4f0593a9a9:29:24657186 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:35:36.927 [DBG] Execution loop ServerJobCancellationWatcher:f4242bac has started in 9.7088 ms
+2024-08-03 07:35:36.931 [VRB] Checking for aborted jobs...
+2024-08-03 07:35:36.932 [VRB] No newly aborted jobs found.
+2024-08-03 07:35:36.939 [DBG] Execution loop ExpirationManager:3c3fdae7 has started in 10.8305 ms
+2024-08-03 07:35:36.984 [DBG] Execution loop CountersAggregator:b0972127 has started in 31.0911 ms
+2024-08-03 07:35:36.987 [DBG] Execution loop SqlServerHeartbeatProcess:9b67aa67 has started in 48.802 ms
+2024-08-03 07:35:36.987 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 07:35:36.990 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2024-08-03 07:35:36.994 [DBG] Execution loop Worker:f37ea44e has started in 9.1709 ms
+2024-08-03 07:35:37.003 [DBG] Execution loop Worker:9f5101db has started in 18.2295 ms
+2024-08-03 07:35:37.050 [DBG] Execution loop Worker:11dc6e3b has started in 65.3625 ms
+2024-08-03 07:35:37.029 [DBG] Execution loop Worker:a4d67339 has started in 44.2937 ms
+2024-08-03 07:35:37.094 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 07:35:37.095 [DBG] Execution loop Worker:61c91c56 has started in 110.4945 ms
+2024-08-03 07:35:37.103 [DBG] Execution loop Worker:8aac9fcf has started in 118.8156 ms
+2024-08-03 07:35:37.111 [DBG] Execution loop Worker:c92c1436 has started in 126.2603 ms
+2024-08-03 07:35:37.125 [DBG] Execution loop Worker:904cb1dc has started in 140.7828 ms
+2024-08-03 07:35:37.139 [DBG] Execution loop Worker:5d95ad78 has started in 154.634 ms
+2024-08-03 07:35:37.141 [DBG] Execution loop Worker:51a18191 has started in 156.7616 ms
+2024-08-03 07:35:37.148 [DBG] Execution loop Worker:848659d3 has started in 163.4286 ms
+2024-08-03 07:35:37.145 [DBG] Execution loop Worker:01920259 has started in 160.6481 ms
+2024-08-03 07:35:37.246 [DBG] Execution loop Worker:821d91ce has started in 261.9423 ms
+2024-08-03 07:35:37.153 [DBG] Execution loop Worker:ea66c073 has started in 168.6546 ms
+2024-08-03 07:35:37.309 [DBG] Execution loop Worker:6838e86f has started in 324.1925 ms
+2024-08-03 07:35:37.313 [VRB] Outdated records removed from the 'AggregatedCounter' table.
+2024-08-03 07:35:37.315 [DBG] Removing outdated records from the 'Job' table...
+2024-08-03 07:35:37.445 [DBG] Execution loop Worker:da9c6f39 has started in 460.64 ms
+2024-08-03 07:35:37.445 [DBG] Execution loop Worker:c00d4193 has started in 460.8093 ms
+2024-08-03 07:35:37.474 [DBG] Execution loop Worker:d0f53595 has started in 489.7437 ms
+2024-08-03 07:35:37.474 [DBG] Execution loop Worker:424bdeac has started in 489.9416 ms
+2024-08-03 07:35:37.477 [DBG] Execution loop Worker:713426c9 has started in 492.3778 ms
+2024-08-03 07:35:37.580 [DBG] Execution loop RecurringJobScheduler:868fdbfc has started in 79.9552 ms
+2024-08-03 07:35:37.504 [INF] Server ef4f0593a9a9:29:24657186 all the dispatchers started
+2024-08-03 07:35:37.504 [DBG] Execution loop DelayedJobScheduler:7cfc433d has started in 30.0626 ms
+2024-08-03 07:35:37.798 [VRB] Outdated records removed from the 'Job' table.
+2024-08-03 07:35:37.799 [DBG] Removing outdated records from the 'List' table...
+2024-08-03 07:35:37.895 [VRB] Outdated records removed from the 'List' table.
+2024-08-03 07:35:37.916 [DBG] Removing outdated records from the 'Set' table...
+2024-08-03 07:35:37.966 [VRB] Outdated records removed from the 'Set' table.
+2024-08-03 07:35:37.967 [DBG] Removing outdated records from the 'Hash' table...
+2024-08-03 07:35:37.992 [VRB] Outdated records removed from the 'Hash' table.
+2024-08-03 07:35:41.936 [VRB] Checking for aborted jobs...
+2024-08-03 07:35:41.941 [VRB] No newly aborted jobs found.
+2024-08-03 07:35:46.943 [VRB] Checking for aborted jobs...
+2024-08-03 07:35:46.948 [VRB] No newly aborted jobs found.
+2024-08-03 07:35:51.956 [VRB] Checking for aborted jobs...
+2024-08-03 07:35:51.961 [VRB] No newly aborted jobs found.
+2024-08-03 07:35:56.970 [VRB] Checking for aborted jobs...
+2024-08-03 07:35:56.971 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:01.974 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:01.981 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:06.957 [DBG] Server ef4f0593a9a9:29:24657186 heartbeat successfully sent
+2024-08-03 07:36:06.958 [VRB] Server ef4f0593a9a9:29:24657186 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:36:06.986 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:06.987 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:11.990 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:11.991 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:16.998 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:17.000 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:22.007 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:22.010 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:27.010 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:27.011 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:32.013 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:32.016 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:36.982 [DBG] Server ef4f0593a9a9:29:24657186 heartbeat successfully sent
+2024-08-03 07:36:36.984 [VRB] Server ef4f0593a9a9:29:24657186 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:36:37.023 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:37.025 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:42.027 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:42.031 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:47.035 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:47.036 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:49.439 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:36:49.462 [WRN] Failed to determine the https port for redirect.
+2024-08-03 07:36:49.621 [INF] -------------Request-Begin------------
+2024-08-03 07:36:49.622 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:36:49.622 [INF] 
+
+2024-08-03 07:36:49.623 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 2
+
+2024-08-03 07:36:49.624 [INF] -------------Request-End------------
+2024-08-03 07:36:49.673 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:36:49.676 [INF] -------------Request-Begin------------
+2024-08-03 07:36:49.676 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:36:49.677 [INF] 
+
+2024-08-03 07:36:49.679 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 2
+
+2024-08-03 07:36:49.685 [INF] -------------Request-End------------
+2024-08-03 07:36:52.042 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:52.046 [VRB] No newly aborted jobs found.
+2024-08-03 07:36:57.057 [VRB] Checking for aborted jobs...
+2024-08-03 07:36:57.062 [VRB] No newly aborted jobs found.
+2024-08-03 07:37:02.070 [VRB] Checking for aborted jobs...
+2024-08-03 07:37:02.074 [VRB] No newly aborted jobs found.
+2024-08-03 07:37:07.001 [DBG] Server ef4f0593a9a9:29:24657186 heartbeat successfully sent
+2024-08-03 07:37:07.012 [VRB] Server ef4f0593a9a9:29:24657186 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:37:07.076 [VRB] Checking for aborted jobs...
+2024-08-03 07:37:07.077 [VRB] No newly aborted jobs found.
+2024-08-03 07:37:12.094 [VRB] Checking for aborted jobs...
+2024-08-03 07:37:12.101 [VRB] No newly aborted jobs found.
+2024-08-03 07:37:17.103 [VRB] Checking for aborted jobs...
+2024-08-03 07:37:17.104 [VRB] No newly aborted jobs found.
+2024-08-03 07:37:22.106 [VRB] Checking for aborted jobs...
+2024-08-03 07:37:22.110 [VRB] No newly aborted jobs found.
+2024-08-03 07:37:27.115 [VRB] Checking for aborted jobs...
+2024-08-03 07:37:27.121 [VRB] No newly aborted jobs found.
+2024-08-03 07:37:32.131 [VRB] Checking for aborted jobs...
+2024-08-03 07:37:32.134 [VRB] No newly aborted jobs found.
+2024-08-03 07:38:47.187 [INF] Application is starting...
+2024-08-03 07:38:47.458 [WRN] Storing keys in a directory '/home/app/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2024-08-03 07:38:47.473 [INF] Start installing Hangfire SQL objects...
+2024-08-03 07:38:47.760 [INF] Hangfire SQL objects installed.
+2024-08-03 07:38:47.794 [WRN] No XML encryptor configured. Key {fcd420ed-7baa-4975-95bc-f7f4152b2099} may be persisted to storage in unencrypted form.
+2024-08-03 07:38:47.880 [INF] Starting Hangfire Server using job storage: 'SQL Server: 192.168.0.23@padb'
+2024-08-03 07:38:47.880 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-03 07:38:47.881 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-03 07:38:47.887 [DBG] Execution loop BackgroundServerProcess:b4075775 has started in 1.3199 ms
+2024-08-03 07:38:47.888 [VRB] Server 505c36c1838e:1:5814bebf is announcing itself...
+2024-08-03 07:38:47.937 [INF] Server 505c36c1838e:1:5814bebf successfully announced in 48.5623 ms
+2024-08-03 07:38:47.939 [DBG] Execution loop ServerHeartbeatProcess:290bab79 has started in 0.8069 ms
+2024-08-03 07:38:47.940 [INF] Server 505c36c1838e:1:5814bebf is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-03 07:38:47.940 [DBG] Execution loop ServerWatchdog:11d00739 has started in 0.2785 ms
+2024-08-03 07:38:47.941 [VRB] Server 505c36c1838e:1:5814bebf waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:38:47.943 [DBG] Execution loop ServerJobCancellationWatcher:e10d11fd has started in 2.6111 ms
+2024-08-03 07:38:47.944 [VRB] Checking for aborted jobs...
+2024-08-03 07:38:47.944 [VRB] No newly aborted jobs found.
+2024-08-03 07:38:47.946 [DBG] Execution loop ExpirationManager:c1ce07f5 has started in 2.8997 ms
+2024-08-03 07:38:47.947 [INF] 1 servers were removed due to timeout
+2024-08-03 07:38:47.947 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2024-08-03 07:38:47.949 [DBG] Execution loop CountersAggregator:d6daebe8 has started in 3.1852 ms
+2024-08-03 07:38:47.950 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 07:38:47.951 [DBG] Execution loop SqlServerHeartbeatProcess:cc802810 has started in 1.7825 ms
+2024-08-03 07:38:47.952 [DBG] Execution loop Worker:fd66b20c has started in 0.4347 ms
+2024-08-03 07:38:47.953 [DBG] Execution loop Worker:d5be4582 has started in 1.6638 ms
+2024-08-03 07:38:47.954 [DBG] Execution loop Worker:0b0c5cb4 has started in 2.8582 ms
+2024-08-03 07:38:47.955 [DBG] Execution loop Worker:e3b131c7 has started in 3.5812 ms
+2024-08-03 07:38:47.955 [DBG] Execution loop Worker:e7b09407 has started in 3.8109 ms
+2024-08-03 07:38:47.957 [DBG] Execution loop Worker:6c0e2941 has started in 6.029 ms
+2024-08-03 07:38:47.960 [VRB] Outdated records removed from the 'AggregatedCounter' table.
+2024-08-03 07:38:47.960 [DBG] Execution loop Worker:70c69eb2 has started in 8.5725 ms
+2024-08-03 07:38:47.961 [DBG] Removing outdated records from the 'Job' table...
+2024-08-03 07:38:47.966 [DBG] Execution loop Worker:c46c1b71 has started in 14.8517 ms
+2024-08-03 07:38:47.967 [DBG] Execution loop Worker:11dbd002 has started in 15.3069 ms
+2024-08-03 07:38:47.967 [DBG] Execution loop Worker:b43ac95d has started in 15.5712 ms
+2024-08-03 07:38:47.971 [DBG] Execution loop Worker:dcf774e5 has started in 19.5432 ms
+2024-08-03 07:38:47.972 [VRB] Outdated records removed from the 'Job' table.
+2024-08-03 07:38:47.977 [DBG] Removing outdated records from the 'List' table...
+2024-08-03 07:38:47.971 [DBG] Execution loop Worker:ec87b7b0 has started in 20.0263 ms
+2024-08-03 07:38:47.977 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 07:38:47.979 [DBG] Execution loop Worker:53d709ec has started in 27.3048 ms
+2024-08-03 07:38:47.978 [DBG] Execution loop Worker:18fb382e has started in 26.3131 ms
+2024-08-03 07:38:47.979 [DBG] Execution loop Worker:af12af3a has started in 27.6489 ms
+2024-08-03 07:38:47.980 [DBG] Execution loop Worker:63597beb has started in 28.0935 ms
+2024-08-03 07:38:47.980 [DBG] Execution loop Worker:3b7e27a3 has started in 29.0402 ms
+2024-08-03 07:38:47.981 [DBG] Execution loop Worker:62e56920 has started in 29.5848 ms
+2024-08-03 07:38:47.986 [DBG] Execution loop Worker:83be88be has started in 34.5485 ms
+2024-08-03 07:38:47.991 [DBG] Execution loop Worker:43650e39 has started in 39.5654 ms
+2024-08-03 07:38:47.992 [DBG] Execution loop DelayedJobScheduler:86480550 has started in 0.8216 ms
+2024-08-03 07:38:47.995 [DBG] Execution loop RecurringJobScheduler:849938e8 has started in 3.2672 ms
+2024-08-03 07:38:47.995 [INF] Server 505c36c1838e:1:5814bebf all the dispatchers started
+2024-08-03 07:38:48.015 [VRB] Outdated records removed from the 'List' table.
+2024-08-03 07:38:48.020 [DBG] Removing outdated records from the 'Set' table...
+2024-08-03 07:38:48.030 [VRB] Outdated records removed from the 'Set' table.
+2024-08-03 07:38:48.031 [DBG] Removing outdated records from the 'Hash' table...
+2024-08-03 07:38:48.037 [VRB] Outdated records removed from the 'Hash' table.
+2024-08-03 07:38:52.946 [VRB] Checking for aborted jobs...
+2024-08-03 07:38:52.961 [VRB] No newly aborted jobs found.
+2024-08-03 07:38:57.967 [VRB] Checking for aborted jobs...
+2024-08-03 07:38:57.973 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:00.651 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:39:00.661 [WRN] Failed to determine the https port for redirect.
+2024-08-03 07:39:00.713 [INF] -------------Request-Begin------------
+2024-08-03 07:39:00.714 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:39:00.714 [INF] 
+
+2024-08-03 07:39:00.715 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 2
+
+2024-08-03 07:39:00.716 [INF] -------------Request-End------------
+2024-08-03 07:39:00.760 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:39:00.762 [INF] -------------Request-Begin------------
+2024-08-03 07:39:00.762 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:39:00.762 [INF] 
+
+2024-08-03 07:39:00.763 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 2
+
+2024-08-03 07:39:00.763 [INF] -------------Request-End------------
+2024-08-03 07:39:01.653 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:39:01.661 [INF] -------------Request-Begin------------
+2024-08-03 07:39:01.673 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:39:01.675 [INF] 
+
+2024-08-03 07:39:01.677 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 4
+
+2024-08-03 07:39:01.679 [INF] -------------Request-End------------
+2024-08-03 07:39:01.704 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:39:01.705 [INF] -------------Request-Begin------------
+2024-08-03 07:39:01.706 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:39:01.706 [INF] 
+
+2024-08-03 07:39:01.707 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 4
+
+2024-08-03 07:39:01.707 [INF] -------------Request-End------------
+2024-08-03 07:39:02.983 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:02.988 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:08.002 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:08.005 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:13.009 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:13.012 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:17.959 [DBG] Server 505c36c1838e:1:5814bebf heartbeat successfully sent
+2024-08-03 07:39:17.960 [VRB] Server 505c36c1838e:1:5814bebf waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:39:18.018 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:18.020 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:23.026 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:23.036 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:28.039 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:28.041 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:33.043 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:33.053 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:38.053 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:38.058 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:43.064 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:43.067 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:47.993 [DBG] Server 505c36c1838e:1:5814bebf heartbeat successfully sent
+2024-08-03 07:39:47.994 [VRB] Server 505c36c1838e:1:5814bebf waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:39:48.074 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:48.076 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:53.078 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:53.086 [VRB] No newly aborted jobs found.
+2024-08-03 07:39:58.093 [VRB] Checking for aborted jobs...
+2024-08-03 07:39:58.099 [VRB] No newly aborted jobs found.
+2024-08-03 07:40:03.062 [DBG] Hangfire Server is stopping...
+2024-08-03 07:40:03.064 [INF] Server 505c36c1838e:1:5814bebf caught stopping signal...
+2024-08-03 07:40:03.065 [DBG] Execution loop CountersAggregator:d6daebe8 stopped in 0 ms
+2024-08-03 07:40:03.065 [DBG] Execution loop ExpirationManager:c1ce07f5 stopped in 0 ms
+2024-08-03 07:40:03.065 [DBG] Execution loop SqlServerHeartbeatProcess:cc802810 stopped in 0 ms
+2024-08-03 07:40:03.068 [DBG] Execution loop ServerWatchdog:11d00739 stopped in 0 ms
+2024-08-03 07:40:03.069 [DBG] Execution loop DelayedJobScheduler:86480550 stopped in 0 ms
+2024-08-03 07:40:03.069 [DBG] Execution loop ServerJobCancellationWatcher:e10d11fd stopped in 0 ms
+2024-08-03 07:40:03.069 [DBG] Execution loop RecurringJobScheduler:849938e8 stopped in 0 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:e3b131c7 stopped in 0 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:18fb382e stopped in 0 ms
+2024-08-03 07:40:03.072 [DBG] Execution loop Worker:83be88be stopped in 0.2793 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:53d709ec stopped in 0 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:c46c1b71 stopped in 0 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:b43ac95d stopped in 0 ms
+2024-08-03 07:40:03.071 [DBG] Execution loop Worker:70c69eb2 stopped in 0 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:d5be4582 stopped in 0 ms
+2024-08-03 07:40:03.071 [DBG] Execution loop Worker:62e56920 stopped in 0.0598 ms
+2024-08-03 07:40:03.072 [DBG] Execution loop Worker:6c0e2941 stopped in 0.2053 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:fd66b20c stopped in 0 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:3b7e27a3 stopped in 0 ms
+2024-08-03 07:40:03.071 [DBG] Execution loop Worker:af12af3a stopped in 0 ms
+2024-08-03 07:40:03.071 [DBG] Execution loop Worker:43650e39 stopped in 0 ms
+2024-08-03 07:40:03.071 [DBG] Execution loop Worker:0b0c5cb4 stopped in 0 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:11dbd002 stopped in 0 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:dcf774e5 stopped in 0 ms
+2024-08-03 07:40:03.070 [DBG] Execution loop Worker:63597beb stopped in 0 ms
+2024-08-03 07:40:03.073 [DBG] Execution loop Worker:e7b09407 stopped in 1.6604 ms
+2024-08-03 07:40:03.073 [DBG] Execution loop Worker:ec87b7b0 stopped in 0 ms
+2024-08-03 07:40:03.077 [INF] Server 505c36c1838e:1:5814bebf All dispatchers stopped
+2024-08-03 07:40:03.078 [DBG] Execution loop ServerHeartbeatProcess:290bab79 stopped in 0.485 ms
+2024-08-03 07:40:03.080 [VRB] Server 505c36c1838e:1:5814bebf is reporting itself as stopped...
+2024-08-03 07:40:03.085 [DBG] Hangfire Server is stopping...
+2024-08-03 07:40:03.100 [INF] Server 505c36c1838e:1:5814bebf successfully reported itself as stopped in 19.6001 ms
+2024-08-03 07:40:03.103 [INF] Server 505c36c1838e:1:5814bebf has been stopped in total 29.9414 ms
+2024-08-03 07:40:03.103 [DBG] Execution loop BackgroundServerProcess:b4075775 stopped in 30.6181 ms
+2024-08-03 07:40:13.071 [INF] Application is starting...
+2024-08-03 07:40:13.328 [WRN] Storing keys in a directory '/home/app/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2024-08-03 07:40:13.344 [INF] Start installing Hangfire SQL objects...
+2024-08-03 07:40:13.591 [INF] Hangfire SQL objects installed.
+2024-08-03 07:40:13.702 [INF] Starting Hangfire Server using job storage: 'SQL Server: 192.168.0.23@padb'
+2024-08-03 07:40:13.702 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-03 07:40:13.703 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-03 07:40:13.708 [DBG] Execution loop BackgroundServerProcess:8576d57b has started in 1.3352 ms
+2024-08-03 07:40:13.710 [VRB] Server 505c36c1838e:1:eb9635f9 is announcing itself...
+2024-08-03 07:40:13.761 [INF] Server 505c36c1838e:1:eb9635f9 successfully announced in 50.384 ms
+2024-08-03 07:40:13.762 [DBG] Execution loop ServerHeartbeatProcess:9a74f11b has started in 0.6682 ms
+2024-08-03 07:40:13.762 [INF] Server 505c36c1838e:1:eb9635f9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-03 07:40:13.763 [DBG] Execution loop ServerWatchdog:790d69cb has started in 0.2859 ms
+2024-08-03 07:40:13.763 [DBG] Execution loop ServerJobCancellationWatcher:2ac0ae15 has started in 0.356 ms
+2024-08-03 07:40:13.764 [VRB] Server 505c36c1838e:1:eb9635f9 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:40:13.764 [VRB] Checking for aborted jobs...
+2024-08-03 07:40:13.764 [DBG] Execution loop ExpirationManager:ce5be98f has started in 0.3297 ms
+2024-08-03 07:40:13.765 [VRB] No newly aborted jobs found.
+2024-08-03 07:40:13.765 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2024-08-03 07:40:13.765 [DBG] Execution loop CountersAggregator:84e7974f has started in 1.2417 ms
+2024-08-03 07:40:13.766 [DBG] Execution loop SqlServerHeartbeatProcess:f4fa7fb0 has started in 0.2267 ms
+2024-08-03 07:40:13.766 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 07:40:13.766 [DBG] Execution loop Worker:c069dd04 has started in 0.4787 ms
+2024-08-03 07:40:13.767 [DBG] Execution loop Worker:29c15f0a has started in 0.8644 ms
+2024-08-03 07:40:13.769 [DBG] Execution loop Worker:1231564d has started in 3.5295 ms
+2024-08-03 07:40:13.774 [DBG] Execution loop Worker:20555f9a has started in 8.499 ms
+2024-08-03 07:40:13.775 [DBG] Execution loop Worker:0accea6a has started in 8.7168 ms
+2024-08-03 07:40:13.775 [DBG] Execution loop Worker:53134046 has started in 8.8751 ms
+2024-08-03 07:40:13.775 [DBG] Execution loop Worker:dd2ea5e8 has started in 9.1977 ms
+2024-08-03 07:40:13.776 [DBG] Execution loop Worker:d7a35954 has started in 9.5975 ms
+2024-08-03 07:40:13.780 [DBG] Execution loop Worker:99f5f503 has started in 13.3515 ms
+2024-08-03 07:40:13.780 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 07:40:13.780 [DBG] Execution loop Worker:37cd14ac has started in 14.4178 ms
+2024-08-03 07:40:13.787 [DBG] Execution loop Worker:cc4cf92d has started in 20.6685 ms
+2024-08-03 07:40:13.791 [DBG] Execution loop Worker:a863df88 has started in 25.4236 ms
+2024-08-03 07:40:13.787 [DBG] Execution loop Worker:ca711d08 has started in 21.4689 ms
+2024-08-03 07:40:13.788 [DBG] Execution loop Worker:6ec33128 has started in 22.434 ms
+2024-08-03 07:40:13.786 [DBG] Execution loop Worker:f9317b65 has started in 20.4072 ms
+2024-08-03 07:40:13.789 [DBG] Execution loop Worker:b2a2b0cb has started in 22.9216 ms
+2024-08-03 07:40:13.793 [DBG] Execution loop Worker:d31b00fc has started in 27.0315 ms
+2024-08-03 07:40:13.799 [VRB] Outdated records removed from the 'AggregatedCounter' table.
+2024-08-03 07:40:13.800 [DBG] Removing outdated records from the 'Job' table...
+2024-08-03 07:40:13.807 [DBG] Execution loop Worker:810f8bf4 has started in 41.4317 ms
+2024-08-03 07:40:13.814 [DBG] Execution loop Worker:11740437 has started in 47.935 ms
+2024-08-03 07:40:13.816 [DBG] Execution loop Worker:53f69dbe has started in 49.9985 ms
+2024-08-03 07:40:13.816 [DBG] Execution loop DelayedJobScheduler:64144e17 has started in 0.3742 ms
+2024-08-03 07:40:13.817 [DBG] Execution loop RecurringJobScheduler:b531b9f7 has started in 0.4742 ms
+2024-08-03 07:40:13.821 [VRB] Outdated records removed from the 'Job' table.
+2024-08-03 07:40:13.817 [INF] Server 505c36c1838e:1:eb9635f9 all the dispatchers started
+2024-08-03 07:40:13.823 [DBG] Removing outdated records from the 'List' table...
+2024-08-03 07:40:13.828 [VRB] Outdated records removed from the 'List' table.
+2024-08-03 07:40:13.828 [DBG] Removing outdated records from the 'Set' table...
+2024-08-03 07:40:13.831 [VRB] Outdated records removed from the 'Set' table.
+2024-08-03 07:40:13.831 [DBG] Removing outdated records from the 'Hash' table...
+2024-08-03 07:40:13.835 [VRB] Outdated records removed from the 'Hash' table.
+2024-08-03 07:40:16.143 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:16.150 [WRN] Failed to determine the https port for redirect.
+2024-08-03 07:40:16.181 [INF] -------------Request-Begin------------
+2024-08-03 07:40:16.185 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:16.186 [INF] 
+
+2024-08-03 07:40:16.187 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 2
+
+2024-08-03 07:40:16.187 [INF] -------------Request-End------------
+2024-08-03 07:40:16.228 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:16.230 [INF] -------------Request-Begin------------
+2024-08-03 07:40:16.230 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:16.231 [INF] 
+
+2024-08-03 07:40:16.231 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 2
+
+2024-08-03 07:40:16.232 [INF] -------------Request-End------------
+2024-08-03 07:40:18.766 [VRB] Checking for aborted jobs...
+2024-08-03 07:40:18.770 [VRB] No newly aborted jobs found.
+2024-08-03 07:40:19.968 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:19.971 [INF] -------------Request-Begin------------
+2024-08-03 07:40:19.977 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:19.983 [INF] 
+
+2024-08-03 07:40:19.987 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 4
+
+2024-08-03 07:40:19.989 [INF] -------------Request-End------------
+2024-08-03 07:40:20.015 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:20.017 [INF] -------------Request-Begin------------
+2024-08-03 07:40:20.018 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:20.019 [INF] 
+
+2024-08-03 07:40:20.021 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 4
+
+2024-08-03 07:40:20.021 [INF] -------------Request-End------------
+2024-08-03 07:40:20.455 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:20.456 [INF] -------------Request-Begin------------
+2024-08-03 07:40:20.459 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:20.460 [INF] 
+
+2024-08-03 07:40:20.460 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 6
+
+2024-08-03 07:40:20.461 [INF] -------------Request-End------------
+2024-08-03 07:40:20.488 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:20.490 [INF] -------------Request-Begin------------
+2024-08-03 07:40:20.490 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:20.491 [INF] 
+
+2024-08-03 07:40:20.491 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 6
+
+2024-08-03 07:40:20.492 [INF] -------------Request-End------------
+2024-08-03 07:40:20.669 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:20.670 [INF] -------------Request-Begin------------
+2024-08-03 07:40:20.670 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:20.671 [INF] 
+
+2024-08-03 07:40:20.671 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 8
+
+2024-08-03 07:40:20.671 [INF] -------------Request-End------------
+2024-08-03 07:40:20.690 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:20.691 [INF] -------------Request-Begin------------
+2024-08-03 07:40:20.692 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:20.692 [INF] 
+
+2024-08-03 07:40:20.692 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 8
+
+2024-08-03 07:40:20.693 [INF] -------------Request-End------------
+2024-08-03 07:40:20.899 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:20.901 [INF] -------------Request-Begin------------
+2024-08-03 07:40:20.901 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:20.902 [INF] 
+
+2024-08-03 07:40:20.903 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 10
+
+2024-08-03 07:40:20.904 [INF] -------------Request-End------------
+2024-08-03 07:40:20.933 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:20.933 [INF] -------------Request-Begin------------
+2024-08-03 07:40:20.934 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:20.935 [INF] 
+
+2024-08-03 07:40:20.935 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 10
+
+2024-08-03 07:40:20.936 [INF] -------------Request-End------------
+2024-08-03 07:40:21.062 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.063 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.063 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.064 [INF] 
+
+2024-08-03 07:40:21.065 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 12
+
+2024-08-03 07:40:21.066 [INF] -------------Request-End------------
+2024-08-03 07:40:21.090 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.091 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.091 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.092 [INF] 
+
+2024-08-03 07:40:21.092 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 12
+
+2024-08-03 07:40:21.092 [INF] -------------Request-End------------
+2024-08-03 07:40:21.224 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.225 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.225 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.226 [INF] 
+
+2024-08-03 07:40:21.226 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 14
+
+2024-08-03 07:40:21.226 [INF] -------------Request-End------------
+2024-08-03 07:40:21.248 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.248 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.249 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.249 [INF] 
+
+2024-08-03 07:40:21.250 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 14
+
+2024-08-03 07:40:21.250 [INF] -------------Request-End------------
+2024-08-03 07:40:21.406 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.407 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.407 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.408 [INF] 
+
+2024-08-03 07:40:21.408 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 16
+
+2024-08-03 07:40:21.409 [INF] -------------Request-End------------
+2024-08-03 07:40:21.434 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.435 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.435 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.436 [INF] 
+
+2024-08-03 07:40:21.436 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 16
+
+2024-08-03 07:40:21.437 [INF] -------------Request-End------------
+2024-08-03 07:40:21.603 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.606 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.607 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.608 [INF] 
+
+2024-08-03 07:40:21.609 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 18
+
+2024-08-03 07:40:21.609 [INF] -------------Request-End------------
+2024-08-03 07:40:21.636 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.638 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.640 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.640 [INF] 
+
+2024-08-03 07:40:21.641 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 18
+
+2024-08-03 07:40:21.642 [INF] -------------Request-End------------
+2024-08-03 07:40:21.751 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.754 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.756 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.758 [INF] 
+
+2024-08-03 07:40:21.762 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 20
+
+2024-08-03 07:40:21.763 [INF] -------------Request-End------------
+2024-08-03 07:40:21.788 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.790 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.790 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.791 [INF] 
+
+2024-08-03 07:40:21.792 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 20
+
+2024-08-03 07:40:21.792 [INF] -------------Request-End------------
+2024-08-03 07:40:21.930 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.933 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.938 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.949 [INF] 
+
+2024-08-03 07:40:21.954 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 22
+
+2024-08-03 07:40:21.955 [INF] -------------Request-End------------
+2024-08-03 07:40:21.976 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:21.983 [INF] -------------Request-Begin------------
+2024-08-03 07:40:21.983 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:21.984 [INF] 
+
+2024-08-03 07:40:21.988 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 22
+
+2024-08-03 07:40:21.988 [INF] -------------Request-End------------
+2024-08-03 07:40:22.142 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.145 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.153 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.160 [INF] 
+
+2024-08-03 07:40:22.165 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 24
+
+2024-08-03 07:40:22.166 [INF] -------------Request-End------------
+2024-08-03 07:40:22.192 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.194 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.199 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.202 [INF] 
+
+2024-08-03 07:40:22.205 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 24
+
+2024-08-03 07:40:22.206 [INF] -------------Request-End------------
+2024-08-03 07:40:22.290 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.290 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.291 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.292 [INF] 
+
+2024-08-03 07:40:22.292 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 26
+
+2024-08-03 07:40:22.293 [INF] -------------Request-End------------
+2024-08-03 07:40:22.322 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.323 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.325 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.325 [INF] 
+
+2024-08-03 07:40:22.326 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 26
+
+2024-08-03 07:40:22.328 [INF] -------------Request-End------------
+2024-08-03 07:40:22.462 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.466 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.471 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.473 [INF] 
+
+2024-08-03 07:40:22.474 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 28
+
+2024-08-03 07:40:22.480 [INF] -------------Request-End------------
+2024-08-03 07:40:22.507 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.508 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.508 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.509 [INF] 
+
+2024-08-03 07:40:22.509 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 28
+
+2024-08-03 07:40:22.509 [INF] -------------Request-End------------
+2024-08-03 07:40:22.607 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.609 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.616 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.617 [INF] 
+
+2024-08-03 07:40:22.618 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 30
+
+2024-08-03 07:40:22.619 [INF] -------------Request-End------------
+2024-08-03 07:40:22.642 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.642 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.643 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.643 [INF] 
+
+2024-08-03 07:40:22.644 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 30
+
+2024-08-03 07:40:22.644 [INF] -------------Request-End------------
+2024-08-03 07:40:22.770 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.771 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.775 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.782 [INF] 
+
+2024-08-03 07:40:22.788 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 32
+
+2024-08-03 07:40:22.792 [INF] -------------Request-End------------
+2024-08-03 07:40:22.820 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.821 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.822 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.822 [INF] 
+
+2024-08-03 07:40:22.822 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 32
+
+2024-08-03 07:40:22.823 [INF] -------------Request-End------------
+2024-08-03 07:40:22.933 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.934 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.935 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.935 [INF] 
+
+2024-08-03 07:40:22.936 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 34
+
+2024-08-03 07:40:22.936 [INF] -------------Request-End------------
+2024-08-03 07:40:22.956 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:22.956 [INF] -------------Request-Begin------------
+2024-08-03 07:40:22.956 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:22.957 [INF] 
+
+2024-08-03 07:40:22.957 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 34
+
+2024-08-03 07:40:22.958 [INF] -------------Request-End------------
+2024-08-03 07:40:23.236 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:23.237 [INF] -------------Request-Begin------------
+2024-08-03 07:40:23.238 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:23.238 [INF] 
+
+2024-08-03 07:40:23.239 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 36
+
+2024-08-03 07:40:23.239 [INF] -------------Request-End------------
+2024-08-03 07:40:23.266 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:23.267 [INF] -------------Request-Begin------------
+2024-08-03 07:40:23.268 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:23.268 [INF] 
+
+2024-08-03 07:40:23.269 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 36
+
+2024-08-03 07:40:23.269 [INF] -------------Request-End------------
+2024-08-03 07:40:23.438 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:23.440 [INF] -------------Request-Begin------------
+2024-08-03 07:40:23.451 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:23.455 [INF] 
+
+2024-08-03 07:40:23.456 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: / 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 1
+Service2 : 2
+Service3 : 38
+
+2024-08-03 07:40:23.456 [INF] -------------Request-End------------
+2024-08-03 07:40:23.486 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:23.489 [INF] -------------Request-Begin------------
+2024-08-03 07:40:23.490 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+Request Body: 
+2024-08-03 07:40:23.491 [INF] 
+
+2024-08-03 07:40:23.491 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /favicon.ico 
+QueryString:  
+StatusCode: 200 
+Response Body: Service1 : 0
+Service2 : 0
+Service3 : 38
+
+2024-08-03 07:40:23.492 [INF] -------------Request-End------------
+2024-08-03 07:40:23.782 [VRB] Checking for aborted jobs...
+2024-08-03 07:40:23.783 [VRB] No newly aborted jobs found.
+2024-08-03 07:40:28.790 [VRB] Checking for aborted jobs...
+2024-08-03 07:40:28.791 [VRB] No newly aborted jobs found.
+2024-08-03 07:40:33.803 [VRB] Checking for aborted jobs...
+2024-08-03 07:40:33.806 [VRB] No newly aborted jobs found.
+2024-08-03 07:40:38.809 [VRB] Checking for aborted jobs...
+2024-08-03 07:40:38.811 [VRB] No newly aborted jobs found.
+2024-08-03 07:40:43.785 [DBG] Server 505c36c1838e:1:eb9635f9 heartbeat successfully sent
+2024-08-03 07:40:43.786 [VRB] Server 505c36c1838e:1:eb9635f9 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:40:43.815 [VRB] Checking for aborted jobs...
+2024-08-03 07:40:43.816 [VRB] No newly aborted jobs found.
+2024-08-03 07:40:44.172 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:40:44.880 [INF] -------------Request-Begin------------
+2024-08-03 07:40:44.881 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /api/Authorization 
+QueryString:  
+Request Body: {
+  "UserName": "papara",
+  "Password": "papara"
+}
+2024-08-03 07:40:44.881 [INF] 
+
+2024-08-03 07:40:44.882 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /api/Authorization 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-08-03T07:45:44.8717389+00:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcGFyYSIsIlVzZXJJZCI6IjEiLCJSb2xlIjoiYWRtaW4iLCJTdGF0dXMiOiIxIiwiRW1haWwiOiJwYUBwYS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJQYXJhIFBhIiwiZXhwIjoxNzIyNjc0MTQ0LCJpc3MiOiJQYXJhQXBpIiwiYXVkIjoiUGFyYUFwaSJ9.2za3uNqg1Xg6fsPIYW-o8bc2lVNU6R7c_P3hLr__DGw",
+    "UserName": "papara",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T07:40:44.8718477Z",
+  "ReferenceNumber": "4e0b9016-b6a2-4033-b1be-1913f3288935"
+}
+2024-08-03 07:40:44.882 [INF] -------------Request-End------------
+2024-08-03 07:40:48.820 [VRB] Checking for aborted jobs...
+2024-08-03 07:40:48.824 [VRB] No newly aborted jobs found.
+2024-08-03 07:40:53.833 [VRB] Checking for aborted jobs...
+2024-08-03 07:40:53.834 [VRB] No newly aborted jobs found.
+2024-08-03 07:40:58.840 [VRB] Checking for aborted jobs...
+2024-08-03 07:40:58.843 [VRB] No newly aborted jobs found.
+2024-08-03 07:41:03.851 [VRB] Checking for aborted jobs...
+2024-08-03 07:41:03.854 [VRB] No newly aborted jobs found.
+2024-08-03 07:41:03.868 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 07:41:04.037 [INF] -------------Request-Begin------------
+2024-08-03 07:41:04.039 [INF] Http Request Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /api/Accounts 
+QueryString:  
+Request Body: 
+2024-08-03 07:41:04.039 [INF] 
+
+2024-08-03 07:41:04.040 [INF] Http Response Information: 
+Schema:http 
+Host: 127.0.0.1:8080 
+Path: /api/Accounts 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": [
+    {
+      "CustomerId": 5,
+      "Name": "5 test",
+      "AccountNumber": 2345234,
+      "IBAN": "TR2342342342342",
+      "Balance": 0.00,
+      "CurrencyCode": "TRY",
+      "OpenDate": "2023-01-02T00:00:00",
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23423443",
+      "CustomerNumber": 45234563,
+      "Id": 1
+    },
+    {
+      "CustomerId": 8,
+      "Name": "8 test",
+      "AccountNumber": 34543534,
+      "IBAN": "TR23423423432423",
+      "Balance": 0.00,
+      "CurrencyCode": "TRY",
+      "OpenDate": "2023-01-02T00:00:00",
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 745654,
+      "Id": 2
+    },
+    {
+      "CustomerId": 10003,
+      "Name": "10003",
+      "AccountNumber": 1000310003,
+      "IBAN": "TR1000310003100031000310003",
+      "Balance": 0.00,
+      "CurrencyCode": "TRY",
+      "OpenDate": "2023-01-02T00:00:00",
+      "CustomerName": "Mehmet Yakup",
+      "CustomerIdentityNumber": "253454364",
+      "CustomerNumber": 2342323,
+      "Id": 6
+    },
+    {
+      "CustomerId": 8,
+      "Name": "8 demo test",
+      "AccountNumber": 9365310,
+      "IBAN": "TR936531097925786936531001",
+      "Balance": 0.00,
+      "CurrencyCode": "USD",
+      "OpenDate": "2024-07-28T14:08:51.996575",
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 745654,
+      "Id": 8
+    },
+    {
+      "CustomerId": 8,
+      "Name": "8 demo test",
+      "AccountNumber": 6500414,
+      "IBAN": "TR650041497925786650041401",
+      "Balance": 0.00,
+      "CurrencyCode": "USD",
+      "OpenDate": "2024-07-28T14:09:45.780397",
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 745654,
+      "Id": 9
+    },
+    {
+      "CustomerId": 8,
+      "Name": "8 demo test",
+      "AccountNumber": 5289008,
+      "IBAN": "TR528900897925786528900801",
+      "Balance": 0.00,
+      "CurrencyCode": "USD",
+      "OpenDate": "2024-07-28T14:12:08.287586",
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 745654,
+      "Id": 10
+    },
+    {
+      "CustomerId": 8,
+      "Name": "8 demo test",
+      "AccountNumber": 1987790,
+      "IBAN": "TR198779097925786198779001",
+      "Balance": 0.00,
+      "CurrencyCode": "USD",
+      "OpenDate": "2024-07-28T14:14:03.921675",
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 745654,
+      "Id": 11
+    },
+    {
+      "CustomerId": 8,
+      "Name": "8 demo test",
+      "AccountNumber": 2864768,
+      "IBAN": "TR286476897925786286476801",
+      "Balance": 0.00,
+      "CurrencyCode": "USD",
+      "OpenDate": "2024-07-28T14:15:49.957076",
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 745654,
+      "Id": 12
+    },
+    {
+      "CustomerId": 8,
+      "Name": "8 demo",
+      "AccountNumber": 3567381,
+      "IBAN": "TR356738197925786356738101",
+      "Balance": 0.00,
+      "CurrencyCode": "USD",
+      "OpenDate": "2024-07-28T14:23:53.502376",
+      "CustomerName": "Ali Yilmaz",
+      "CustomerIdentityNumber": "23543423443",
+      "CustomerNumber": 745654,
+      "Id": 13
+    }
+  ],
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T07:41:04.029351Z",
+  "ReferenceNumber": "92c19d92-519b-4300-b31f-5470aaedbe52"
+}
+2024-08-03 07:41:04.043 [INF] -------------Request-End------------
+2024-08-03 07:41:08.869 [VRB] Checking for aborted jobs...
+2024-08-03 07:41:08.871 [VRB] No newly aborted jobs found.
+2024-08-03 07:41:13.806 [DBG] Server 505c36c1838e:1:eb9635f9 heartbeat successfully sent
+2024-08-03 07:41:13.807 [VRB] Server 505c36c1838e:1:eb9635f9 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:41:13.875 [VRB] Checking for aborted jobs...
+2024-08-03 07:41:13.876 [VRB] No newly aborted jobs found.
+2024-08-03 07:41:18.880 [VRB] Checking for aborted jobs...
+2024-08-03 07:41:18.885 [VRB] No newly aborted jobs found.
+2024-08-03 07:41:23.888 [VRB] Checking for aborted jobs...
+2024-08-03 07:41:23.889 [VRB] No newly aborted jobs found.
+2024-08-03 07:41:28.892 [VRB] Checking for aborted jobs...
+2024-08-03 07:41:28.897 [VRB] No newly aborted jobs found.
+2024-08-03 07:41:33.898 [VRB] Checking for aborted jobs...
+2024-08-03 07:41:33.900 [VRB] No newly aborted jobs found.
+2024-08-03 07:41:38.904 [VRB] Checking for aborted jobs...
+2024-08-03 07:41:38.910 [VRB] No newly aborted jobs found.
+2024-08-03 07:41:43.815 [DBG] Server 505c36c1838e:1:eb9635f9 heartbeat successfully sent
+2024-08-03 07:41:43.816 [VRB] Server 505c36c1838e:1:eb9635f9 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:41:43.913 [VRB] Checking for aborted jobs...
+2024-08-03 07:41:43.914 [VRB] No newly aborted jobs found.
+2024-08-03 07:41:46.721 [DBG] Hangfire Server is stopping...
+2024-08-03 07:41:46.723 [INF] Server 505c36c1838e:1:eb9635f9 caught stopping signal...
+2024-08-03 07:41:46.724 [DBG] Execution loop CountersAggregator:84e7974f stopped in 0 ms
+2024-08-03 07:41:46.725 [DBG] Execution loop SqlServerHeartbeatProcess:f4fa7fb0 stopped in 0 ms
+2024-08-03 07:41:46.724 [DBG] Execution loop ExpirationManager:ce5be98f stopped in 0 ms
+2024-08-03 07:41:46.726 [DBG] Execution loop RecurringJobScheduler:b531b9f7 stopped in 0 ms
+2024-08-03 07:41:46.726 [DBG] Execution loop DelayedJobScheduler:64144e17 stopped in 0 ms
+2024-08-03 07:41:46.729 [DBG] Execution loop Worker:53134046 stopped in 0 ms
+2024-08-03 07:41:46.731 [DBG] Execution loop Worker:810f8bf4 stopped in 0 ms
+2024-08-03 07:41:46.725 [DBG] Execution loop ServerWatchdog:790d69cb stopped in 0 ms
+2024-08-03 07:41:46.727 [DBG] Execution loop Worker:d31b00fc stopped in 0 ms
+2024-08-03 07:41:46.727 [DBG] Execution loop Worker:29c15f0a stopped in 0 ms
+2024-08-03 07:41:46.728 [DBG] Execution loop Worker:cc4cf92d stopped in 0 ms
+2024-08-03 07:41:46.728 [DBG] Execution loop Worker:99f5f503 stopped in 0 ms
+2024-08-03 07:41:46.728 [DBG] Execution loop Worker:c069dd04 stopped in 0 ms
+2024-08-03 07:41:46.726 [DBG] Execution loop ServerJobCancellationWatcher:2ac0ae15 stopped in 0 ms
+2024-08-03 07:41:46.729 [DBG] Execution loop Worker:d7a35954 stopped in 0 ms
+2024-08-03 07:41:46.729 [DBG] Execution loop Worker:ca711d08 stopped in 0 ms
+2024-08-03 07:41:46.729 [DBG] Execution loop Worker:1231564d stopped in 0 ms
+2024-08-03 07:41:46.729 [DBG] Execution loop Worker:6ec33128 stopped in 0 ms
+2024-08-03 07:41:46.730 [DBG] Execution loop Worker:f9317b65 stopped in 0 ms
+2024-08-03 07:41:46.730 [DBG] Execution loop Worker:b2a2b0cb stopped in 0 ms
+2024-08-03 07:41:46.730 [DBG] Execution loop Worker:0accea6a stopped in 0 ms
+2024-08-03 07:41:46.731 [DBG] Execution loop Worker:11740437 stopped in 0 ms
+2024-08-03 07:41:46.731 [DBG] Execution loop Worker:37cd14ac stopped in 0 ms
+2024-08-03 07:41:46.731 [DBG] Execution loop Worker:53f69dbe stopped in 0 ms
+2024-08-03 07:41:46.730 [DBG] Execution loop Worker:dd2ea5e8 stopped in 0 ms
+2024-08-03 07:41:46.731 [DBG] Execution loop Worker:20555f9a stopped in 0 ms
+2024-08-03 07:41:46.731 [DBG] Execution loop Worker:a863df88 stopped in 0 ms
+2024-08-03 07:41:46.741 [DBG] Hangfire Server is stopping...
+2024-08-03 07:41:46.742 [INF] Server 505c36c1838e:1:eb9635f9 All dispatchers stopped
+2024-08-03 07:41:46.743 [DBG] Execution loop ServerHeartbeatProcess:9a74f11b stopped in 0.3071 ms
+2024-08-03 07:41:46.744 [VRB] Server 505c36c1838e:1:eb9635f9 is reporting itself as stopped...
+2024-08-03 07:41:46.752 [INF] Server 505c36c1838e:1:eb9635f9 successfully reported itself as stopped in 7.2107 ms
+2024-08-03 07:41:46.752 [INF] Server 505c36c1838e:1:eb9635f9 has been stopped in total 20.3025 ms
+2024-08-03 07:41:46.752 [DBG] Execution loop BackgroundServerProcess:8576d57b stopped in 20.7312 ms
+2024-08-03 07:51:49.869 [INF] Application is starting...
+2024-08-03 07:51:51.058 [WRN] Storing keys in a directory '/home/app/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2024-08-03 07:51:51.132 [INF] Start installing Hangfire SQL objects...
+2024-08-03 07:51:51.609 [INF] Hangfire SQL objects installed.
+2024-08-03 07:51:51.652 [WRN] No XML encryptor configured. Key {52310969-dea8-4d11-a24c-d5e84650bd00} may be persisted to storage in unencrypted form.
+2024-08-03 07:51:51.946 [INF] Starting Hangfire Server using job storage: 'SQL Server: 192.168.0.23@padb'
+2024-08-03 07:51:51.947 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-08-03 07:51:51.948 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-08-03 07:51:51.965 [DBG] Execution loop BackgroundServerProcess:9ac7d6c2 has started in 3.6532 ms
+2024-08-03 07:51:51.968 [VRB] Server 7c516aceb696:29:7c00c128 is announcing itself...
+2024-08-03 07:51:52.048 [INF] Server 7c516aceb696:29:7c00c128 successfully announced in 78.7665 ms
+2024-08-03 07:51:52.051 [DBG] Execution loop ServerHeartbeatProcess:8ef6a18d has started in 2.421 ms
+2024-08-03 07:51:52.052 [INF] Server 7c516aceb696:29:7c00c128 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-08-03 07:51:52.055 [DBG] Execution loop ServerWatchdog:0687b278 has started in 2.1346 ms
+2024-08-03 07:51:52.056 [DBG] Execution loop ServerJobCancellationWatcher:77d691f1 has started in 3.5532 ms
+2024-08-03 07:51:52.057 [VRB] Server 7c516aceb696:29:7c00c128 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:51:52.058 [VRB] Checking for aborted jobs...
+2024-08-03 07:51:52.059 [VRB] No newly aborted jobs found.
+2024-08-03 07:51:52.062 [DBG] Execution loop ExpirationManager:f0117beb has started in 5.5624 ms
+2024-08-03 07:51:52.064 [INF] 1 servers were removed due to timeout
+2024-08-03 07:51:52.065 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2024-08-03 07:51:52.070 [DBG] Execution loop CountersAggregator:09fd9368 has started in 9.862 ms
+2024-08-03 07:51:52.072 [DBG] Execution loop SqlServerHeartbeatProcess:1db37a65 has started in 3.4365 ms
+2024-08-03 07:51:52.076 [DBG] Aggregating records in 'Counter' table...
+2024-08-03 07:51:52.075 [DBG] Execution loop Worker:7085dae3 has started in 3.406 ms
+2024-08-03 07:51:52.109 [DBG] Execution loop Worker:d34a4976 has started in 37.3095 ms
+2024-08-03 07:51:52.101 [DBG] Execution loop Worker:59a0bce5 has started in 28.5544 ms
+2024-08-03 07:51:52.100 [DBG] Execution loop Worker:4ae9524f has started in 28.1332 ms
+2024-08-03 07:51:52.141 [DBG] Execution loop Worker:57ccab92 has started in 68.7643 ms
+2024-08-03 07:51:52.115 [DBG] Execution loop Worker:8b48a97d has started in 42.4179 ms
+2024-08-03 07:51:52.167 [DBG] Execution loop Worker:312df9c8 has started in 94.9664 ms
+2024-08-03 07:51:52.167 [VRB] Outdated records removed from the 'AggregatedCounter' table.
+2024-08-03 07:51:52.190 [DBG] Execution loop Worker:3661441d has started in 117.6462 ms
+2024-08-03 07:51:52.190 [DBG] Removing outdated records from the 'Job' table...
+2024-08-03 07:51:52.206 [DBG] Execution loop Worker:fabcb4ea has started in 134.164 ms
+2024-08-03 07:51:52.207 [DBG] Execution loop Worker:e6874a1b has started in 134.9537 ms
+2024-08-03 07:51:52.210 [DBG] Execution loop Worker:04d92cbf has started in 137.8327 ms
+2024-08-03 07:51:52.221 [VRB] Records from the 'Counter' table aggregated.
+2024-08-03 07:51:52.222 [DBG] Execution loop Worker:e7ddb9b3 has started in 149.5676 ms
+2024-08-03 07:51:52.274 [DBG] Execution loop Worker:38b4fc14 has started in 202.3536 ms
+2024-08-03 07:51:52.275 [DBG] Execution loop Worker:25478993 has started in 203.1094 ms
+2024-08-03 07:51:52.281 [DBG] Execution loop Worker:8dddb1ea has started in 209.2042 ms
+2024-08-03 07:51:52.289 [DBG] Execution loop Worker:70a1b31e has started in 217.2309 ms
+2024-08-03 07:51:52.294 [DBG] Execution loop Worker:eacaa537 has started in 219.8477 ms
+2024-08-03 07:51:52.317 [DBG] Execution loop Worker:6d8674c6 has started in 245.1235 ms
+2024-08-03 07:51:52.339 [DBG] Execution loop Worker:eaf64951 has started in 266.9652 ms
+2024-08-03 07:51:52.384 [DBG] Execution loop Worker:ddd5d153 has started in 311.5587 ms
+2024-08-03 07:51:52.387 [DBG] Execution loop DelayedJobScheduler:a5570345 has started in 2.9769 ms
+2024-08-03 07:51:52.519 [INF] Server 7c516aceb696:29:7c00c128 all the dispatchers started
+2024-08-03 07:51:52.519 [DBG] Execution loop RecurringJobScheduler:4ea87a8b has started in 109.4807 ms
+2024-08-03 07:51:52.620 [VRB] Outdated records removed from the 'Job' table.
+2024-08-03 07:51:52.622 [DBG] Removing outdated records from the 'List' table...
+2024-08-03 07:51:52.842 [VRB] Outdated records removed from the 'List' table.
+2024-08-03 07:51:52.844 [DBG] Removing outdated records from the 'Set' table...
+2024-08-03 07:51:52.913 [VRB] Outdated records removed from the 'Set' table.
+2024-08-03 07:51:52.914 [DBG] Removing outdated records from the 'Hash' table...
+2024-08-03 07:51:52.930 [VRB] Outdated records removed from the 'Hash' table.
+2024-08-03 07:51:57.061 [VRB] Checking for aborted jobs...
+2024-08-03 07:51:57.063 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:02.069 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:02.070 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:07.074 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:07.076 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:12.078 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:12.082 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:17.085 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:17.090 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:22.078 [DBG] Server 7c516aceb696:29:7c00c128 heartbeat successfully sent
+2024-08-03 07:52:22.081 [VRB] Server 7c516aceb696:29:7c00c128 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:52:22.094 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:22.095 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:27.096 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:27.110 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:32.113 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:32.123 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:37.127 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:37.131 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:42.135 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:42.136 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:47.140 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:47.143 [VRB] No newly aborted jobs found.
+2024-08-03 07:52:52.102 [DBG] Server 7c516aceb696:29:7c00c128 heartbeat successfully sent
+2024-08-03 07:52:52.104 [VRB] Server 7c516aceb696:29:7c00c128 waiting for 00:00:30 delay before sending a heartbeat
+2024-08-03 07:52:52.150 [VRB] Checking for aborted jobs...
+2024-08-03 07:52:52.154 [VRB] No newly aborted jobs found.

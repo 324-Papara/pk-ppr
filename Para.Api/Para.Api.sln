@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Para.Data", "Para.Data\Para
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Para.Bussiness", "Para.Bussiness\Para.Bussiness.csproj", "{19ED0DA4-473B-403C-8722-6F540E8164F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Para.IdentityApi", "Para.IdentityApi\Para.IdentityApi.csproj", "{A97B0EAF-FD1A-4EA6-875B-5658233E0854}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{19ED0DA4-473B-403C-8722-6F540E8164F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19ED0DA4-473B-403C-8722-6F540E8164F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19ED0DA4-473B-403C-8722-6F540E8164F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A97B0EAF-FD1A-4EA6-875B-5658233E0854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A97B0EAF-FD1A-4EA6-875B-5658233E0854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A97B0EAF-FD1A-4EA6-875B-5658233E0854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A97B0EAF-FD1A-4EA6-875B-5658233E0854}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

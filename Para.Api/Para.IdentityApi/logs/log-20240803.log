@@ -1,0 +1,150 @@
+2024-08-03 12:37:18.769 [INF] Application is starting...
+2024-08-03 12:38:04.334 [INF] Application is starting...
+2024-08-03 12:39:08.402 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 12:39:08.423 [WRN] Failed to determine the https port for redirect.
+2024-08-03 12:39:09.098 [FTL] Path=/api/identity/Authorization/Register || Method=POST || Exception=Unable to resolve service for type 'Para.IdentityApi.Service.IAuthService' while attempting to activate 'Para.IdentityApi.Controllers.AuthorizationController'.
+2024-08-03 12:39:09.251 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 50e47605-43d2-42d1-9d8d-85dac461840b and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Para.IdentityApi.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.IdentityApi/Middleware/ErrorHandlerMiddleware.cs:line 35
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-03 12:39:09.347 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 50e47605-43d2-42d1-9d8d-85dac461840b and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.DisplayExceptionContent(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-03 12:39:09.350 [ERR] Connection id "0HN5JJVU03TIU", Request id "0HN5JJVU03TIU:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 50e47605-43d2-42d1-9d8d-85dac461840b and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Para.IdentityApi.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Pk/pk-ppr/Para.Api/Para.IdentityApi/Middleware/ErrorHandlerMiddleware.cs:line 35
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2024-08-03 12:39:31.985 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 12:40:08.313 [INF] Application is starting...
+2024-08-03 12:40:10.857 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 12:40:10.875 [WRN] Failed to determine the https port for redirect.
+2024-08-03 12:42:12.163 [INF] Application is starting...
+2024-08-03 12:42:13.906 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 12:42:13.922 [WRN] Failed to determine the https port for redirect.
+2024-08-03 12:42:52.886 [INF] -------------Request-Begin------------
+2024-08-03 12:42:52.887 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/identity/Authorization/Register 
+QueryString:  
+Request Body: {
+  "Email": "para@para.com",
+  "Password": "Abc123",
+  "ConfirmPassword": "Abc123",
+  "FirstName": "abc",
+  "LastName": "abc",
+  "IdentityNumber": 32423432
+}
+2024-08-03 12:42:52.887 [INF] 
+
+2024-08-03 12:42:52.888 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/identity/Authorization/Register 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Message": null,
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T09:42:52.784996Z",
+  "ReferenceNumber": "89169472-f889-4768-a070-a8ed1b4feb79"
+}
+2024-08-03 12:42:52.888 [INF] -------------Request-End------------
+2024-08-03 12:43:15.050 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 12:43:35.026 [INF] -------------Request-Begin------------
+2024-08-03 12:43:35.027 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/identity/Authorization/Login 
+QueryString:  
+Request Body: {
+  "UserName": "para@para.com",
+  "Password": "Abc123"
+}
+2024-08-03 12:43:35.027 [INF] 
+
+2024-08-03 12:43:35.027 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/identity/Authorization/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-08-03T13:38:32.918702+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcmFAcGFyYS5jb20iLCJVc2VySWQiOiJlNzNkZDlkZi1lMTY5LTRjYzctYmNjNi00OTQ5MjUyNmFhNzUiLCJFbWFpbCI6InBhcmFAcGFyYS5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjpbImFiYyBhYmMiLCJwYXJhQHBhcmEuY29tIl0sImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiZTczZGQ5ZGYtZTE2OS00Y2M3LWJjYzYtNDk0OTI1MjZhYTc1IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoicGFyYUBwYXJhLmNvbSIsImV4cCI6MTcyMjY4MTUwNywiaXNzIjoiUGFyYUFwaSIsImF1ZCI6IlBhcmFBcGkifQ.o2Bcq5HLKdPML2eUkmWUltDwgjP3RHS1xpXYB6ciHM8",
+    "UserName": "para@para.com",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T09:43:33.343628Z",
+  "ReferenceNumber": "ad02dee6-5b21-4a16-b814-a7701e98c5bb"
+}
+2024-08-03 12:43:35.027 [INF] -------------Request-End------------
+2024-08-03 12:45:09.367 [INF] LogRequestLoggingMiddleware.Invoke
+2024-08-03 12:46:34.458 [INF] -------------Request-Begin------------
+2024-08-03 12:46:34.459 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/identity/Authorization/Login 
+QueryString:  
+Request Body: {
+  "UserName": "para@para.com",
+  "Password": "Abc123"
+}
+2024-08-03 12:46:34.459 [INF] 
+
+2024-08-03 12:46:34.459 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5009 
+Path: /api/identity/Authorization/Login 
+QueryString:  
+StatusCode: 200 
+Response Body: {
+  "Data": {
+    "ExpireTime": "2024-08-03T13:41:34.455738+03:00",
+    "AccessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6InBhcmFAcGFyYS5jb20iLCJVc2VySWQiOiJlNzNkZDlkZi1lMTY5LTRjYzctYmNjNi00OTQ5MjUyNmFhNzUiLCJFbWFpbCI6InBhcmFAcGFyYS5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjpbImFiYyBhYmMiLCJwYXJhQHBhcmEuY29tIl0sImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiZTczZGQ5ZGYtZTE2OS00Y2M3LWJjYzYtNDk0OTI1MjZhYTc1IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoicGFyYUBwYXJhLmNvbSIsImV4cCI6MTcyMjY4MTY5NCwiaXNzIjoiUGFyYUFwaSIsImF1ZCI6IlBhcmFBcGkifQ.NVLluQEtoRrHE_RQdbLq1slcgUK8N5vHkbPvC7fBJnA",
+    "UserName": "para@para.com",
+    "Id": 0
+  },
+  "Message": "Success",
+  "IsSuccess": true,
+  "ServerDate": "2024-08-03T09:46:34.455749Z",
+  "ReferenceNumber": "292426be-ef2c-4f19-a9da-b180c56318a2"
+}
+2024-08-03 12:46:34.459 [INF] -------------Request-End------------
